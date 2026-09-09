@@ -1,0 +1,46 @@
+# ===== 依赖 =====
+node_modules/
+
+# ===== 自动下载的 Node 运行时 =====
+.runtime/
+
+# ===== 构建产物 =====
+dist/
+web/dist/
+
+# ===== 日志 =====
+*.log
+server/data/backend.log
+server/data/backend.err.log
+
+# ===== 敏感配置：COS 密钥 + 发布密码（严禁提交） =====
+server/data/publish-config.json
+
+# ===== 大数据缓存：2.3GB 漫画图片（可重新爬取） =====
+server/data/img/manga/
+
+# ===== 历史快照 / 导出 / 版本（可再生） =====
+server/data/snapshots/
+server/data/export/
+server/data/versions/
+
+# ===== 临时 / 中间文件 =====
+server/data/proc_final.txt
+
+# ===== AI 工作目录（对话记忆等） =====
+.workbuddy/
+
+# ===== 开发期截图（根目录） =====
+/gacha-auto.png
+/gacha-page.png
+/manga-157-dialog.png
+/publish-preview.png
+/t2.jpg
+
+# ===== 废弃的旧启动脚本（含硬编码路径，已被 启动.bat 取代） =====
+/start-all.bat
+
+# ===== 系统文件 =====
+desktop.ini
+.DS_Store
+Thumbs.db

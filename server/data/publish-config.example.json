@@ -1,0 +1,7 @@
+{
+  "password": "在此填写发布密码",
+  "secretId": "在此填写腾讯云 COS SecretId",
+  "secretKey": "在此填写腾讯云 COS SecretKey",
+  "bucket": "在此填写 COS 存储桶名称（含 -appid）",
+  "region": "ap-chengdu"
+}

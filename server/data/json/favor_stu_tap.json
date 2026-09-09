@@ -1,0 +1,3294 @@
+[
+  {
+    "id": 10000,
+    "name": "爱露",
+    "FavorItemTags": [
+      "ak",
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "BD"
+    ]
+  },
+  {
+    "id": 10001,
+    "name": "艾米",
+    "FavorItemTags": [
+      "ak",
+      "aQ"
+    ],
+    "FavorItemUniqueTags": [
+      "Bd"
+    ]
+  },
+  {
+    "id": 10002,
+    "name": "晴奈",
+    "FavorItemTags": [
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "BE",
+      "db"
+    ]
+  },
+  {
+    "id": 10003,
+    "name": "日富美",
+    "FavorItemTags": [
+      "ap"
+    ],
+    "FavorItemUniqueTags": [
+      "Be",
+      "dC"
+    ]
+  },
+  {
+    "id": 10004,
+    "name": "日奈",
+    "FavorItemTags": [
+      "aW"
+    ],
+    "FavorItemUniqueTags": [
+      "BF",
+      "dD"
+    ]
+  },
+  {
+    "id": 10005,
+    "name": "星野",
+    "FavorItemTags": [
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "Bf",
+      "de"
+    ]
+  },
+  {
+    "id": 10006,
+    "name": "伊织",
+    "FavorItemTags": [
+      "aJ",
+      "as"
+    ],
+    "FavorItemUniqueTags": [
+      "BG"
+    ]
+  },
+  {
+    "id": 10007,
+    "name": "真纪",
+    "FavorItemTags": [
+      "al",
+      "ax"
+    ],
+    "FavorItemUniqueTags": [
+      "Bg"
+    ]
+  },
+  {
+    "id": 10008,
+    "name": "妮露",
+    "FavorItemTags": [
+      "al"
+    ],
+    "FavorItemUniqueTags": [
+      "BH"
+    ]
+  },
+  {
+    "id": 10009,
+    "name": "泉",
+    "FavorItemTags": [
+      "aJ",
+      "aP"
+    ],
+    "FavorItemUniqueTags": [
+      "Bh"
+    ]
+  },
+  {
+    "id": 10010,
+    "name": "白子",
+    "FavorItemTags": [
+      "aj"
+    ],
+    "FavorItemUniqueTags": [
+      "BI"
+    ]
+  },
+  {
+    "id": 10011,
+    "name": "瞬",
+    "FavorItemTags": [
+      "Bb",
+      "aS"
+    ],
+    "FavorItemUniqueTags": [
+      "Bi"
+    ]
+  },
+  {
+    "id": 10012,
+    "name": "堇",
+    "FavorItemTags": [
+      "aj"
+    ],
+    "FavorItemUniqueTags": [
+      "BJ"
+    ]
+  },
+  {
+    "id": 10013,
+    "name": "鹤城",
+    "FavorItemTags": [
+      "aq"
+    ],
+    "FavorItemUniqueTags": [
+      "Bj",
+      "dp"
+    ]
+  },
+  {
+    "id": 10014,
+    "name": "泉奈",
+    "FavorItemTags": [
+      "an"
+    ],
+    "FavorItemUniqueTags": [
+      "bf"
+    ]
+  },
+  {
+    "id": 10015,
+    "name": "爱丽丝",
+    "FavorItemTags": [
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "BS",
+      "DX"
+    ]
+  },
+  {
+    "id": 10016,
+    "name": "绿",
+    "FavorItemTags": [
+      "aU"
+    ],
+    "FavorItemUniqueTags": [
+      "Bv",
+      "dJ"
+    ]
+  },
+  {
+    "id": 10017,
+    "name": "切里诺",
+    "FavorItemTags": [
+      "ak",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "BT"
+    ]
+  },
+  {
+    "id": 10018,
+    "name": "柚子",
+    "FavorItemTags": [
+      "aL",
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "bg"
+    ]
+  },
+  {
+    "id": 10019,
+    "name": "梓",
+    "FavorItemTags": [
+      "an",
+      "ap",
+      "aw"
+    ],
+    "FavorItemUniqueTags": [
+      "Bs"
+    ]
+  },
+  {
+    "id": 10020,
+    "name": "小春",
+    "FavorItemTags": [
+      "Bb",
+      "aq",
+      "ar"
+    ],
+    "FavorItemUniqueTags": [
+      "Bu"
+    ]
+  },
+  {
+    "id": 10021,
+    "name": "梓（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "ap",
+      "aw"
+    ],
+    "FavorItemUniqueTags": [
+      "Cy",
+      "Dz"
+    ]
+  },
+  {
+    "id": 10022,
+    "name": "日奈（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "aW"
+    ],
+    "FavorItemUniqueTags": [
+      "cA",
+      "dd"
+    ]
+  },
+  {
+    "id": 10023,
+    "name": "伊织（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "aJ",
+      "as"
+    ],
+    "FavorItemUniqueTags": [
+      "ca"
+    ]
+  },
+  {
+    "id": 10024,
+    "name": "白子（骑行）",
+    "FavorItemTags": [
+      "aj",
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "cb"
+    ]
+  },
+  {
+    "id": 10025,
+    "name": "瞬（小）",
+    "FavorItemTags": [
+      "aJ",
+      "aw"
+    ],
+    "FavorItemUniqueTags": [
+      "ce"
+    ]
+  },
+  {
+    "id": 10026,
+    "name": "妮露（邦妮）",
+    "FavorItemTags": [
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "cG",
+      "dl"
+    ]
+  },
+  {
+    "id": 10027,
+    "name": "花凛（邦妮）",
+    "FavorItemTags": [
+      "aw"
+    ],
+    "FavorItemUniqueTags": [
+      "cg",
+      "dg"
+    ]
+  },
+  {
+    "id": 10028,
+    "name": "明日奈（邦妮）",
+    "FavorItemTags": [
+      "aJ"
+    ],
+    "FavorItemUniqueTags": [
+      "cH",
+      "DY"
+    ]
+  },
+  {
+    "id": 10029,
+    "name": "夏",
+    "FavorItemTags": [
+      "aJ",
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "ci"
+    ]
+  },
+  {
+    "id": 10030,
+    "name": "千夏（温泉）",
+    "FavorItemTags": [
+      "ak",
+      "BB",
+      "aT"
+    ],
+    "FavorItemUniqueTags": [
+      "ck"
+    ]
+  },
+  {
+    "id": 10031,
+    "name": "爱露（新年）",
+    "FavorItemTags": [
+      "ak",
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "cm"
+    ]
+  },
+  {
+    "id": 10032,
+    "name": "睦月（新年）",
+    "FavorItemTags": [
+      "al",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "cN"
+    ]
+  },
+  {
+    "id": 10033,
+    "name": "若藻",
+    "FavorItemTags": [
+      "aw"
+    ],
+    "FavorItemUniqueTags": [
+      "co",
+      "dr"
+    ]
+  },
+  {
+    "id": 10034,
+    "name": "三森",
+    "FavorItemTags": [
+      "am",
+      "ay",
+      "an",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "cq"
+    ]
+  },
+  {
+    "id": 10035,
+    "name": "忧",
+    "FavorItemTags": [
+      "BB",
+      "aY",
+      "aT"
+    ],
+    "FavorItemUniqueTags": [
+      "Dc",
+      "dq"
+    ]
+  },
+  {
+    "id": 10036,
+    "name": "日向",
+    "FavorItemTags": [
+      "aN",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "DD",
+      "dE"
+    ]
+  },
+  {
+    "id": 10037,
+    "name": "真里奈",
+    "FavorItemTags": [
+      "ak",
+      "aw"
+    ],
+    "FavorItemUniqueTags": [
+      "Dd"
+    ]
+  },
+  {
+    "id": 10038,
+    "name": "宫子",
+    "FavorItemTags": [
+      "as",
+      "aT"
+    ],
+    "FavorItemUniqueTags": [
+      "De",
+      "dK"
+    ]
+  },
+  {
+    "id": 10039,
+    "name": "美游",
+    "FavorItemTags": [
+      "as",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "DF",
+      "dk"
+    ]
+  },
+  {
+    "id": 10040,
+    "name": "月咏",
+    "FavorItemTags": [
+      "aN",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "Dg"
+    ]
+  },
+  {
+    "id": 10041,
+    "name": "美咲",
+    "FavorItemTags": [
+      "aw"
+    ],
+    "FavorItemUniqueTags": [
+      "Di",
+      "dj"
+    ]
+  },
+  {
+    "id": 10042,
+    "name": "亚津子",
+    "FavorItemTags": [
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "DJ",
+      "Dy"
+    ]
+  },
+  {
+    "id": 10043,
+    "name": "若藻（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "aw"
+    ],
+    "FavorItemUniqueTags": [
+      "DK",
+      "dS"
+    ]
+  },
+  {
+    "id": 10044,
+    "name": "野宫（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "Bb",
+      "ar"
+    ],
+    "FavorItemUniqueTags": [
+      "Dk"
+    ]
+  },
+  {
+    "id": 10045,
+    "name": "星野（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "Ds",
+      "dF"
+    ]
+  },
+  {
+    "id": 10046,
+    "name": "泉奈（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "an"
+    ],
+    "FavorItemUniqueTags": [
+      "DT"
+    ]
+  },
+  {
+    "id": 10047,
+    "name": "千世（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "BB",
+      "aY"
+    ],
+    "FavorItemUniqueTags": [
+      "Dt"
+    ]
+  },
+  {
+    "id": 10048,
+    "name": "纱织",
+    "FavorItemTags": [
+      "Bb",
+      "ar"
+    ],
+    "FavorItemUniqueTags": [
+      "Du"
+    ]
+  },
+  {
+    "id": 10049,
+    "name": "和纱",
+    "FavorItemTags": [
+      "aJ",
+      "ao",
+      "ar"
+    ],
+    "FavorItemUniqueTags": [
+      "dv"
+    ]
+  },
+  {
+    "id": 10050,
+    "name": "心奈",
+    "FavorItemTags": [
+      "aJ",
+      "ao"
+    ],
+    "FavorItemUniqueTags": [
+      "dW",
+      "dX"
+    ]
+  },
+  {
+    "id": 10051,
+    "name": "歌原（应援团）",
+    "FavorItemTags": [
+      "aL",
+      "at"
+    ],
+    "FavorItemUniqueTags": [
+      "dZ",
+      "EB"
+    ]
+  },
+  {
+    "id": 10052,
+    "name": "诺亚",
+    "FavorItemTags": [
+      "BB",
+      "aY"
+    ],
+    "FavorItemUniqueTags": [
+      "Ea"
+    ]
+  },
+  {
+    "id": 10053,
+    "name": "优香（体操服）",
+    "FavorItemTags": [
+      "aZ"
+    ],
+    "FavorItemUniqueTags": [
+      "Ec"
+    ]
+  },
+  {
+    "id": 10054,
+    "name": "玛丽（体操服）",
+    "FavorItemTags": [
+      "an",
+      "aN",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "ED",
+      "Ee"
+    ]
+  },
+  {
+    "id": 10055,
+    "name": "时雨",
+    "FavorItemTags": [
+      "aO",
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "Eh",
+      "EJ"
+    ]
+  },
+  {
+    "id": 10056,
+    "name": "芹娜（圣诞）",
+    "FavorItemTags": [
+      "aO",
+      "aK",
+      "aU"
+    ],
+    "FavorItemUniqueTags": [
+      "EI",
+      "Ej"
+    ]
+  },
+  {
+    "id": 10057,
+    "name": "晴奈（新年）",
+    "FavorItemTags": [
+      "BA",
+      "ao"
+    ],
+    "FavorItemUniqueTags": [
+      "EM",
+      "Em"
+    ]
+  },
+  {
+    "id": 10058,
+    "name": "美祢",
+    "FavorItemTags": [
+      "Bb",
+      "ar"
+    ],
+    "FavorItemUniqueTags": [
+      "EN",
+      "En"
+    ]
+  },
+  {
+    "id": 10059,
+    "name": "未花",
+    "FavorItemTags": [
+      "Bb",
+      "aJ",
+      "aS"
+    ],
+    "FavorItemUniqueTags": [
+      "ET",
+      "Et"
+    ]
+  },
+  {
+    "id": 10060,
+    "name": "惠",
+    "FavorItemTags": [
+      "al",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "EQ",
+      "Eq"
+    ]
+  },
+  {
+    "id": 10061,
+    "name": "樱子",
+    "FavorItemTags": [
+      "aJ"
+    ],
+    "FavorItemUniqueTags": [
+      "ER",
+      "Er"
+    ]
+  },
+  {
+    "id": 10062,
+    "name": "时",
+    "FavorItemTags": [
+      "aj",
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "Eu",
+      "EV"
+    ]
+  },
+  {
+    "id": 10063,
+    "name": "小雪",
+    "FavorItemTags": [
+      "al",
+      "aZ",
+      "aW"
+    ],
+    "FavorItemUniqueTags": [
+      "Ev",
+      "EW"
+    ]
+  },
+  {
+    "id": 10064,
+    "name": "佳代子（新年）",
+    "FavorItemTags": [
+      "aL",
+      "aQ",
+      "an",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "Ex",
+      "EY"
+    ]
+  },
+  {
+    "id": 10065,
+    "name": "果穗",
+    "FavorItemTags": [
+      "BB",
+      "aY"
+    ],
+    "FavorItemUniqueTags": [
+      "Ez",
+      "eA"
+    ]
+  },
+  {
+    "id": 10066,
+    "name": "爱丽丝（女仆）",
+    "FavorItemTags": [
+      "aR",
+      "an",
+      "al"
+    ],
+    "FavorItemUniqueTags": [
+      "eB",
+      "eb"
+    ]
+  },
+  {
+    "id": 10067,
+    "name": "时（邦妮）",
+    "FavorItemTags": [
+      "aj",
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "eD",
+      "ed"
+    ]
+  },
+  {
+    "id": 10068,
+    "name": "玲纱",
+    "FavorItemTags": [
+      "aL",
+      "aQ",
+      "aJ"
+    ],
+    "FavorItemUniqueTags": [
+      "eE",
+      "ee"
+    ]
+  },
+  {
+    "id": 10069,
+    "name": "瑠海",
+    "FavorItemTags": [
+      "an",
+      "ay"
+    ],
+    "FavorItemUniqueTags": [
+      "eg",
+      "eH"
+    ]
+  },
+  {
+    "id": 10070,
+    "name": "南",
+    "FavorItemTags": [
+      "ak",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "eh",
+      "eI"
+    ]
+  },
+  {
+    "id": 10071,
+    "name": "宫子（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "as",
+      "aT"
+    ],
+    "FavorItemUniqueTags": [
+      "ek",
+      "eL"
+    ]
+  },
+  {
+    "id": 10072,
+    "name": "咲（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "as",
+      "Ba",
+      "ak"
+    ],
+    "FavorItemUniqueTags": [
+      "el",
+      "eM"
+    ]
+  },
+  {
+    "id": 10073,
+    "name": "忧（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "BB",
+      "aT",
+      "aY"
+    ],
+    "FavorItemUniqueTags": [
+      "eQ",
+      "eq"
+    ]
+  },
+  {
+    "id": 10074,
+    "name": "花子（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "Bb",
+      "BA",
+      "aS"
+    ],
+    "FavorItemUniqueTags": [
+      "eR",
+      "er"
+    ]
+  },
+  {
+    "id": 10075,
+    "name": "芽瑠",
+    "FavorItemTags": [
+      "BB",
+      "al",
+      "ax"
+    ],
+    "FavorItemUniqueTags": [
+      "FD",
+      "Fd"
+    ]
+  },
+  {
+    "id": 10076,
+    "name": "琴里（应援团）",
+    "FavorItemTags": [
+      "Ba",
+      "aj",
+      "aZ"
+    ],
+    "FavorItemUniqueTags": [
+      "FE",
+      "Fe"
+    ]
+  },
+  {
+    "id": 10077,
+    "name": "一花",
+    "FavorItemTags": [
+      "aL",
+      "an",
+      "Bb"
+    ],
+    "FavorItemUniqueTags": [
+      "FG",
+      "Fg"
+    ]
+  },
+  {
+    "id": 10078,
+    "name": "霞",
+    "FavorItemTags": [
+      "at",
+      "aW",
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "FH",
+      "Fh"
+    ]
+  },
+  {
+    "id": 10079,
+    "name": "御坂美琴",
+    "FavorItemTags": [],
+    "FavorItemUniqueTags": [
+      "Fn",
+      "Fp"
+    ]
+  },
+  {
+    "id": 10080,
+    "name": "食蜂操祈",
+    "FavorItemTags": [],
+    "FavorItemUniqueTags": [
+      "FO",
+      "FQ"
+    ]
+  },
+  {
+    "id": 10081,
+    "name": "紫",
+    "FavorItemTags": [
+      "aJ",
+      "an",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "FP",
+      "FR"
+    ]
+  },
+  {
+    "id": 10082,
+    "name": "莲华",
+    "FavorItemTags": [
+      "am",
+      "ay",
+      "aM",
+      "aX",
+      "aq"
+    ],
+    "FavorItemUniqueTags": [
+      "FS",
+      "Fs"
+    ]
+  },
+  {
+    "id": 10083,
+    "name": "桔梗",
+    "FavorItemTags": [
+      "BB",
+      "aT",
+      "au",
+      "aY",
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "FT",
+      "Ft"
+    ]
+  },
+  {
+    "id": 10084,
+    "name": "小玉（露营）",
+    "FavorItemTags": [
+      "al",
+      "aw"
+    ],
+    "FavorItemUniqueTags": [
+      "Fy",
+      "FZ"
+    ]
+  },
+  {
+    "id": 10085,
+    "name": "晴（露营）",
+    "FavorItemTags": [
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "Fz",
+      "fA"
+    ]
+  },
+  {
+    "id": 10086,
+    "name": "日奈（礼服）",
+    "FavorItemTags": [
+      "aW",
+      "aM"
+    ],
+    "FavorItemUniqueTags": [
+      "fB",
+      "fb"
+    ]
+  },
+  {
+    "id": 10087,
+    "name": "亚子（礼服）",
+    "FavorItemTags": [
+      "ak",
+      "Ba",
+      "au"
+    ],
+    "FavorItemUniqueTags": [
+      "fC",
+      "fc"
+    ]
+  },
+  {
+    "id": 10088,
+    "name": "佳代子（礼服）",
+    "FavorItemTags": [
+      "aL",
+      "aQ"
+    ],
+    "FavorItemUniqueTags": [
+      "ff",
+      "fG"
+    ]
+  },
+  {
+    "id": 10089,
+    "name": "爱露（礼服）",
+    "FavorItemTags": [
+      "ak",
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "fg",
+      "fH"
+    ]
+  },
+  {
+    "id": 10090,
+    "name": "海香",
+    "FavorItemTags": [
+      "al",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "fS",
+      "fs"
+    ]
+  },
+  {
+    "id": 10091,
+    "name": "和纱（乐队）",
+    "FavorItemTags": [
+      "aJ",
+      "aQ"
+    ],
+    "FavorItemUniqueTags": [
+      "fX",
+      "fx"
+    ]
+  },
+  {
+    "id": 10092,
+    "name": "好美（乐队）",
+    "FavorItemTags": [
+      "aJ",
+      "ar"
+    ],
+    "FavorItemUniqueTags": [
+      "fY",
+      "fy"
+    ]
+  },
+  {
+    "id": 10093,
+    "name": "绮罗罗",
+    "FavorItemTags": [
+      "Bb",
+      "aS",
+      "an"
+    ],
+    "FavorItemUniqueTags": [
+      "GA",
+      "Ga"
+    ]
+  },
+  {
+    "id": 10094,
+    "name": "桃（女仆）",
+    "FavorItemTags": [
+      "aR",
+      "aK"
+    ],
+    "FavorItemUniqueTags": [
+      "Gb",
+      "GC"
+    ]
+  },
+  {
+    "id": 10095,
+    "name": "绿（女仆）",
+    "FavorItemTags": [
+      "am",
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "Gc",
+      "GD"
+    ]
+  },
+  {
+    "id": 10096,
+    "name": "康娜（泳装）",
+    "FavorItemTags": [
+      "BB",
+      "au",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Ge",
+      "GF"
+    ]
+  },
+  {
+    "id": 10097,
+    "name": "萌绘（泳装）",
+    "FavorItemTags": [
+      "as",
+      "av",
+      "aL",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Gf",
+      "GG"
+    ]
+  },
+  {
+    "id": 10098,
+    "name": "星野（武装）",
+    "FavorItemTags": [
+      "ak",
+      "as"
+    ],
+    "FavorItemUniqueTags": [
+      "Gi",
+      "GJ"
+    ]
+  },
+  {
+    "id": 10100,
+    "name": "白子＊恐怖",
+    "FavorItemTags": [
+      "aj"
+    ],
+    "FavorItemUniqueTags": [
+      "Gj",
+      "GK"
+    ]
+  },
+  {
+    "id": 10101,
+    "name": "纱织（泳装）",
+    "FavorItemTags": [
+      "Bb",
+      "aS",
+      "as",
+      "Cx",
+      "CX"
+    ],
+    "FavorItemUniqueTags": [
+      "Gk",
+      "GL"
+    ]
+  },
+  {
+    "id": 10102,
+    "name": "日和（泳装）",
+    "FavorItemTags": [
+      "aJ",
+      "az",
+      "aq",
+      "Cx",
+      "CX"
+    ],
+    "FavorItemUniqueTags": [
+      "Gl",
+      "GM"
+    ]
+  },
+  {
+    "id": 10103,
+    "name": "真里奈（旗袍）",
+    "FavorItemTags": [
+      "ak",
+      "al"
+    ],
+    "FavorItemUniqueTags": [
+      "GO",
+      "Go"
+    ]
+  },
+  {
+    "id": 10104,
+    "name": "丽情",
+    "FavorItemTags": [
+      "aj",
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "Gr",
+      "GS"
+    ]
+  },
+  {
+    "id": 10105,
+    "name": "玛丽（偶像）",
+    "FavorItemTags": [
+      "am",
+      "BA",
+      "ay"
+    ],
+    "FavorItemUniqueTags": [
+      "Gt",
+      "GU"
+    ]
+  },
+  {
+    "id": 10106,
+    "name": "樱子（偶像）",
+    "FavorItemTags": [
+      "BB",
+      "av",
+      "aW"
+    ],
+    "FavorItemUniqueTags": [
+      "Gu",
+      "GV"
+    ]
+  },
+  {
+    "id": 10107,
+    "name": "千明",
+    "FavorItemTags": [
+      "BB",
+      "aY",
+      "aW"
+    ],
+    "FavorItemUniqueTags": [
+      "Gz",
+      "gA"
+    ]
+  },
+  {
+    "id": 10108,
+    "name": "优香（睡衣）",
+    "FavorItemTags": [
+      "aK",
+      "aL",
+      "Bb"
+    ],
+    "FavorItemUniqueTags": [
+      "gb",
+      "gC"
+    ]
+  },
+  {
+    "id": 10109,
+    "name": "诺亚（睡衣）",
+    "FavorItemTags": [
+      "aK",
+      "BB",
+      "Bb"
+    ],
+    "FavorItemUniqueTags": [
+      "gc",
+      "gD"
+    ]
+  },
+  {
+    "id": 10110,
+    "name": "圣娅",
+    "FavorItemTags": [
+      "BB",
+      "av",
+      "aY"
+    ],
+    "FavorItemUniqueTags": [
+      "gE",
+      "gH"
+    ]
+  },
+  {
+    "id": 10111,
+    "name": "妮露（制服）",
+    "FavorItemTags": [
+      "al",
+      "aR",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "gG",
+      "gJ"
+    ]
+  },
+  {
+    "id": 10112,
+    "name": "明日奈（制服）",
+    "FavorItemTags": [
+      "Bb",
+      "ar",
+      "aS"
+    ],
+    "FavorItemUniqueTags": [
+      "ge",
+      "gh"
+    ]
+  },
+  {
+    "id": 10113,
+    "name": "濑名（便服）",
+    "FavorItemTags": [
+      "Ba",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "gk",
+      "gL"
+    ]
+  },
+  {
+    "id": 10114,
+    "name": "朱莉（打工）",
+    "FavorItemTags": [
+      "ay",
+      "ar"
+    ],
+    "FavorItemUniqueTags": [
+      "gl",
+      "gM"
+    ]
+  },
+  {
+    "id": 10115,
+    "name": "丽",
+    "FavorItemTags": [
+      "aV",
+      "aL"
+    ],
+    "FavorItemUniqueTags": [
+      "gn",
+      "gO"
+    ]
+  },
+  {
+    "id": 10116,
+    "name": "纱织（礼服）",
+    "FavorItemTags": [
+      "Bb",
+      "an"
+    ],
+    "FavorItemUniqueTags": [
+      "go",
+      "gP"
+    ]
+  },
+  {
+    "id": 10117,
+    "name": "光",
+    "FavorItemTags": [
+      "aJ",
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "gY",
+      "gy"
+    ]
+  },
+  {
+    "id": 10118,
+    "name": "望",
+    "FavorItemTags": [
+      "al",
+      "ak"
+    ],
+    "FavorItemUniqueTags": [
+      "gZ",
+      "gz"
+    ]
+  },
+  {
+    "id": 10119,
+    "name": "名草",
+    "FavorItemTags": [
+      "aJ",
+      "aS",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "Hf",
+      "HG"
+    ]
+  },
+  {
+    "id": 10120,
+    "name": "夏（乐队）",
+    "FavorItemTags": [
+      "aJ",
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "Hd",
+      "HE"
+    ]
+  },
+  {
+    "id": 10121,
+    "name": "紫（泳装）",
+    "FavorItemTags": [
+      "aJ",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Hg",
+      "HH"
+    ]
+  },
+  {
+    "id": 10122,
+    "name": "未花（泳装）",
+    "FavorItemTags": [
+      "Bb",
+      "ar",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "HK",
+      "Hk"
+    ]
+  },
+  {
+    "id": 10123,
+    "name": "圣娅（泳装）",
+    "FavorItemTags": [
+      "BB",
+      "av",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "HL",
+      "Hl"
+    ]
+  },
+  {
+    "id": 10124,
+    "name": "莲见（泳装）",
+    "FavorItemTags": [
+      "aJ",
+      "az",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "HM",
+      "Hm"
+    ]
+  },
+  {
+    "id": 10125,
+    "name": "绘里",
+    "FavorItemTags": [
+      "ak",
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "Hq",
+      "HR"
+    ]
+  },
+  {
+    "id": 10126,
+    "name": "庚",
+    "FavorItemTags": [
+      "BB",
+      "aq"
+    ],
+    "FavorItemUniqueTags": [
+      "Hr",
+      "HS"
+    ]
+  },
+  {
+    "id": 10127,
+    "name": "美代",
+    "FavorItemTags": [
+      "BB",
+      "ak"
+    ],
+    "FavorItemUniqueTags": [
+      "HU",
+      "Hu"
+    ]
+  },
+  {
+    "id": 10128,
+    "name": "冬",
+    "FavorItemTags": [
+      "aX",
+      "Bb"
+    ],
+    "FavorItemUniqueTags": [
+      "HV",
+      "Hv"
+    ]
+  },
+  {
+    "id": 10129,
+    "name": "铃美（魔法）",
+    "FavorItemTags": [
+      "Bb",
+      "aK",
+      "aL",
+      "aQ"
+    ],
+    "FavorItemUniqueTags": [
+      "Hz",
+      "hA"
+    ]
+  },
+  {
+    "id": 10130,
+    "name": "昴",
+    "FavorItemTags": [
+      "aQ",
+      "aV",
+      "ak",
+      "as",
+      "ar"
+    ],
+    "FavorItemUniqueTags": [
+      "ha",
+      "hB"
+    ]
+  },
+  {
+    "id": 10131,
+    "name": "贵音",
+    "FavorItemTags": [
+      "BB",
+      "aY",
+      "aT"
+    ],
+    "FavorItemUniqueTags": [
+      "hk",
+      "hL"
+    ]
+  },
+  {
+    "id": 10132,
+    "name": "月咏（礼服）",
+    "FavorItemTags": [
+      "Bb",
+      "an",
+      "av",
+      "aS"
+    ],
+    "FavorItemUniqueTags": [
+      "hm",
+      "hN"
+    ]
+  },
+  {
+    "id": 10133,
+    "name": "莉音（武装）",
+    "FavorItemTags": [
+      "aL",
+      "av",
+      "aW"
+    ],
+    "FavorItemUniqueTags": [
+      "hp",
+      "hQ"
+    ]
+  },
+  {
+    "id": 10134,
+    "name": "爱丽丝（武装）",
+    "FavorItemTags": [
+      "aR",
+      "al",
+      "an"
+    ],
+    "FavorItemUniqueTags": [
+      "hq",
+      "hR"
+    ]
+  },
+  {
+    "id": 10135,
+    "name": "柯伊",
+    "FavorItemTags": [
+      "Bb",
+      "ar",
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "hr",
+      "hS"
+    ]
+  },
+  {
+    "id": 10136,
+    "name": "艾米（武装）",
+    "FavorItemTags": [
+      "aR",
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "hy",
+      "hZ"
+    ]
+  },
+  {
+    "id": 10137,
+    "name": "木乃香",
+    "FavorItemTags": [
+      "aj",
+      "BB",
+      "aK"
+    ],
+    "FavorItemUniqueTags": [
+      "Ib",
+      "IC"
+    ]
+  },
+  {
+    "id": 10138,
+    "name": "丽奈",
+    "FavorItemTags": [
+      "Bb",
+      "an",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "Ic",
+      "ID"
+    ]
+  },
+  {
+    "id": 10139,
+    "name": "妮可",
+    "FavorItemTags": [
+      "as",
+      "aJ",
+      "am"
+    ],
+    "FavorItemUniqueTags": [
+      "IF",
+      "If"
+    ]
+  },
+  {
+    "id": 10140,
+    "name": "胡桃",
+    "FavorItemTags": [
+      "as",
+      "aw",
+      "aS"
+    ],
+    "FavorItemUniqueTags": [
+      "IG",
+      "Ig"
+    ]
+  },
+  {
+    "id": 10141,
+    "name": "春香（礼服）",
+    "FavorItemTags": [
+      "al",
+      "ak"
+    ],
+    "FavorItemUniqueTags": [
+      "IP",
+      "Ip"
+    ]
+  },
+  {
+    "id": 10142,
+    "name": "名草（泳装）",
+    "FavorItemTags": [
+      "aJ",
+      "Bb",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "IQ",
+      "Iq"
+    ]
+  },
+  {
+    "id": 10144,
+    "name": "雪玲（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "Bb"
+    ],
+    "FavorItemUniqueTags": [
+      "IS",
+      "Is"
+    ]
+  },
+  {
+    "id": 10145,
+    "name": "妃咲（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "ak"
+    ],
+    "FavorItemUniqueTags": [
+      "IT",
+      "It"
+    ]
+  },
+  {
+    "id": 10146,
+    "name": "真琴（泳装）",
+    "FavorItemTags": [
+      "ak",
+      "av",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Iu",
+      "IV"
+    ]
+  },
+  {
+    "id": 10147,
+    "name": "皋月（泳装）",
+    "FavorItemTags": [
+      "BB",
+      "Ba",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Iv",
+      "IW"
+    ]
+  },
+  {
+    "id": 10148,
+    "name": "伊吕波（泳装）",
+    "FavorItemTags": [
+      "BB",
+      "Bb",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Iw",
+      "IX"
+    ]
+  },
+  {
+    "id": 13000,
+    "name": "茜",
+    "FavorItemTags": [
+      "am"
+    ],
+    "FavorItemUniqueTags": [
+      "BK"
+    ]
+  },
+  {
+    "id": 13001,
+    "name": "千世",
+    "FavorItemTags": [
+      "BB",
+      "aY"
+    ],
+    "FavorItemUniqueTags": [
+      "Bk"
+    ]
+  },
+  {
+    "id": 13002,
+    "name": "明里",
+    "FavorItemTags": [
+      "az"
+    ],
+    "FavorItemUniqueTags": [
+      "BL",
+      "Dw"
+    ]
+  },
+  {
+    "id": 13003,
+    "name": "莲见",
+    "FavorItemTags": [
+      "aJ",
+      "az"
+    ],
+    "FavorItemUniqueTags": [
+      "Bl"
+    ]
+  },
+  {
+    "id": 13004,
+    "name": "野宫",
+    "FavorItemTags": [
+      "Bb",
+      "ar"
+    ],
+    "FavorItemUniqueTags": [
+      "BM"
+    ]
+  },
+  {
+    "id": 13005,
+    "name": "佳代子",
+    "FavorItemTags": [
+      "aL",
+      "aQ"
+    ],
+    "FavorItemUniqueTags": [
+      "Bm"
+    ]
+  },
+  {
+    "id": 13006,
+    "name": "睦月",
+    "FavorItemTags": [
+      "al",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "BN"
+    ]
+  },
+  {
+    "id": 13007,
+    "name": "纯子",
+    "FavorItemTags": [
+      "aJ",
+      "ao"
+    ],
+    "FavorItemUniqueTags": [
+      "Bn"
+    ]
+  },
+  {
+    "id": 13008,
+    "name": "芹香",
+    "FavorItemTags": [
+      "ak"
+    ],
+    "FavorItemUniqueTags": [
+      "BO"
+    ]
+  },
+  {
+    "id": 13009,
+    "name": "椿",
+    "FavorItemTags": [
+      "aK"
+    ],
+    "FavorItemUniqueTags": [
+      "Bo",
+      "dP"
+    ]
+  },
+  {
+    "id": 13010,
+    "name": "优香",
+    "FavorItemTags": [
+      "aZ"
+    ],
+    "FavorItemUniqueTags": [
+      "BP",
+      "ds"
+    ]
+  },
+  {
+    "id": 13011,
+    "name": "桃",
+    "FavorItemTags": [
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "BW",
+      "dL"
+    ]
+  },
+  {
+    "id": 13012,
+    "name": "桐乃",
+    "FavorItemTags": [
+      "ao",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "cF",
+      "dH"
+    ]
+  },
+  {
+    "id": 13013,
+    "name": "红叶",
+    "FavorItemTags": [
+      "BB",
+      "aq",
+      "ar"
+    ],
+    "FavorItemUniqueTags": [
+      "FC",
+      "Fc"
+    ]
+  },
+  {
+    "id": 13014,
+    "name": "莲华（泳装）",
+    "FavorItemTags": [
+      "am",
+      "BB",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Hh",
+      "HI"
+    ]
+  },
+  {
+    "id": 16000,
+    "name": "春香",
+    "FavorItemTags": [
+      "aN",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "Bp"
+    ]
+  },
+  {
+    "id": 16001,
+    "name": "明日奈",
+    "FavorItemTags": [
+      "Bb"
+    ],
+    "FavorItemUniqueTags": [
+      "BQ",
+      "Dx"
+    ]
+  },
+  {
+    "id": 16002,
+    "name": "琴里",
+    "FavorItemTags": [
+      "BB",
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "Bq",
+      "dh"
+    ]
+  },
+  {
+    "id": 16003,
+    "name": "铃美",
+    "FavorItemTags": [
+      "aw"
+    ],
+    "FavorItemUniqueTags": [
+      "BR",
+      "dO"
+    ]
+  },
+  {
+    "id": 16004,
+    "name": "菲娜",
+    "FavorItemTags": [
+      "aX"
+    ],
+    "FavorItemUniqueTags": [
+      "Br",
+      "dM"
+    ]
+  },
+  {
+    "id": 16005,
+    "name": "鹤城（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "aq"
+    ],
+    "FavorItemUniqueTags": [
+      "CZ",
+      "dQ"
+    ]
+  },
+  {
+    "id": 16006,
+    "name": "泉（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "aJ",
+      "aP"
+    ],
+    "FavorItemUniqueTags": [
+      "cB"
+    ]
+  },
+  {
+    "id": 16007,
+    "name": "巴",
+    "FavorItemTags": [
+      "BA",
+      "aT",
+      "aY"
+    ],
+    "FavorItemUniqueTags": [
+      "cL",
+      "do"
+    ]
+  },
+  {
+    "id": 16008,
+    "name": "吹雪",
+    "FavorItemTags": [
+      "aJ",
+      "ao"
+    ],
+    "FavorItemUniqueTags": [
+      "cQ"
+    ]
+  },
+  {
+    "id": 16009,
+    "name": "满",
+    "FavorItemTags": [
+      "ak",
+      "aV"
+    ],
+    "FavorItemUniqueTags": [
+      "DH"
+    ]
+  },
+  {
+    "id": 16010,
+    "name": "响（应援团）",
+    "FavorItemTags": [
+      "aL",
+      "am",
+      "aQ"
+    ],
+    "FavorItemUniqueTags": [
+      "dz",
+      "Eb"
+    ]
+  },
+  {
+    "id": 16011,
+    "name": "莲见（体操服）",
+    "FavorItemTags": [
+      "aJ",
+      "az"
+    ],
+    "FavorItemUniqueTags": [
+      "Ed",
+      "EF"
+    ]
+  },
+  {
+    "id": 16012,
+    "name": "纯子（新年）",
+    "FavorItemTags": [
+      "aJ",
+      "ao"
+    ],
+    "FavorItemUniqueTags": [
+      "EO",
+      "Eo"
+    ]
+  },
+  {
+    "id": 16013,
+    "name": "小春（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "aq",
+      "aT"
+    ],
+    "FavorItemUniqueTags": [
+      "eP",
+      "ep"
+    ]
+  },
+  {
+    "id": 16014,
+    "name": "伊吹",
+    "FavorItemTags": [
+      "al",
+      "aw",
+      "ax",
+      "aJ",
+      "ao"
+    ],
+    "FavorItemUniqueTags": [
+      "fD",
+      "fd"
+    ]
+  },
+  {
+    "id": 16015,
+    "name": "爱理（乐队）",
+    "FavorItemTags": [
+      "aJ",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "fZ",
+      "fz"
+    ]
+  },
+  {
+    "id": 16016,
+    "name": "美祢（偶像）",
+    "FavorItemTags": [
+      "Bb",
+      "ar",
+      "ap"
+    ],
+    "FavorItemUniqueTags": [
+      "Gv",
+      "GW"
+    ]
+  },
+  {
+    "id": 16017,
+    "name": "青叶",
+    "FavorItemTags": [
+      "aM",
+      "am",
+      "aO"
+    ],
+    "FavorItemUniqueTags": [
+      "HA",
+      "Ha"
+    ]
+  },
+  {
+    "id": 16018,
+    "name": "兰舞",
+    "FavorItemTags": [
+      "aj",
+      "ak",
+      "aJ"
+    ],
+    "FavorItemUniqueTags": [
+      "hb",
+      "hC"
+    ]
+  },
+  {
+    "id": 16019,
+    "name": "时（武装）",
+    "FavorItemTags": [
+      "aL",
+      "aR",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "hs",
+      "hT"
+    ]
+  },
+  {
+    "id": 16020,
+    "name": "御伽",
+    "FavorItemTags": [
+      "as",
+      "aV",
+      "aj"
+    ],
+    "FavorItemUniqueTags": [
+      "IH",
+      "Ih"
+    ]
+  },
+  {
+    "id": 20000,
+    "name": "响",
+    "FavorItemTags": [
+      "aL"
+    ],
+    "FavorItemUniqueTags": [
+      "Bw"
+    ]
+  },
+  {
+    "id": 20001,
+    "name": "花凛",
+    "FavorItemTags": [
+      "aZ"
+    ],
+    "FavorItemUniqueTags": [
+      "BX",
+      "dG"
+    ]
+  },
+  {
+    "id": 20002,
+    "name": "纱绫",
+    "FavorItemTags": [
+      "aO",
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "Bx"
+    ]
+  },
+  {
+    "id": 20003,
+    "name": "真白",
+    "FavorItemTags": [
+      "as"
+    ],
+    "FavorItemUniqueTags": [
+      "BY",
+      "dI"
+    ]
+  },
+  {
+    "id": 20004,
+    "name": "真白（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "as"
+    ],
+    "FavorItemUniqueTags": [
+      "Cz",
+      "di"
+    ]
+  },
+  {
+    "id": 20005,
+    "name": "日富美（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "ap"
+    ],
+    "FavorItemUniqueTags": [
+      "CY",
+      "dc"
+    ]
+  },
+  {
+    "id": 20006,
+    "name": "纱绫（便服）",
+    "FavorItemTags": [
+      "ao",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "cf",
+      "dm"
+    ]
+  },
+  {
+    "id": 20007,
+    "name": "初音未来",
+    "FavorItemTags": [],
+    "FavorItemUniqueTags": [
+      "cJ"
+    ]
+  },
+  {
+    "id": 20008,
+    "name": "亚子",
+    "FavorItemTags": [
+      "ak",
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "cj"
+    ]
+  },
+  {
+    "id": 20009,
+    "name": "切里诺（温泉）",
+    "FavorItemTags": [
+      "aV",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "cl",
+      "dA"
+    ]
+  },
+  {
+    "id": 20010,
+    "name": "和香（温泉）",
+    "FavorItemTags": [
+      "aM",
+      "aJ",
+      "at"
+    ],
+    "FavorItemUniqueTags": [
+      "cM"
+    ]
+  },
+  {
+    "id": 20011,
+    "name": "芹香（新年）",
+    "FavorItemTags": [
+      "ak"
+    ],
+    "FavorItemUniqueTags": [
+      "cn"
+    ]
+  },
+  {
+    "id": 20012,
+    "name": "濑名",
+    "FavorItemTags": [
+      "aK",
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "cP",
+      "dN"
+    ]
+  },
+  {
+    "id": 20013,
+    "name": "千寻",
+    "FavorItemTags": [
+      "aL",
+      "aQ"
+    ],
+    "FavorItemUniqueTags": [
+      "cp"
+    ]
+  },
+  {
+    "id": 20014,
+    "name": "咲",
+    "FavorItemTags": [
+      "as",
+      "Ba",
+      "ak"
+    ],
+    "FavorItemUniqueTags": [
+      "Df"
+    ]
+  },
+  {
+    "id": 20015,
+    "name": "枫",
+    "FavorItemTags": [
+      "al",
+      "av",
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "Dh"
+    ]
+  },
+  {
+    "id": 20016,
+    "name": "伊吕波",
+    "FavorItemTags": [
+      "BB",
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "DI"
+    ]
+  },
+  {
+    "id": 20017,
+    "name": "日和",
+    "FavorItemTags": [
+      "am"
+    ],
+    "FavorItemUniqueTags": [
+      "Dj"
+    ]
+  },
+  {
+    "id": 20018,
+    "name": "萌绘",
+    "FavorItemTags": [
+      "aL",
+      "as"
+    ],
+    "FavorItemUniqueTags": [
+      "dw"
+    ]
+  },
+  {
+    "id": 20019,
+    "name": "茜（邦妮）",
+    "FavorItemTags": [
+      "am",
+      "ay"
+    ],
+    "FavorItemUniqueTags": [
+      "EA",
+      "EC"
+    ]
+  },
+  {
+    "id": 20020,
+    "name": "日鞠",
+    "FavorItemTags": [
+      "ak",
+      "aW"
+    ],
+    "FavorItemUniqueTags": [
+      "EE",
+      "Ef"
+    ]
+  },
+  {
+    "id": 20021,
+    "name": "花江（圣诞）",
+    "FavorItemTags": [
+      "aO",
+      "aj"
+    ],
+    "FavorItemUniqueTags": [
+      "Ei",
+      "EK"
+    ]
+  },
+  {
+    "id": 20022,
+    "name": "风香（新年）",
+    "FavorItemTags": [
+      "am",
+      "ay",
+      "aO"
+    ],
+    "FavorItemUniqueTags": [
+      "EP",
+      "Ep"
+    ]
+  },
+  {
+    "id": 20023,
+    "name": "康娜",
+    "FavorItemTags": [
+      "aO",
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "ES",
+      "Es"
+    ]
+  },
+  {
+    "id": 20024,
+    "name": "渚",
+    "FavorItemTags": [
+      "ak",
+      "ao"
+    ],
+    "FavorItemUniqueTags": [
+      "Ew",
+      "EX"
+    ]
+  },
+  {
+    "id": 20025,
+    "name": "春香（新年）",
+    "FavorItemTags": [
+      "aN",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "Ey",
+      "EZ"
+    ]
+  },
+  {
+    "id": 20026,
+    "name": "实梨",
+    "FavorItemTags": [
+      "aO",
+      "BB",
+      "aT"
+    ],
+    "FavorItemUniqueTags": [
+      "ei",
+      "eJ"
+    ]
+  },
+  {
+    "id": 20027,
+    "name": "白子（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "aj"
+    ],
+    "FavorItemUniqueTags": [
+      "en",
+      "eO"
+    ]
+  },
+  {
+    "id": 20028,
+    "name": "日向（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "am",
+      "ay",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "eS",
+      "es"
+    ]
+  },
+  {
+    "id": 20029,
+    "name": "三森（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "am",
+      "Bb",
+      "BB"
+    ],
+    "FavorItemUniqueTags": [
+      "eT",
+      "et"
+    ]
+  },
+  {
+    "id": 20030,
+    "name": "晴奈（体操服）",
+    "FavorItemTags": [
+      "aJ",
+      "aj",
+      "ao"
+    ],
+    "FavorItemUniqueTags": [
+      "FF",
+      "Ff"
+    ]
+  },
+  {
+    "id": 20031,
+    "name": "时雨（温泉）",
+    "FavorItemTags": [
+      "aO",
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "FI",
+      "Fi"
+    ]
+  },
+  {
+    "id": 20032,
+    "name": "艾米（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "ak",
+      "aQ"
+    ],
+    "FavorItemUniqueTags": [
+      "FU",
+      "Fu"
+    ]
+  },
+  {
+    "id": 20033,
+    "name": "真琴",
+    "FavorItemTags": [
+      "ak",
+      "aV",
+      "aW",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "fE",
+      "fe"
+    ]
+  },
+  {
+    "id": 20034,
+    "name": "明里（新年）",
+    "FavorItemTags": [
+      "az"
+    ],
+    "FavorItemUniqueTags": [
+      "fh",
+      "fI"
+    ]
+  },
+  {
+    "id": 20035,
+    "name": "椿（导游）",
+    "FavorItemTags": [
+      "aK",
+      "BB"
+    ],
+    "FavorItemUniqueTags": [
+      "fT",
+      "ft"
+    ]
+  },
+  {
+    "id": 20036,
+    "name": "芹香（泳装）",
+    "FavorItemTags": [
+      "ak",
+      "BA",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Gd",
+      "GE"
+    ]
+  },
+  {
+    "id": 20037,
+    "name": "吹雪（泳装）",
+    "FavorItemTags": [
+      "aJ",
+      "aR",
+      "aP",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Gg",
+      "GH"
+    ]
+  },
+  {
+    "id": 20038,
+    "name": "巴（旗袍）",
+    "FavorItemTags": [
+      "BB",
+      "an"
+    ],
+    "FavorItemUniqueTags": [
+      "GP",
+      "Gp"
+    ]
+  },
+  {
+    "id": 20039,
+    "name": "妃咲",
+    "FavorItemTags": [
+      "BB",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "Gs",
+      "GT"
+    ]
+  },
+  {
+    "id": 20040,
+    "name": "皋月",
+    "FavorItemTags": [
+      "BB",
+      "Ba",
+      "aW"
+    ],
+    "FavorItemUniqueTags": [
+      "ga",
+      "gB"
+    ]
+  },
+  {
+    "id": 20041,
+    "name": "莉音",
+    "FavorItemTags": [
+      "av",
+      "aL"
+    ],
+    "FavorItemUniqueTags": [
+      "gf",
+      "gi"
+    ]
+  },
+  {
+    "id": 20042,
+    "name": "真纪（露营）",
+    "FavorItemTags": [
+      "ax",
+      "aL",
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "gg",
+      "gj"
+    ]
+  },
+  {
+    "id": 20043,
+    "name": "泉（正月）",
+    "FavorItemTags": [
+      "aP",
+      "aJ"
+    ],
+    "FavorItemUniqueTags": [
+      "gm",
+      "gN"
+    ]
+  },
+  {
+    "id": 20044,
+    "name": "堇（打工）",
+    "FavorItemTags": [
+      "aj",
+      "aO"
+    ],
+    "FavorItemUniqueTags": [
+      "gp",
+      "gQ"
+    ]
+  },
+  {
+    "id": 20045,
+    "name": "菲娜（导游）",
+    "FavorItemTags": [
+      "aX",
+      "BB",
+      "aM"
+    ],
+    "FavorItemUniqueTags": [
+      "HB",
+      "Hb"
+    ]
+  },
+  {
+    "id": 20046,
+    "name": "尼娅",
+    "FavorItemTags": [
+      "av",
+      "al",
+      "ak"
+    ],
+    "FavorItemUniqueTags": [
+      "He",
+      "HF"
+    ]
+  },
+  {
+    "id": 20047,
+    "name": "桔梗（泳装）",
+    "FavorItemTags": [
+      "BB",
+      "CX",
+      "Cx",
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "Hi",
+      "HJ"
+    ]
+  },
+  {
+    "id": 20048,
+    "name": "渚（泳装）",
+    "FavorItemTags": [
+      "ak",
+      "ao",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "HN",
+      "Hn"
+    ]
+  },
+  {
+    "id": 20049,
+    "name": "美咲（泳装）",
+    "FavorItemTags": [
+      "aw",
+      "BA",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Hs",
+      "HT"
+    ]
+  },
+  {
+    "id": 20050,
+    "name": "律",
+    "FavorItemTags": [
+      "al",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "HW",
+      "Hw"
+    ]
+  },
+  {
+    "id": 20051,
+    "name": "玲纱（魔法）",
+    "FavorItemTags": [
+      "BB",
+      "aR",
+      "al",
+      "aJ"
+    ],
+    "FavorItemUniqueTags": [
+      "hc",
+      "hD"
+    ]
+  },
+  {
+    "id": 20052,
+    "name": "八云",
+    "FavorItemTags": [
+      "BB",
+      "ak"
+    ],
+    "FavorItemUniqueTags": [
+      "hj",
+      "hK"
+    ]
+  },
+  {
+    "id": 20053,
+    "name": "满（礼服）",
+    "FavorItemTags": [
+      "an",
+      "aV",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "hl",
+      "hM"
+    ]
+  },
+  {
+    "id": 20054,
+    "name": "日鞠（武装）",
+    "FavorItemTags": [
+      "ak",
+      "Ba"
+    ],
+    "FavorItemUniqueTags": [
+      "ht",
+      "hU"
+    ]
+  },
+  {
+    "id": 20055,
+    "name": "柚子（武装）",
+    "FavorItemTags": [
+      "Bb",
+      "as"
+    ],
+    "FavorItemUniqueTags": [
+      "hz",
+      "IA"
+    ]
+  },
+  {
+    "id": 20056,
+    "name": "小雪（睡衣）",
+    "FavorItemTags": [
+      "aK",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "Ia",
+      "IB"
+    ]
+  },
+  {
+    "id": 20057,
+    "name": "茜（制服）",
+    "FavorItemTags": [
+      "am",
+      "ay",
+      "ak"
+    ],
+    "FavorItemUniqueTags": [
+      "Id",
+      "IE"
+    ]
+  },
+  {
+    "id": 20058,
+    "name": "绘梨香",
+    "FavorItemTags": [
+      "an",
+      "Bb",
+      "BB"
+    ],
+    "FavorItemUniqueTags": [
+      "II",
+      "Ii"
+    ]
+  },
+  {
+    "id": 20059,
+    "name": "睦月（礼服）",
+    "FavorItemTags": [
+      "al",
+      "av"
+    ],
+    "FavorItemUniqueTags": [
+      "IR",
+      "Ir"
+    ]
+  },
+  {
+    "id": 20060,
+    "name": "伊吹（泳装）",
+    "FavorItemTags": [
+      "al",
+      "aJ",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Ix",
+      "IY"
+    ]
+  },
+  {
+    "id": 23000,
+    "name": "爱理",
+    "FavorItemTags": [
+      "aJ"
+    ],
+    "FavorItemUniqueTags": [
+      "By"
+    ]
+  },
+  {
+    "id": 23001,
+    "name": "风香",
+    "FavorItemTags": [
+      "am",
+      "ay"
+    ],
+    "FavorItemUniqueTags": [
+      "BZ"
+    ]
+  },
+  {
+    "id": 23002,
+    "name": "花江",
+    "FavorItemTags": [
+      "Bb"
+    ],
+    "FavorItemUniqueTags": [
+      "Bz"
+    ]
+  },
+  {
+    "id": 23003,
+    "name": "晴",
+    "FavorItemTags": [
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "bA",
+      "dB"
+    ]
+  },
+  {
+    "id": 23004,
+    "name": "歌原",
+    "FavorItemTags": [
+      "at"
+    ],
+    "FavorItemUniqueTags": [
+      "ba",
+      "dR"
+    ]
+  },
+  {
+    "id": 23005,
+    "name": "绫音",
+    "FavorItemTags": [
+      "BB"
+    ],
+    "FavorItemUniqueTags": [
+      "bB"
+    ]
+  },
+  {
+    "id": 23006,
+    "name": "静子",
+    "FavorItemTags": [
+      "aO"
+    ],
+    "FavorItemUniqueTags": [
+      "bF"
+    ]
+  },
+  {
+    "id": 23007,
+    "name": "花子",
+    "FavorItemTags": [
+      "BB",
+      "aq",
+      "aW"
+    ],
+    "FavorItemUniqueTags": [
+      "BV"
+    ]
+  },
+  {
+    "id": 23008,
+    "name": "玛丽",
+    "FavorItemTags": [
+      "aN",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "cK"
+    ]
+  },
+  {
+    "id": 26000,
+    "name": "千夏",
+    "FavorItemTags": [
+      "BB",
+      "aT"
+    ],
+    "FavorItemUniqueTags": [
+      "bb",
+      "da"
+    ]
+  },
+  {
+    "id": 26001,
+    "name": "小玉",
+    "FavorItemTags": [
+      "al",
+      "aw"
+    ],
+    "FavorItemUniqueTags": [
+      "bC"
+    ]
+  },
+  {
+    "id": 26002,
+    "name": "朱莉",
+    "FavorItemTags": [
+      "ax"
+    ],
+    "FavorItemUniqueTags": [
+      "bc",
+      "df"
+    ]
+  },
+  {
+    "id": 26003,
+    "name": "芹娜",
+    "FavorItemTags": [
+      "aU"
+    ],
+    "FavorItemUniqueTags": [
+      "bD",
+      "dn"
+    ]
+  },
+  {
+    "id": 26004,
+    "name": "志美子",
+    "FavorItemTags": [
+      "BB"
+    ],
+    "FavorItemUniqueTags": [
+      "bd"
+    ]
+  },
+  {
+    "id": 26005,
+    "name": "好美",
+    "FavorItemTags": [
+      "aJ"
+    ],
+    "FavorItemUniqueTags": [
+      "bE"
+    ]
+  },
+  {
+    "id": 26006,
+    "name": "和香",
+    "FavorItemTags": [
+      "aJ",
+      "at"
+    ],
+    "FavorItemUniqueTags": [
+      "bG"
+    ]
+  },
+  {
+    "id": 26007,
+    "name": "绫音（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "BB"
+    ],
+    "FavorItemUniqueTags": [
+      "DL",
+      "DZ"
+    ]
+  },
+  {
+    "id": 26008,
+    "name": "静子（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "aO"
+    ],
+    "FavorItemUniqueTags": [
+      "DU"
+    ]
+  },
+  {
+    "id": 26009,
+    "name": "柚子（女仆）",
+    "FavorItemTags": [
+      "aL",
+      "aR"
+    ],
+    "FavorItemUniqueTags": [
+      "eC",
+      "ec"
+    ]
+  },
+  {
+    "id": 26010,
+    "name": "美游（泳装）",
+    "FavorItemTags": [
+      "CX",
+      "Cx",
+      "as",
+      "BA"
+    ],
+    "FavorItemUniqueTags": [
+      "em",
+      "eN"
+    ]
+  },
+  {
+    "id": 26011,
+    "name": "佐天泪子",
+    "FavorItemTags": [],
+    "FavorItemUniqueTags": [
+      "Fo",
+      "Fq"
+    ]
+  },
+  {
+    "id": 26012,
+    "name": "桐乃（泳装）",
+    "FavorItemTags": [
+      "aj",
+      "ao",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Gh",
+      "GI"
+    ]
+  },
+  {
+    "id": 26013,
+    "name": "亚津子（泳装）",
+    "FavorItemTags": [
+      "BB",
+      "Ba",
+      "av",
+      "Cx",
+      "CX"
+    ],
+    "FavorItemUniqueTags": [
+      "Gm",
+      "GN"
+    ]
+  },
+  {
+    "id": 26014,
+    "name": "花凛（制服）",
+    "FavorItemTags": [
+      "am",
+      "BA",
+      "aq"
+    ],
+    "FavorItemUniqueTags": [
+      "gF",
+      "gI"
+    ]
+  },
+  {
+    "id": 26015,
+    "name": "一花（泳装）",
+    "FavorItemTags": [
+      "Bb",
+      "aL",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "HO",
+      "Ho"
+    ]
+  },
+  {
+    "id": 26016,
+    "name": "千明（泳装）",
+    "FavorItemTags": [
+      "BB",
+      "aY",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "Iy",
+      "IZ"
+    ]
+  }
+]

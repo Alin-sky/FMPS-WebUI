@@ -1,0 +1,2583 @@
+[
+  {
+    "Id": 5000,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aK",
+      "ap",
+      "Bo",
+      "cP",
+      "fT",
+      "Gv",
+      "gb",
+      "Ia"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_0",
+    "Name": "波浪猫枕头",
+    "Desc": "超火的MomoFriends联名商品第7弹！\n年度床上用品人气排名第3的波浪猫枕头。"
+  },
+  {
+    "Id": 5001,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aj",
+      "ap",
+      "Be",
+      "BI",
+      "CY",
+      "Eu",
+      "eD",
+      "en",
+      "Gj",
+      "hb",
+      "Ib"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_1",
+    "Name": "佩洛洛健腹轮",
+    "Desc": "超火的MomoFriends联名商品第9弹！\n 年度运动器材人气排名第1的佩洛洛健腹轮。"
+  },
+  {
+    "Id": 5002,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aL",
+      "aQ",
+      "Bw",
+      "dw",
+      "Hr",
+      "HS"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_2",
+    "Name": "埃帕蓝牙耳机",
+    "Desc": "最近在基沃托斯女生之中非常流行的无线耳机。 只靠零花钱买的话实在太贵了。大概要打工3个月才能买到。"
+  },
+  {
+    "Id": 5003,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "BB",
+      "aq",
+      "Bj",
+      "Bu",
+      "CZ",
+      "eP",
+      "FS",
+      "Gl",
+      "He",
+      "HF",
+      "Hh",
+      "hy",
+      "hZ"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_3",
+    "Name": "无法实现的爱恋\n~正因为是不被世间容许的爱，才更令人流连忘返~",
+    "Desc": "超人气言情小说作家“恋之鲤”的最新作品！\n描述一段无法实现的爱情，是一部紧扣心弦的爱情小说！"
+  },
+  {
+    "Id": 5004,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "BB",
+      "aR",
+      "bA",
+      "BS",
+      "eB",
+      "Fz"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_4",
+    "Name": "游戏杂志《HIT GIRLS》",
+    "Desc": "绝不错过任何一个情报。\n杂志里不仅有基沃托斯最新游戏发售消息，还有经典游戏攻略和游戏周边发售等消息。"
+  },
+  {
+    "Id": 5005,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "Bb",
+      "ar",
+      "BQ",
+      "FG",
+      "GA",
+      "Gk",
+      "GP",
+      "Gp",
+      "go",
+      "HO"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_5",
+    "Name": "樱桃唇彩",
+    "Desc": "可爱与艳丽兼具的唇彩。\n在喜欢打扮的女性中人气爆棚的时尚单品。"
+  },
+  {
+    "Id": 5006,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "Bb",
+      "aS",
+      "Bz",
+      "Du",
+      "eR",
+      "Hz",
+      "IG"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_6",
+    "Name": "让皮肤更加白皙透亮的护肤霜",
+    "Desc": "高档化妆品品牌“莎姆艾菈”推出的热卖产品。\n让皮肤变得非常白皙透明，能更加自然地贴合皮肤，营造出健康的肤色。"
+  },
+  {
+    "Id": 5007,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "Bb",
+      "as",
+      "BY",
+      "Df",
+      "el",
+      "Gi"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_7",
+    "Name": "迷彩伪装用粉底液3件套",
+    "Desc": "高档化妆品品牌“莎姆艾菈”推出的热卖产品。\n渗入肌肤的舒适感！需要时可随时随地进行伪装！快来体验一下属于自己的伪装吧！"
+  },
+  {
+    "Id": 5008,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aJ",
+      "ao",
+      "By",
+      "bE",
+      "ce",
+      "EM",
+      "fX",
+      "fY",
+      "fZ",
+      "Gg",
+      "gY",
+      "Hd",
+      "HN"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_8",
+    "Name": "高级曲奇礼盒套装",
+    "Desc": "清淡香甜、口味一流的薛定谔的高级曲奇礼盒套装。\n有50%概率会发现里面装的不是曲奇，而是别的东西。"
+  },
+  {
+    "Id": 5009,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "BB",
+      "aT",
+      "bB",
+      "De",
+      "DL",
+      "ek",
+      "Hi"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_9",
+    "Name": "《枪、可爱、青春》",
+    "Desc": "枪、可爱，以及青春。\n追溯基沃托斯大众文化的起源并对其进行分析的今年最佳畅销书。"
+  },
+  {
+    "Id": 5010,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "al",
+      "at",
+      "ba",
+      "bG",
+      "dZ",
+      "gf",
+      "gi",
+      "hp",
+      "hQ"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_10",
+    "Name": "天体望远镜",
+    "Desc": "基沃托斯官方天文观测协会选为标准观测用兴趣装备的天体望远镜。"
+  },
+  {
+    "Id": 5011,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aL",
+      "aR",
+      "BW",
+      "cG",
+      "Gb",
+      "HL",
+      "Hl",
+      "hq",
+      "hr",
+      "hz",
+      "IA"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_11",
+    "Name": "Game Girl Color复刻版",
+    "Desc": "“为你的休闲时刻增添魅力！”\n曾经风靡一时的经典游戏机“Game Girl Color”的复刻版！"
+  },
+  {
+    "Id": 5012,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aJ",
+      "as",
+      "Cz",
+      "Gi"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_12",
+    "Name": "MX-野外战口粮 C型 甜品风味",
+    "Desc": "卡路里才是战斗力！"
+  },
+  {
+    "Id": 5013,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aJ",
+      "aP"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_13",
+    "Name": "抹茶味弹珠汽水",
+    "Desc": "具有独特风味的抹茶味碳酸饮料。\n来品尝一下绿色的清爽吧！"
+  },
+  {
+    "Id": 5014,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aK",
+      "aU",
+      "bD",
+      "Bv"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_14",
+    "Name": "果冻抱枕",
+    "Desc": "老牌游戏“果冻”系列的主人公终于出周边了！\n连相同颜色的果冻能互相吃掉的细节也完美重现！"
+  },
+  {
+    "Id": 5015,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "BB",
+      "au",
+      "bd",
+      "Bu",
+      "fC",
+      "HU"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_15",
+    "Name": "跳跃侦探兔\n~由大雾引发的温泉滑倒事件~",
+    "Desc": "高高竖起纯白色的兔耳朵，从不放过任何一个线索！\n跳跃侦探兔系列第3篇！\n这次故事的舞台是温泉哦！"
+  },
+  {
+    "Id": 5016,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aj",
+      "aR",
+      "BJ",
+      "Ei",
+      "Gh",
+      "gp",
+      "IH"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_16",
+    "Name": "健身圈",
+    "Desc": "“玩游戏也能愉快地运动！”\n有了健身圈，在家中即可享受运动乐趣。\n增肌、减脂，无所不能哦！"
+  },
+  {
+    "Id": 5017,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "ak",
+      "aV",
+      "Bf",
+      "cb",
+      "ci",
+      "cl",
+      "Ds",
+      "eQ",
+      "eq",
+      "FH",
+      "Gi",
+      "hl",
+      "Iu"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_17",
+    "Name": "藏宝图",
+    "Desc": "去寻找吧！我坚信宝藏一定就在那里！\n标记了基沃托斯3大藏宝地点的地图。"
+  },
+  {
+    "Id": 5018,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "al",
+      "av",
+      "BH",
+      "BN",
+      "cf",
+      "gZ"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_18",
+    "Name": "装扮用圈圈眼镜",
+    "Desc": "戴上这个你也可以成为天才！\n只要戴上就能成为天才的眼镜（仅限外表）。\n※注意：佩戴眼镜并不能提高智商。"
+  },
+  {
+    "Id": 5019,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "ak",
+      "aW",
+      "BF",
+      "BV",
+      "cA",
+      "Ev",
+      "fB",
+      "fg",
+      "ht"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_19",
+    "Name": "世界上最没用的机器",
+    "Desc": "没任何用处，但非常可爱！可是真的毫无用处！但可爱就好啦！最适合在特别的日子当作礼物赠送的玩具排行榜中名列前5的热门玩具。"
+  },
+  {
+    "Id": 5020,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "al",
+      "aw",
+      "BR",
+      "Bs",
+      "Cy",
+      "cg",
+      "co",
+      "Dd",
+      "Di",
+      "DK",
+      "GO",
+      "Gv",
+      "GW",
+      "Hs",
+      "Ic",
+      "ID",
+      "II",
+      "Ii"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_20",
+    "Name": "蝴蝶结玩具熊",
+    "Desc": "看起来有点普通但其实很可爱的玩具熊。\n在喜欢可爱东西的学员之中比较受欢迎。"
+  },
+  {
+    "Id": 5021,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aM",
+      "aX",
+      "Br",
+      "fB",
+      "HV",
+      "hs",
+      "hT"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_21",
+    "Name": "电影预售票",
+    "Desc": "“有意义的电影就要和亲近的人一起看。”\n在任何电影院都可以使用的电影预售票，只要有这一张票，就可以两个人一起看电影！"
+  },
+  {
+    "Id": 5022,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "al",
+      "ax",
+      "bc",
+      "gg",
+      "Hq",
+      "HR",
+      "Ix"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_22",
+    "Name": "绘画颜料30色套装",
+    "Desc": "装有30种不同颜色的专业级颜料套装。\n用这套颜料来画出整个世界吧！"
+  },
+  {
+    "Id": 5023,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "BB",
+      "aY",
+      "cL",
+      "eT",
+      "Gm",
+      "gc",
+      "Hf",
+      "HG",
+      "IQ",
+      "Iq"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_23",
+    "Name": "古典诗集",
+    "Desc": "古色古香的古典诗集。\n将古典文学的之乎者也收入你的囊中。"
+  },
+  {
+    "Id": 5024,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "am",
+      "ay",
+      "BK",
+      "Dj",
+      "eg",
+      "Gc",
+      "Gs",
+      "GT",
+      "gF"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_24",
+    "Name": "可爱的餐具套装",
+    "Desc": "印有可爱吉祥物的餐具套装。\n每年都能跻入基沃托斯餐具销售排行榜前10的经典款。"
+  },
+  {
+    "Id": 5025,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "al",
+      "aZ",
+      "BP",
+      "BX",
+      "Ec",
+      "eB",
+      "IS",
+      "Is"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_25",
+    "Name": "益智魔方",
+    "Desc": "“只有解开这个，才算得上真正的千禧年人！”千禧年科技学院公认的高难度魔方。"
+  },
+  {
+    "Id": 5026,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aJ",
+      "az",
+      "BT",
+      "cH",
+      "ER",
+      "fX",
+      "fY",
+      "fZ",
+      "Hd",
+      "ha",
+      "hB"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_26",
+    "Name": "大型蛋糕",
+    "Desc": "就算只用眼睛看看也能使人心满意足的超大蛋糕。\n在背面悄咪咪地标记着卡路里……"
+  },
+  {
+    "Id": 5027,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aM",
+      "az",
+      "BL",
+      "cM",
+      "fh",
+      "HA"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_27",
+    "Name": "高档自助餐招待券",
+    "Desc": "高档自助餐厅的招待券。凭它就可以享用基沃托斯首屈一指的厨师制作的高档料理了。\n要是私下购买的话，真的很贵很贵。"
+  },
+  {
+    "Id": 5028,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aN",
+      "av",
+      "DD",
+      "IP",
+      "Ip"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_28",
+    "Name": "食虫植物盆栽",
+    "Desc": "少数有着特殊喜好的人喜欢的食虫植物盆栽。\n他们认为食虫植物捕食昆虫的样子非常可爱。"
+  },
+  {
+    "Id": 5029,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "ak",
+      "av",
+      "BO",
+      "cn",
+      "fg",
+      "Gd",
+      "hj"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_29",
+    "Name": "看似昂贵的贪婪之坛",
+    "Desc": "一看就觉得非常昂贵的贴金坛子。\n谨防假冒产品！"
+  },
+  {
+    "Id": 5030,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "ak",
+      "aQ",
+      "ck",
+      "Ew",
+      "eh",
+      "ff",
+      "Id"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_30",
+    "Name": "发条音乐盒",
+    "Desc": "看起来比较高级的发条音乐盒，用原木营造出了一种复古的感觉。在收藏家们之间比较出名。"
+  },
+  {
+    "Id": 5031,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "an",
+      "BA",
+      "BE",
+      "bf",
+      "cF",
+      "cK",
+      "DF",
+      "DT",
+      "EM",
+      "eg",
+      "em",
+      "Gt",
+      "gl",
+      "gM",
+      "Hg",
+      "HH",
+      "hk",
+      "hL",
+      "IT",
+      "It"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_31",
+    "Name": "刺绣手绢",
+    "Desc": "装饰着刺绣的手绢，朴素的刺绣散发着端庄的美丽。"
+  },
+  {
+    "Id": 5032,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "BB",
+      "Ba",
+      "DJ",
+      "ei",
+      "FE"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_32",
+    "Name": "百科全书",
+    "Desc": "从为什么会打雷下雨，到为什么有冬天夏天。\n你所好奇的一切都可以在这里找到答案。"
+  },
+  {
+    "Id": 5033,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "aO",
+      "Ba",
+      "bF",
+      "cj",
+      "DU",
+      "EP",
+      "fC",
+      "Gr",
+      "GS",
+      "Gu",
+      "GV",
+      "gk"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_33",
+    "Name": "营养补充剂",
+    "Desc": "吃一口就能活力满满！\n很适合送给珍爱的人的健康食品。"
+  },
+  {
+    "Id": 5034,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SR",
+    "Quality": 3,
+    "Tags": [
+      "K",
+      "DV",
+      "CX",
+      "Cx"
+    ],
+    "ShiftingCraftQuality": 20,
+    "CraftQuality": 20,
+    "ExpValue": 20,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_34",
+    "Name": "夏日泳圈",
+    "Desc": "夏天来啦！去海边吧！\n不管你是游泳新手，还是游泳高手，为了你的安全，请务必带上这款戏水必备品。时尚安全的同时，更为你增添一份可爱！"
+  },
+  {
+    "Id": 5100,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "aK",
+      "Bf",
+      "de",
+      "Di",
+      "dj",
+      "Ds",
+      "dF",
+      "EI",
+      "Ej",
+      "ek",
+      "eL",
+      "fT",
+      "ft",
+      "Gi",
+      "GJ",
+      "gb",
+      "gC",
+      "gc",
+      "gD",
+      "HN",
+      "Hn"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_0",
+    "Name": "蕾丝枕头",
+    "Desc": "用高级材质制成的蕾丝枕头。乍看之下设计简约，但就像它的名字那样，承载着少女们的梦想。"
+  },
+  {
+    "Id": 5101,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "BB",
+      "Ez",
+      "eA",
+      "eQ",
+      "eq",
+      "FC",
+      "Fc",
+      "FT",
+      "Ft",
+      "Ge",
+      "GF",
+      "gE",
+      "gH",
+      "HB",
+      "Hb",
+      "Hi",
+      "HJ",
+      "HU",
+      "Hu",
+      "hc",
+      "hD",
+      "Iw",
+      "IX"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_1",
+    "Name": "街头混混系列第1本",
+    "Desc": "以“对我们来说义气和胆识就是一切！”的台词而闻名的热议之作，街头混混系列第1本。读过它的人都表示主角可爱得出乎意料，目前全集正在热卖中。"
+  },
+  {
+    "Id": 5102,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "Bb",
+      "Be",
+      "dC",
+      "BF",
+      "dD",
+      "cA",
+      "dd",
+      "cH",
+      "DY",
+      "bD",
+      "dn",
+      "EN",
+      "En",
+      "eP",
+      "ep",
+      "FG",
+      "Fg",
+      "GA",
+      "Ga",
+      "GP",
+      "Gp",
+      "ge",
+      "gh",
+      "HO",
+      "Ho",
+      "Hr",
+      "HS",
+      "HV",
+      "Hv",
+      "hm",
+      "hN",
+      "hr",
+      "hS"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_2",
+    "Name": "莎姆艾菈【Beyond】",
+    "Desc": "高级化妆品公司莎姆艾菈贩卖的最高级香水。\n以“试着喷一次就能变得可爱！”的广告语而著名的超级无敌人气商品，为旷世天才调香师【Beyond】制作的莎姆艾菈12杰作之一。"
+  },
+  {
+    "Id": 5103,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "ak",
+      "Bf",
+      "de",
+      "Dc",
+      "dq",
+      "cL",
+      "do",
+      "CY",
+      "dc",
+      "cl",
+      "dA",
+      "bb",
+      "da",
+      "Ds",
+      "dF",
+      "EE",
+      "Ef",
+      "Ew",
+      "EX",
+      "eh",
+      "eI",
+      "fE",
+      "fe",
+      "fg",
+      "fH",
+      "Gd",
+      "GE",
+      "ga",
+      "gB",
+      "Hq",
+      "HR",
+      "hj",
+      "hK",
+      "ht",
+      "hU",
+      "IH",
+      "Ih",
+      "IT",
+      "It",
+      "Iv",
+      "IW"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_3",
+    "Name": "高级蛋形工艺品",
+    "Desc": "蛋形模样的身体上镶嵌着美丽宝石并雕刻着几何图形的精巧工艺品。当然温暖地抱着它也不会孵出小鸡来。"
+  },
+  {
+    "Id": 5104,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "aJ",
+      "BL",
+      "Dw",
+      "cF",
+      "dH",
+      "BQ",
+      "Dx",
+      "dW",
+      "dX",
+      "Ed",
+      "EF",
+      "EO",
+      "Eo",
+      "ET",
+      "Et",
+      "ER",
+      "Er",
+      "eE",
+      "ee",
+      "FF",
+      "Ff",
+      "fD",
+      "fd",
+      "fh",
+      "fI",
+      "fX",
+      "fx",
+      "fY",
+      "fy",
+      "fZ",
+      "fz",
+      "Gg",
+      "GH",
+      "Gl",
+      "GM",
+      "Gu",
+      "GV",
+      "gl",
+      "gM",
+      "gY",
+      "gy",
+      "Hd",
+      "HE",
+      "HM",
+      "Hm"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_4",
+    "Name": "千层酥咖啡厅的正宗芭菲",
+    "Desc": "崔尼蒂的有名甜品店千层酥咖啡厅出售的芭菲圣代。在柔软的冰淇淋上层层叠上饼干、糖浆、鲜奶油还有水果，这才是正宗的芭菲圣代！"
+  },
+  {
+    "Id": 5105,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "aL",
+      "De",
+      "dK",
+      "BP",
+      "ds",
+      "Bq",
+      "dh",
+      "bA",
+      "dB",
+      "ba",
+      "dR",
+      "DL",
+      "DZ",
+      "dZ",
+      "EB",
+      "eC",
+      "ec",
+      "FH",
+      "Fh",
+      "Fy",
+      "FZ",
+      "Fz",
+      "fA",
+      "ff",
+      "fG",
+      "Gf",
+      "GG",
+      "Gz",
+      "gA",
+      "gf",
+      "gi",
+      "gn",
+      "gO",
+      "hp",
+      "hQ",
+      "hz",
+      "IA",
+      "Iy",
+      "IZ"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_5",
+    "Name": "A-Book Rare",
+    "Desc": "基沃托斯学员们最想拥有的电子设备TOP3中的笔记本电脑，价格非常昂贵。好想拥有！但真的很贵！"
+  },
+  {
+    "Id": 5106,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "an",
+      "Bj",
+      "dp",
+      "Cy",
+      "Dz",
+      "co",
+      "dr",
+      "DF",
+      "dk",
+      "CZ",
+      "dQ",
+      "DK",
+      "dS",
+      "ED",
+      "Ee",
+      "eB",
+      "eb",
+      "eg",
+      "eH",
+      "em",
+      "eN",
+      "eR",
+      "er",
+      "FP",
+      "FR",
+      "GA",
+      "Ga",
+      "Gk",
+      "GL",
+      "GO",
+      "Go",
+      "Gv",
+      "GW",
+      "gg",
+      "gj",
+      "go",
+      "gP",
+      "Hf",
+      "HG",
+      "Hg",
+      "HH",
+      "HK",
+      "Hk",
+      "Hs",
+      "HT",
+      "Hz",
+      "hA",
+      "hl",
+      "hM",
+      "II",
+      "Ii",
+      "IQ",
+      "Iq",
+      "Iu",
+      "IV"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_6",
+    "Name": "时髦梳子",
+    "Desc": "高级感的时髦设计的携带型梳子。送礼用的人气商品。"
+  },
+  {
+    "Id": 5107,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "aO",
+      "BP",
+      "ds",
+      "BY",
+      "dI",
+      "Cz",
+      "di",
+      "cf",
+      "dm",
+      "cP",
+      "dN",
+      "bc",
+      "df",
+      "bD",
+      "dn",
+      "Eh",
+      "EJ",
+      "EP",
+      "Ep",
+      "ES",
+      "Es",
+      "ei",
+      "eJ",
+      "el",
+      "eM",
+      "FI",
+      "Fi",
+      "fC",
+      "fc",
+      "gk",
+      "gL",
+      "gp",
+      "gQ",
+      "hy",
+      "hZ",
+      "IS",
+      "Is"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_7",
+    "Name": "营养满分综合维他命果冻",
+    "Desc": "含有综合维他命的营养果冻商品。果冻拥有各种水果的味道，吃起来也很有趣。要小心可能一不小心就吃完了一整桶！"
+  },
+  {
+    "Id": 5108,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "aN",
+      "Bo",
+      "dP",
+      "Ey",
+      "EZ",
+      "Gs",
+      "GT",
+      "He",
+      "HF",
+      "HW",
+      "Hw",
+      "IP",
+      "Ip"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_8",
+    "Name": "最高级枫树盆栽",
+    "Desc": "观赏一下就能让心情平静下来的最高级枫树盆栽。就像随着四季更替衣装一般不断变化的树叶，有着一种幽静的韵味。"
+  },
+  {
+    "Id": 5109,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "am",
+      "cg",
+      "dg",
+      "DD",
+      "dE",
+      "Br",
+      "dM",
+      "BX",
+      "dG",
+      "dz",
+      "Eb",
+      "EA",
+      "EC",
+      "eD",
+      "ed",
+      "eS",
+      "es",
+      "eT",
+      "et",
+      "FS",
+      "Fs",
+      "Gc",
+      "GD",
+      "Gt",
+      "GU",
+      "gF",
+      "gI",
+      "HA",
+      "Ha",
+      "Hh",
+      "HI",
+      "Ic",
+      "ID",
+      "Id",
+      "IE",
+      "IF",
+      "If"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_9",
+    "Name": "针线套装",
+    "Desc": "挑选在各种情况下会需要的工具，专家专用的针线组合。只要有这个组合，不管是衣服破旧、袜子破洞都可以轻松解决！"
+  },
+  {
+    "Id": 5110,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "aM",
+      "BE",
+      "db",
+      "BR",
+      "dO",
+      "EM",
+      "Em",
+      "Ex",
+      "EY",
+      "fB",
+      "fb",
+      "ha",
+      "hB",
+      "hk",
+      "hL"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_10",
+    "Name": "音乐演奏会门票",
+    "Desc": "在基沃托斯定期举办的音乐演奏会的门票。范围涵盖经典乐曲到最近流行的流行歌曲。对喜欢各种类型音乐的人来说是最棒的礼物。"
+  },
+  {
+    "Id": 5111,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "aj",
+      "Ei",
+      "EK",
+      "Eu",
+      "EV",
+      "eD",
+      "ed",
+      "en",
+      "eO",
+      "FE",
+      "Fe",
+      "Gh",
+      "GI",
+      "Gr",
+      "GS",
+      "hb",
+      "hC",
+      "Ib",
+      "IC"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_11",
+    "Name": "一天三次哑铃套装",
+    "Desc": "装有多个不同重量的哑铃的套装商品。一天三次。早上、中午、晚上反复进行肌力运动，打造出帅气的肌肉吧！"
+  },
+  {
+    "Id": 5112,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "K",
+      "Dv",
+      "BC",
+      "al",
+      "BS",
+      "DX",
+      "Bv",
+      "dJ",
+      "cG",
+      "dl",
+      "DJ",
+      "Dy",
+      "BW",
+      "dL",
+      "EQ",
+      "Eq",
+      "Ev",
+      "EW",
+      "eB",
+      "eb",
+      "FD",
+      "Fd",
+      "fD",
+      "fd",
+      "fS",
+      "fs",
+      "Gb",
+      "GC",
+      "Gm",
+      "GN",
+      "gG",
+      "gJ",
+      "gZ",
+      "gz",
+      "HL",
+      "Hl",
+      "hq",
+      "hR",
+      "hs",
+      "hT",
+      "Ia",
+      "IB",
+      "IG",
+      "Ig",
+      "IR",
+      "Ir",
+      "Ix",
+      "IY"
+    ],
+    "CraftQuality": 50,
+    "ExpValue": 60,
+    "Craftable": [
+      true,
+      true,
+      true
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_12",
+    "Name": "桌游《人生》",
+    "Desc": "可以体验就业、中头奖、宇宙之旅的有趣桌游。每局游戏都有难以预料结果的轮盘和骰子，如同我们的人生。"
+  },
+  {
+    "Id": 5996,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "BC",
+      "Bc",
+      "ew"
+    ],
+    "ExpValue": 60,
+    "Craftable": [
+      false,
+      false,
+      false
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_special",
+    "Name": "清新的花束",
+    "Desc": "为珍贵之人用宝石做成的花束纪念礼物。\n清秀的花苞让心情变得平稳安定。"
+  },
+  {
+    "Id": 5997,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "BC",
+      "Bc",
+      "ew"
+    ],
+    "ExpValue": 60,
+    "Craftable": [
+      false,
+      false,
+      false
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_lv2_package",
+    "Name": "美丽花束",
+    "Desc": "为珍贵之人用红宝石做成的花束纪念礼物。\n美丽的红色花瓣牢牢抓住对方的心。"
+  },
+  {
+    "Id": 5998,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "BC",
+      "Bc"
+    ],
+    "ExpValue": 20,
+    "Craftable": [
+      false,
+      false,
+      false
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_ssr_2",
+    "Name": "初音未来的拍立得",
+    "Desc": "在初音未来的“特别演出in基沃托斯”上分发的特制拍立得。由于演出的空前盛况，它已经成为每个初音未来粉丝都想拥有的稀有周边。"
+  },
+  {
+    "Id": 5999,
+    "IsReleased": [
+      true,
+      true,
+      true
+    ],
+    "Category": "Favor",
+    "Rarity": "SSR",
+    "Quality": 4,
+    "Tags": [
+      "BC",
+      "Bc"
+    ],
+    "ExpValue": 20,
+    "Craftable": [
+      false,
+      false,
+      false
+    ],
+    "StageDrop": [
+      false,
+      false,
+      false
+    ],
+    "Shop": [
+      false,
+      false,
+      false
+    ],
+    "Icon": "item_icon_favor_ssr_1",
+    "Name": "闪烁的花束",
+    "Desc": "为特别的人送去值得纪念的礼物，用水晶制成的花束。\n当灯光照上去时，花束会像万花筒一样闪耀。"
+  }
+]

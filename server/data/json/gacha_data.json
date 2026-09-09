@@ -1,0 +1,2738 @@
+[
+  [
+    {
+      "now_pick_cn": [
+        10082,
+        10081,
+        10083
+      ],
+      "fes_cn": false,
+      "pick_cn_time": [
+        "2025-07-03T14:00:00+08:00",
+        "2025-07-17T13:59:00+08:00"
+      ],
+      "now_pick_jp": [
+        10121,
+        20047
+      ],
+      "fes_jp": false,
+      "pick_jp_time": [
+        "2025-06-25T18:00:00+08:00",
+        "2025-07-09T09:59:00+08:00"
+      ],
+      "now_pick_in": [
+        10067,
+        10066,
+        10095,
+        10094
+      ],
+      "fes_in": false,
+      "pick_in_time": [
+        "2025-07-01T13:00:00+08:00",
+        "2025-07-08T09:59:00+08:00"
+      ]
+    }
+  ],
+  [
+    {
+      "id": 10000,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10001,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10002,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10003,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10004,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10005,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10006,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10007,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10008,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10009,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10010,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10011,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10012,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10013,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10014,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10015,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10016,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10017,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10018,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10019,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10020,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10021,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10022,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10023,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10024,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10025,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10026,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10027,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10028,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10029,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10030,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 10031,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10032,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10033,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 10034,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10035,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10036,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10037,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10038,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10039,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10040,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10041,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10042,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10043,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10044,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10045,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 10046,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10047,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10048,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10049,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10050,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10051,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10052,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10053,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10054,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10055,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10056,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10057,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10058,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10059,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 10060,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10061,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10062,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10063,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10064,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10065,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10066,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10067,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10068,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10069,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10070,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10071,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10072,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10073,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10074,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 10075,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10076,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10077,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10078,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10079,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10080,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10081,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10082,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10083,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10084,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10085,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10086,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 10087,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10088,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10089,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10090,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10091,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10092,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10093,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10094,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10095,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10096,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10097,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10098,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 10100,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 10101,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10102,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10103,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10104,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10105,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10106,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10107,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10108,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10109,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10110,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10111,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 10112,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10113,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10114,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10115,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10116,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10117,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10118,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10119,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10120,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10121,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10122,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 10123,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10124,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10125,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10126,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10127,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10128,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10129,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10130,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10131,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10132,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10133,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10134,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 10135,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 10136,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10137,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10138,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10139,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10140,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10141,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10142,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10144,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10145,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10146,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10147,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 10148,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 13000,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13001,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13002,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13003,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13004,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 2
+    },
+    {
+      "id": 13005,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13006,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13007,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13008,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13009,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13010,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13011,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13012,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13013,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 13014,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 16000,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 0
+    },
+    {
+      "id": 16001,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 0
+    },
+    {
+      "id": 16002,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 0
+    },
+    {
+      "id": 16003,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 0
+    },
+    {
+      "id": 16004,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 0
+    },
+    {
+      "id": 16005,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16006,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16007,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16008,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16009,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16010,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16011,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16012,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16013,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16014,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16015,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16016,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16017,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16018,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16019,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 16020,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 20000,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 20001,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 20002,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 20003,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 20004,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 20005,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 20006,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 20007,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 20008,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 20009,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 20010,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 20011,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 20012,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 20013,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 4
+    },
+    {
+      "id": 20014,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20015,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20016,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20017,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20018,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20019,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20020,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20021,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20022,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 20023,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20024,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 20025,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20026,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20027,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20028,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 20029,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20030,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20031,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20032,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20033,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 20034,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20035,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20036,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20037,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20038,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20039,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20040,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20041,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 20042,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20043,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20044,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20045,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20046,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20047,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20048,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 20049,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20050,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20051,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 20052,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20053,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20054,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 1
+    },
+    {
+      "id": 20055,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20056,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20057,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20058,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20059,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 20060,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 3
+    },
+    {
+      "id": 23000,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 23001,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 23002,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 23003,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 23004,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 23005,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 23006,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 23007,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 23008,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 2,
+      "IsLimited": 0
+    },
+    {
+      "id": 26000,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 0
+    },
+    {
+      "id": 26001,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 0
+    },
+    {
+      "id": 26002,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 0
+    },
+    {
+      "id": 26003,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 0
+    },
+    {
+      "id": 26004,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 0
+    },
+    {
+      "id": 26005,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 0
+    },
+    {
+      "id": 26006,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 26007,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 26008,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 26009,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 26010,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 26011,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 26012,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 26013,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 26014,
+      "IsReleased": [
+        true,
+        true,
+        true
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 26015,
+      "IsReleased": [
+        true,
+        true,
+        false
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    },
+    {
+      "id": 26016,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 1,
+      "IsLimited": 2
+    }
+  ]
+]

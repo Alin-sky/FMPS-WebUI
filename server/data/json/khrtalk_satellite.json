@@ -1,0 +1,969 @@
+[
+  {
+    "Id": "20001",
+    "Id_db": 91000,
+    "FirstName_jp": "阿罗娜",
+    "FirstName_zh": "阿罗娜",
+    "Name_jp": "アロナ",
+    "Name_en": "Arona",
+    "Name_zh_tw": "阿罗娜",
+    "Name_kr": "아로나",
+    "Name_zh_cn": "阿罗娜",
+    "Name_zh_ft": "阿罗娜",
+    "NickName": [
+      "阿萝娜",
+      "aluona",
+      "彩奈",
+      "ARONA",
+      "A.R.O.N.A"
+    ]
+  },
+  {
+    "Id": "20002",
+    "Id_db": 91001,
+    "FirstName_jp": "普拉娜",
+    "FirstName_zh": "普拉娜",
+    "Name_jp": "プラナ",
+    "Name_en": "Plana",
+    "Name_zh_tw": "星奈",
+    "Name_kr": "프라나",
+    "Name_zh_cn": "普拉娜",
+    "Name_zh_ft": "普拉娜",
+    "NickName": [
+      "pulana",
+      "普罗娜",
+      "普洛娜",
+      "普莱娜",
+      "黑阿罗娜"
+    ]
+  },
+  {
+    "Id": "20003",
+    "Id_db": 91002,
+    "FirstName_jp": "空",
+    "FirstName_zh": "空",
+    "Name_jp": "ソラ",
+    "Name_en": "Sora",
+    "Name_zh_tw": "空",
+    "Name_kr": "솔라",
+    "Name_zh_cn": "空",
+    "Name_zh_ft": "空",
+    "NickName": [
+      "kong",
+      "小空",
+      "天使24",
+      "打工妹"
+    ]
+  },
+  {
+    "Id": "20004",
+    "Id_db": 91003,
+    "FirstName_jp": "七神",
+    "FirstName_zh": "七神",
+    "Name_jp": "リン",
+    "Name_en": "Rin",
+    "Name_zh_tw": "琳",
+    "Name_kr": "린",
+    "Name_zh_cn": "凛",
+    "Name_zh_ft": "凛",
+    "NickName": [
+      "lin",
+      "首席行政官"
+    ]
+  },
+  {
+    "Id": "20005",
+    "Id_db": 91004,
+    "FirstName_jp": "由良木",
+    "FirstName_zh": "由良木",
+    "Name_jp": "モモカ",
+    "Name_en": "Momoka",
+    "Name_zh_tw": "桃香",
+    "Name_kr": "모모카",
+    "Name_zh_cn": "桃香",
+    "Name_zh_ft": "桃香",
+    "NickName": [
+      "taoxiang",
+      "毛毛力"
+    ]
+  },
+  {
+    "Id": "20006",
+    "Id_db": 91005,
+    "FirstName_jp": "不知火",
+    "FirstName_zh": "不知火",
+    "Name_jp": "カヤ",
+    "Name_en": "Kaya",
+    "Name_zh_tw": "花耶",
+    "Name_kr": "카야",
+    "Name_zh_cn": "花耶",
+    "Name_zh_ft": "卡娅",
+    "NickName": [
+      "kaya",
+      "花耶",
+      "香耶",
+      "花小将"
+    ]
+  },
+  {
+    "Id": "20007",
+    "Id_db": 91006,
+    "FirstName_jp": "岩櫃",
+    "FirstName_zh": "岩櫃",
+    "Name_jp": "アユム",
+    "Name_en": "Ayumu",
+    "Name_zh_tw": "步美",
+    "Name_kr": "아유무",
+    "Name_zh_cn": "步美",
+    "Name_zh_ft": "步美",
+    "NickName": [
+      "bumei",
+      "调停室"
+    ]
+  },
+  {
+    "Id": "20008",
+    "Id_db": 91007,
+    "FirstName_jp": "扇喜",
+    "FirstName_zh": "扇喜",
+    "Name_jp": "アオイ",
+    "Name_en": "Aoi",
+    "Name_zh_tw": "葵",
+    "Name_kr": "아오이",
+    "Name_zh_cn": "葵",
+    "Name_zh_ft": "葵",
+    "NickName": [
+      "kui",
+      "财务室"
+    ]
+  },
+  {
+    "Id": "20009",
+    "Id_db": 91008,
+    "FirstName_jp": "李",
+    "FirstName_zh": "李",
+    "Name_jp": "スモモ",
+    "Name_en": "Sumomo",
+    "Name_zh_tw": "李",
+    "Name_kr": "스모모모",
+    "Name_zh_cn": "李",
+    "Name_zh_ft": "李",
+    "NickName": [
+      "li"
+    ]
+  },
+  {
+    "Id": "20010",
+    "Id_db": 91009,
+    "FirstName_jp": "灰音",
+    "FirstName_zh": "灰音",
+    "Name_jp": "ハイネ",
+    "Name_en": "Haine",
+    "Name_zh_tw": "灰音",
+    "Name_kr": "하이네",
+    "Name_zh_cn": "灰音",
+    "Name_zh_ft": "灰音",
+    "NickName": [
+      "huiyin"
+    ]
+  },
+  {
+    "Id": "20011",
+    "Id_db": 91010,
+    "FirstName_jp": "皐月",
+    "FirstName_zh": "皐月",
+    "Name_jp": "サツキ",
+    "Name_en": "Satsuki",
+    "Name_zh_tw": "皐月",
+    "Name_kr": "사츠키",
+    "Name_zh_cn": "皐月",
+    "Name_zh_ft": "皐月",
+    "NickName": [
+      "gaoyue"
+    ]
+  },
+  {
+    "Id": "20012",
+    "Id_db": 91011,
+    "FirstName_jp": "元宮",
+    "FirstName_zh": "元宮",
+    "Name_jp": "チアキ",
+    "Name_en": "Chiaki",
+    "Name_zh_tw": "千秋",
+    "Name_kr": "치아키",
+    "Name_zh_cn": "千秋",
+    "Name_zh_ft": "千秋",
+    "NickName": [
+      "qianqiu"
+    ]
+  },
+  {
+    "Id": "20013",
+    "Id_db": 91012,
+    "FirstName_jp": "旗見",
+    "FirstName_zh": "旗見",
+    "Name_jp": "エリカ",
+    "Name_en": "Erika",
+    "Name_zh_tw": "绘梨香",
+    "Name_kr": "에리카",
+    "Name_zh_cn": "绘梨香",
+    "Name_zh_ft": "绘梨香",
+    "NickName": [
+      "huilixiang",
+      "艾丽卡"
+    ]
+  },
+  {
+    "Id": "20014",
+    "Id_db": 91013,
+    "FirstName_jp": "調月",
+    "FirstName_zh": "調月",
+    "Name_jp": "リオ",
+    "Name_en": "Rio",
+    "Name_zh_tw": "莉音",
+    "Name_kr": "리오",
+    "Name_zh_cn": "理绪",
+    "Name_zh_ft": "莉音",
+    "NickName": [
+      "liyin",
+      "毁灭菇"
+    ]
+  },
+  {
+    "Id": "20015",
+    "Id_db": 91014,
+    "FirstName_jp": "百合園",
+    "FirstName_zh": "百合园",
+    "Name_jp": "セイア",
+    "Name_en": "Seia",
+    "Name_zh_tw": "聖婭",
+    "Name_kr": "세이아",
+    "Name_zh_cn": "圣娅",
+    "Name_zh_ft": "圣娅",
+    "NickName": [
+      "shengya",
+      "圣哑",
+      "娅门",
+      "北长尾山雀",
+      "谜语人",
+      "预知梦"
+    ]
+  },
+  {
+    "Id": "20018",
+    "Id_db": 91017,
+    "FirstName_jp": "葛叶",
+    "FirstName_zh": "葛叶",
+    "Name_jp": "クズノハ",
+    "Name_en": "Kuzunoha",
+    "Name_zh_tw": "葛叶",
+    "Name_kr": "쿠즈노하",
+    "Name_zh_cn": "葛叶",
+    "Name_zh_ft": "葛叶",
+    "NickName": [
+      "geye",
+      "百鬼夜行的预言者"
+    ]
+  },
+  {
+    "Id": "20019",
+    "Id_db": 91018,
+    "FirstName_jp": "天地",
+    "FirstName_zh": "天地",
+    "Name_jp": "ニヤ",
+    "Name_en": "Niya",
+    "Name_zh_tw": "仁耶",
+    "Name_kr": "니아",
+    "Name_zh_cn": "仁耶",
+    "Name_zh_ft": "妮娅",
+    "NickName": [
+      "niya",
+      "尼娅"
+    ]
+  },
+  {
+    "Id": "20020",
+    "Id_db": 91019,
+    "FirstName_jp": "七度",
+    "FirstName_zh": "七度",
+    "Name_jp": "ユキノ",
+    "Name_en": "Yukino",
+    "Name_zh_tw": "雪乃",
+    "Name_kr": "유키노",
+    "Name_zh_cn": "雪乃",
+    "Name_zh_ft": "雪乃",
+    "NickName": [
+      "xuenai"
+    ]
+  },
+  {
+    "Id": "20021",
+    "Id_db": 91020,
+    "FirstName_jp": "妮可",
+    "FirstName_zh": "妮可",
+    "Name_jp": "ニコ",
+    "Name_en": "Niko",
+    "Name_zh_tw": "妮可",
+    "Name_kr": "니코",
+    "Name_zh_cn": "妮可",
+    "Name_zh_ft": "妮可",
+    "NickName": [
+      "nike"
+    ]
+  },
+  {
+    "Id": "20022",
+    "Id_db": 91021,
+    "FirstName_jp": "胡桃",
+    "FirstName_zh": "胡桃",
+    "Name_jp": "クルミ",
+    "Name_en": "Kurumi",
+    "Name_zh_tw": "胡桃",
+    "Name_kr": "호두",
+    "Name_zh_cn": "胡桃",
+    "Name_zh_ft": "胡桃",
+    "NickName": [
+      "hutao"
+    ]
+  },
+  {
+    "Id": "20023",
+    "Id_db": 91022,
+    "FirstName_jp": "音葵",
+    "FirstName_zh": "音葵",
+    "Name_jp": "オトギ",
+    "Name_en": "Otogi",
+    "Name_zh_tw": "音葵",
+    "Name_kr": "오뚜기",
+    "Name_zh_cn": "音葵",
+    "Name_zh_ft": "音葵",
+    "NickName": [
+      "yinkui"
+    ]
+  },
+  {
+    "Id": "20024",
+    "Id_db": 91023,
+    "FirstName_jp": "川流",
+    "FirstName_zh": "川流",
+    "Name_jp": "シノン",
+    "Name_en": "Shinon",
+    "Name_zh_tw": "志乃",
+    "Name_kr": "시논",
+    "Name_zh_cn": "志乃",
+    "Name_zh_ft": "志乃",
+    "NickName": [
+      "zhinai",
+      "南半球"
+    ]
+  },
+  {
+    "Id": "20025",
+    "Id_db": 91024,
+    "FirstName_jp": "麦",
+    "FirstName_zh": "麦",
+    "Name_jp": "マイ",
+    "Name_en": "Mai",
+    "Name_zh_tw": "麦",
+    "Name_kr": "마이",
+    "Name_zh_cn": "麦",
+    "Name_zh_ft": "麦",
+    "NickName": [
+      "mai",
+      "舞"
+    ]
+  },
+  {
+    "Id": "20026",
+    "Id_db": 91025,
+    "FirstName_jp": "黒服",
+    "FirstName_zh": "黒服",
+    "Name_jp": "黒服",
+    "Name_en": "Black suits",
+    "Name_zh_tw": "黑服",
+    "Name_kr": "黑服",
+    "Name_zh_cn": "黑服",
+    "Name_zh_ft": "黑服",
+    "NickName": [
+      "heifu",
+      "黑色西装人"
+    ]
+  },
+  {
+    "Id": "20027",
+    "Id_db": 91026,
+    "FirstName_jp": "マエストロ",
+    "FirstName_zh": "巨匠",
+    "Name_jp": "マエストロ",
+    "Name_en": "Maesutoro",
+    "Name_zh_tw": "瑪艾斯托洛",
+    "Name_kr": "마에스트로",
+    "Name_zh_cn": "巨匠",
+    "Name_zh_ft": "巨匠",
+    "NickName": [
+      "jujiang",
+      "林檎人"
+    ]
+  },
+  {
+    "Id": "20028",
+    "Id_db": 91027,
+    "FirstName_jp": "デカルコマニー",
+    "FirstName_zh": "戈尔孔达",
+    "Name_jp": "ゴルコンダ",
+    "Name_en": "Gorukonda",
+    "Name_zh_tw": "戈爾孔特",
+    "Name_kr": "고르콘다",
+    "Name_zh_cn": "戈尔孔达",
+    "Name_zh_ft": "戈尔孔达",
+    "NickName": [
+      "geerkongda",
+      "遗像哥"
+    ]
+  },
+  {
+    "Id": "20029",
+    "Id_db": 91028,
+    "FirstName_jp": "ベアトリーチェ",
+    "FirstName_zh": "贝阿朵莉切",
+    "Name_jp": "ベアトリーチェ",
+    "Name_en": "Beatoriicye",
+    "Name_zh_tw": "貝雅特里榭",
+    "Name_kr": "베아트리체",
+    "Name_zh_cn": "贝阿朵莉切",
+    "Name_zh_ft": "贝阿朵莉切",
+    "NickName": [
+      "beiaduoliqie",
+      "火龙果"
+    ]
+  },
+  {
+    "Id": "20030",
+    "Id_db": 91029,
+    "FirstName_jp": "ラブ",
+    "FirstName_zh": "兰舞",
+    "Name_jp": "ラブ",
+    "Name_en": "Rabu",
+    "Name_zh_tw": "兰舞",
+    "Name_kr": "사랑",
+    "Name_zh_cn": "兰舞",
+    "Name_zh_ft": "兰舞",
+    "NickName": [
+      "lanwu",
+      "钢盔团队长"
+    ]
+  },
+  {
+    "Id": "20031",
+    "Id_db": 91030,
+    "FirstName_jp": "姫木",
+    "FirstName_zh": "姫木",
+    "Name_jp": "メル(溫泉)",
+    "Name_en": "Meru",
+    "Name_zh_tw": "梅露(溫泉)",
+    "Name_kr": "",
+    "Name_zh_cn": "梅露(温泉)",
+    "Name_zh_ft": "梅露(温泉)",
+    "NickName": [
+      "meilu(wenquan)"
+    ]
+  },
+  {
+    "Id": "20032",
+    "Id_db": 91031,
+    "FirstName_jp": "狐坂",
+    "FirstName_zh": "狐坂",
+    "Name_jp": "ワカモ(私服)",
+    "Name_en": "Wakamo (Splendid Clothes)",
+    "Name_zh_tw": "若藻(華服)",
+    "Name_kr": "와카모 (화려한 옷)",
+    "Name_zh_cn": "若藻(华服)",
+    "Name_zh_ft": "若藻(华服)",
+    "NickName": [
+      "ruozao(huafu)"
+    ]
+  },
+  {
+    "Id": "20033",
+    "Id_db": 91032,
+    "FirstName_jp": "空崎",
+    "FirstName_zh": "空崎",
+    "Name_jp": "ヒナ(パジャマ)",
+    "Name_en": "Hina (Nightgown)",
+    "Name_zh_tw": "日奈(睡衣)",
+    "Name_kr": "히나 (파자마)",
+    "Name_zh_cn": "日奈(睡衣)",
+    "Name_zh_ft": "日奈(睡衣)",
+    "NickName": [
+      "rinai(shuiyi)"
+    ]
+  },
+  {
+    "Id": "20035",
+    "Id_db": 91034,
+    "FirstName_jp": "朝顔",
+    "FirstName_zh": "朝顔",
+    "Name_jp": " ハナエ(応援団)",
+    "Name_en": "Hanae (Support group)",
+    "Name_zh_tw": "花江(應援團)",
+    "Name_kr": "应援团花江",
+    "Name_zh_cn": "花江(应援团)",
+    "Name_zh_ft": "花江(应援团)",
+    "NickName": [
+      "huajiang(yingyuantuan)"
+    ]
+  },
+  {
+    "Id": "20036",
+    "Id_db": 91035,
+    "FirstName_jp": "鷲見",
+    "FirstName_zh": "鹫见",
+    "Name_jp": "セリナ(ナース)",
+    "Name_en": "Serina (Nurses)",
+    "Name_zh_tw": "芹奈",
+    "Name_kr": "세리나 (간호사)",
+    "Name_zh_cn": "芹奈",
+    "Name_zh_ft": "芹奈(护士)",
+    "NickName": [
+      "qinnai(hushi)"
+    ]
+  },
+  {
+    "Id": "20037",
+    "Id_db": 91036,
+    "FirstName_jp": "角楯",
+    "FirstName_zh": "角楯",
+    "Name_jp": "カリン(制服)",
+    "Name_en": "Krin (uniform)",
+    "Name_zh_tw": "花凜(制服)",
+    "Name_kr": "카린(유니폼)",
+    "Name_zh_cn": "花凛(制服)",
+    "Name_zh_ft": "花凛(制服)",
+    "NickName": [
+      "hualin(zhifu)",
+      "制服花凛"
+    ]
+  },
+  {
+    "Id": "20038",
+    "Id_db": 91037,
+    "FirstName_jp": "狮子堂",
+    "FirstName_zh": "狮子堂",
+    "Name_jp": "イズミ(正月)",
+    "Name_en": "Izumi (New Year)",
+    "Name_zh_tw": "泉(正月)",
+    "Name_kr": "이즈미(설날)",
+    "Name_zh_cn": "泉(正月)",
+    "Name_zh_ft": "泉(正月)",
+    "NickName": [
+      "quan(zhengyue)",
+      "正月泉"
+    ]
+  },
+  {
+    "Id": "20039",
+    "Id_db": 91038,
+    "FirstName_jp": "砂狼",
+    "FirstName_zh": "砂狼",
+    "Name_jp": "シロコ(テラー)",
+    "Name_en": "Shiroko (color)",
+    "Name_zh_tw": "白子(色彩)",
+    "Name_kr": "시로코(텔러)",
+    "Name_zh_cn": "白子(色彩)",
+    "Name_zh_ft": "白子(色彩)",
+    "NickName": [
+      "baizi(secai)",
+      "黑白子"
+    ]
+  },
+  {
+    "Id": "20040",
+    "Id_db": 91039,
+    "FirstName_jp": "ケイ",
+    "FirstName_zh": "凯伊",
+    "Name_jp": "ケイ",
+    "Name_en": "kei",
+    "Name_zh_tw": "凯伊",
+    "Name_kr": "케이",
+    "Name_zh_cn": "凯伊",
+    "Name_zh_ft": "凯伊",
+    "NickName": [
+      "kaiyi",
+      "key",
+      "[key]",
+      "【Key】"
+    ]
+  },
+  {
+    "Id": "20041",
+    "Id_db": 91040,
+    "FirstName_jp": "清澄",
+    "FirstName_zh": "清澄",
+    "Name_jp": "アキラ",
+    "Name_en": "Akira",
+    "Name_zh_tw": "晶",
+    "Name_kr": "아키라",
+    "Name_zh_cn": "晶",
+    "Name_zh_ft": "晶",
+    "NickName": [
+      "jing"
+    ]
+  },
+  {
+    "Id": "20042",
+    "Id_db": 91041,
+    "FirstName_jp": "申谷",
+    "FirstName_zh": "申谷",
+    "Name_jp": "カイ",
+    "Name_en": "Kai",
+    "Name_zh_tw": "廻",
+    "Name_kr": "카이",
+    "Name_zh_cn": "廻",
+    "Name_zh_ft": "廻",
+    "NickName": [
+      "hui",
+      "启"
+    ]
+  },
+  {
+    "Id": "20043",
+    "Id_db": 91042,
+    "FirstName_jp": "風倉",
+    "FirstName_zh": "風",
+    "Name_jp": "モエ(水着)",
+    "Name_en": "Moe (Swimsuit)",
+    "Name_zh_tw": "萌繪(泳裝)",
+    "Name_kr": "모에(수영복)",
+    "Name_zh_cn": "萌绘(泳装)",
+    "Name_zh_ft": "萌绘(泳装)",
+    "NickName": [
+      "menghui(yongzhuang)",
+      "水萌绘"
+    ]
+  },
+  {
+    "Id": "20044",
+    "Id_db": 91043,
+    "FirstName_jp": "三善",
+    "FirstName_zh": "三善",
+    "Name_jp": "タカネ",
+    "Name_en": "Takane",
+    "Name_zh_tw": "貴音",
+    "Name_kr": "타카네",
+    "Name_zh_cn": "贵音",
+    "Name_zh_ft": "贵音",
+    "NickName": [
+      "guiyin"
+    ]
+  },
+  {
+    "Id": "20045",
+    "Id_db": 91044,
+    "FirstName_jp": "荒槇",
+    "FirstName_zh": "荒槇",
+    "Name_jp": "ヤクモ",
+    "Name_en": "Yakumo",
+    "Name_zh_tw": "八雲",
+    "Name_kr": "야쿠모",
+    "Name_zh_cn": "八云",
+    "Name_zh_ft": "八云",
+    "NickName": [
+      "bayun"
+    ]
+  },
+  {
+    "Id": "20046",
+    "Id_db": 91045,
+    "FirstName_jp": "箭吹",
+    "FirstName_zh": "箭吹",
+    "Name_jp": "シュロ",
+    "Name_en": "Syuro",
+    "Name_zh_tw": "棕櫚",
+    "Name_kr": "슈로",
+    "Name_zh_cn": "棕榈",
+    "Name_zh_ft": "棕榈",
+    "NickName": [
+      "zonglv"
+    ]
+  },
+  {
+    "Id": "20047",
+    "Id_db": 91046,
+    "FirstName_jp": "コクリコ",
+    "FirstName_zh": "虞美人",
+    "Name_jp": "コクリコ",
+    "Name_en": "Kokuriko",
+    "Name_zh_tw": "虞美人",
+    "Name_kr": "코클리코",
+    "Name_zh_cn": "雏芥子",
+    "Name_zh_ft": "虞美人",
+    "NickName": [
+      "yumeiren"
+    ]
+  },
+  {
+    "Id": "20048",
+    "Id_db": 91047,
+    "FirstName_jp": "アラタ",
+    "FirstName_zh": "新",
+    "Name_jp": "アラタ",
+    "Name_en": "Arata",
+    "Name_zh_tw": "新",
+    "Name_kr": "아라타",
+    "Name_zh_cn": "新",
+    "Name_zh_ft": "新",
+    "NickName": [
+      "xin"
+    ]
+  },
+  {
+    "Id": "20049",
+    "Id_db": 91048,
+    "FirstName_jp": "アイン",
+    "FirstName_zh": "无",
+    "Name_jp": "アイン",
+    "Name_en": "Ain",
+    "Name_zh_tw": "無",
+    "Name_kr": "아인",
+    "Name_zh_cn": "无",
+    "Name_zh_ft": "无",
+    "NickName": [
+      "wu",
+      "不说",
+      "爱因"
+    ]
+  },
+  {
+    "Id": "20050",
+    "Id_db": 91049,
+    "FirstName_jp": "オウル",
+    "FirstName_zh": "光",
+    "Name_jp": "オウル",
+    "Name_en": "Ouru",
+    "Name_zh_tw": "光",
+    "Name_kr": "오울",
+    "Name_zh_cn": "光",
+    "Name_zh_ft": "光",
+    "NickName": [
+      "guang",
+      "不见"
+    ]
+  },
+  {
+    "Id": "20051",
+    "Id_db": 91050,
+    "FirstName_jp": "ソフ",
+    "FirstName_zh": "限",
+    "Name_jp": "ソフ",
+    "Name_en": "Sofu",
+    "Name_zh_tw": "限",
+    "Name_kr": "소프",
+    "Name_zh_cn": "限",
+    "Name_zh_ft": "限",
+    "NickName": [
+      "xian",
+      "不闻"
+    ]
+  },
+  {
+    "Id": "20052",
+    "Id_db": 91051,
+    "FirstName_jp": "小塗",
+    "FirstName_zh": "小塗",
+    "Name_jp": "マキ(キャンプ)",
+    "Name_en": "Maki (camp)",
+    "Name_zh_tw": "真紀(野營)",
+    "Name_kr": "마키(캠프)",
+    "Name_zh_cn": "真纪(野营)",
+    "Name_zh_ft": "真纪(野营)",
+    "NickName": [
+      "zhenji (yeying)",
+      "野营真纪",
+      "兄弟"
+    ]
+  },
+  {
+    "Id": "20053",
+    "Id_db": 91052,
+    "FirstName_jp": "各務",
+    "FirstName_zh": "各務",
+    "Name_jp": "チヒロ(キャンプ)",
+    "Name_en": "Chihiro (camp)",
+    "Name_zh_tw": "千尋(野營)",
+    "Name_kr": "치히로(캠프)",
+    "Name_zh_cn": "千寻(野营)",
+    "Name_zh_ft": "千寻(野营)",
+    "NickName": [
+      "qianxun (yeying)",
+      "野营千寻"
+    ]
+  },
+  {
+    "Id": "20054",
+    "Id_db": 91053,
+    "FirstName_jp": "野正",
+    "FirstName_zh": "野正",
+    "Name_jp": "レイ",
+    "Name_en": "Rei",
+    "Name_zh_tw": "丽",
+    "Name_kr": "레이",
+    "Name_zh_cn": "玲",
+    "Name_zh_ft": "丽",
+    "NickName": [
+      "ling"
+    ]
+  },
+  {
+    "Id": "20055",
+    "Id_db": 91054,
+    "FirstName_jp": "橘",
+    "FirstName_zh": "橘",
+    "Name_jp": "ヒカリ",
+    "Name_en": "Hikari",
+    "Name_zh_tw": "光明",
+    "Name_kr": "광채",
+    "Name_zh_cn": "光明",
+    "Name_zh_ft": "光明",
+    "NickName": [
+      "guangmin",
+      "铁道双子1"
+    ]
+  },
+  {
+    "Id": "20056",
+    "Id_db": 91055,
+    "FirstName_jp": "橘",
+    "FirstName_zh": "橘",
+    "Name_jp": "ノゾミ",
+    "Name_en": "Nozomi",
+    "Name_zh_tw": "希望",
+    "Name_kr": "소원",
+    "Name_zh_cn": "希望",
+    "Name_zh_ft": "希望",
+    "NickName": [
+      "xiwang",
+      "铁道双子2"
+    ]
+  },
+  {
+    "Id": "20058",
+    "Id_db": 91057,
+    "FirstName_jp": "小鳥遊",
+    "FirstName_zh": "小鸟游",
+    "Name_jp": "ホシノ(1年生)",
+    "Name_en": "Hoshino(Year1)",
+    "Name_zh_tw": "星野",
+    "Name_kr": "호시노(1학년)",
+    "Name_zh_cn": "星野(1年级)",
+    "Name_zh_ft": "1年级星野",
+    "NickName": [
+      "yinianjixingye"
+    ]
+  },
+  {
+    "Id": "20059",
+    "Id_db": 91058,
+    "FirstName_jp": "十六夜",
+    "FirstName_zh": "十六夜",
+    "Name_jp": "ノノミ(1年生)",
+    "Name_en": "Nonomi(Year1)",
+    "Name_zh_tw": "野乃美",
+    "Name_kr": "노노미(1학년)",
+    "Name_zh_cn": "野宫(1年级)",
+    "Name_zh_ft": "1年级野宫",
+    "NickName": [
+      "yinianjiyegong"
+    ]
+  },
+  {
+    "Id": "20060",
+    "Id_db": 91059,
+    "FirstName_jp": "朝霧",
+    "FirstName_zh": "朝霧",
+    "Name_jp": "スオウ",
+    "Name_en": "Suou",
+    "Name_zh_tw": "周防",
+    "Name_kr": "수오",
+    "Name_zh_cn": "周防",
+    "Name_zh_ft": "周防",
+    "NickName": [
+      "zhoufang"
+    ]
+  },
+  {
+    "Id": "20061",
+    "Id_db": 91060,
+    "FirstName_jp": "柚鳥",
+    "FirstName_zh": "柚鸟",
+    "Name_jp": "ナツ(バンド)",
+    "Name_en": "Natsu (Band)",
+    "Name_zh_tw": "夏(樂隊)",
+    "Name_kr": "나츠(밴드)",
+    "Name_zh_cn": "夏(乐队)",
+    "Name_zh_ft": "乐队夏",
+    "NickName": [
+      "yueduixia"
+    ]
+  },
+  {
+    "Id": "20062",
+    "Id_db": 91061,
+    "FirstName_jp": "椎名",
+    "FirstName_zh": "椎名",
+    "Name_jp": "ツムギ",
+    "Name_en": "Tsumugi",
+    "Name_zh_tw": "紬",
+    "Name_kr": "쑥갓",
+    "Name_zh_cn": "䌷",
+    "Name_zh_ft": "䌷",
+    "NickName": [
+      "chou"
+    ]
+  },
+  {
+    "Id": "20063",
+    "Id_db": 91062,
+    "FirstName_jp": "联邦学生会长",
+    "FirstName_zh": "会长",
+    "Name_jp": "会长",
+    "Name_en": "会长",
+    "Name_zh_tw": "學生會長",
+    "Name_kr": "회장",
+    "Name_zh_cn": "会长",
+    "Name_zh_ft": "学生会长",
+    "NickName": [
+      "huizhang"
+    ]
+  },
+  {
+    "Id": "20064",
+    "Id_db": 91063,
+    "FirstName_jp": "梔子",
+    "FirstName_zh": "梔子",
+    "Name_jp": "ユメ",
+    "Name_en": "Yume",
+    "Name_zh_tw": "夢",
+    "Name_kr": "유메",
+    "Name_zh_cn": "梦",
+    "Name_zh_ft": "梦",
+    "NickName": [
+      "meng",
+      "梦前辈"
+    ]
+  },
+  {
+    "Id": "20065",
+    "Id_db": 91064,
+    "FirstName_jp": "御稜",
+    "FirstName_zh": "椎名",
+    "Name_jp": "ナグサ",
+    "Name_en": "Nagusa",
+    "Name_zh_tw": "名草",
+    "Name_kr": "나그사",
+    "Name_zh_cn": "名草",
+    "Name_zh_ft": "名草",
+    "NickName": [
+      "mingcao"
+    ]
+  }
+]
