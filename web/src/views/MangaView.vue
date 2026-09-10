@@ -138,53 +138,62 @@
     </div>
 
     <!-- 抓取方式弹窗 -->
-    <el-dialog v-model="crawlDialog" title="抓取 gamekee 漫画" width="min(680px, 94vw)" top="4vh" append-to-body>
-      <el-alert type="info" :closable="false" class="mb-12" title="将遍历 gamekee 漫画目录树（碧蓝档案！/ 四格 / 青春记录 等），增量抓取新增话数。已抓过的话会跳过；已排除的系列不会被抓取。" />
-      <div class="crawl-toolbar mb-12">
-        <el-checkbox
-          :model-value="crawlAllChecked"
-          :indeterminate="crawlIndeterminate"
-          @change="toggleAllSeries"
-        >全选（未排除）</el-checkbox>
-        <el-button size="small" text @click="crawlSeries = []">清空</el-button>
-        <el-button size="small" text @click="selectOfficialOnly">仅选官方</el-button>
+    <el-dialog v-model="crawlDialog" title="抓取 gamekee 漫画" width="min(780px, 94vw)" top="4vh" append-to-body>
+      <el-alert type="info" :closable="false" class="mb-12" title="遍历 gamekee 漫画目录树增量抓取：已抓过的话自动跳过，已排除的系列不会抓取。" />
+
+      <div class="crawl-bar mb-12">
+        <div class="crawl-actions">
+          <button
+            type="button"
+            class="chip"
+            :class="{ 'is-on': crawlAllChecked, 'is-part': crawlIndeterminate }"
+            @click="toggleAll"
+          >全选</button>
+          <button type="button" class="chip" :class="{ 'is-on': isOfficialOnly }" @click="selectOfficialOnly">仅官方</button>
+          <button type="button" class="chip" @click="crawlSeries = []">清空</button>
+        </div>
         <div class="spacer"></div>
-        <span class="muted crawl-stat">已选 {{ crawlSeries.length }} 个系列 · 共 {{ selectedEpisodeCount }} 话</span>
+        <div class="crawl-sum">已选 <b>{{ crawlSeries.length }}</b> 个系列 · <b>{{ selectedEpisodeCount }}</b> 话</div>
       </div>
 
-      <div v-for="g in seriesGroups" :key="g.key" class="crawl-group">
-        <div class="crawl-group-title">
-          {{ g.label }}
-          <span class="muted">（{{ g.items.length }} 个系列 · {{ groupEpisodeCount(g.items) }} 话）</span>
-        </div>
-        <div class="crawl-cards">
-          <label
-            v-for="s in g.items"
-            :key="s.id"
-            class="crawl-card"
-            :class="{ 'is-excluded': s.excluded, 'is-checked': crawlSeries.includes(s.id) }"
-          >
-            <el-checkbox
-              :model-value="crawlSeries.includes(s.id)"
+      <div class="crawl-picker">
+        <section v-for="g in seriesGroups" :key="g.key" class="crawl-group">
+          <header class="crawl-group-head">
+            <span class="group-dot" :class="'dot-' + g.key" aria-hidden="true"></span>
+            <h4 class="crawl-group-title">{{ g.label }}</h4>
+            <span class="group-meta">{{ g.items.length }} 系列 · {{ groupEpisodeCount(g.items) }} 话</span>
+          </header>
+          <div class="crawl-tiles">
+            <button
+              v-for="s in g.items"
+              :key="s.id"
+              type="button"
+              class="tile"
+              :class="{ 'is-on': crawlSeries.includes(s.id), 'is-off': s.excluded }"
               :disabled="s.excluded"
-              @change="(v) => toggleCrawlSeries(s.id, v)"
-            />
-            <div class="crawl-card-main">
-              <div class="crawl-card-name">
+              :aria-pressed="crawlSeries.includes(s.id)"
+              @click="toggleCrawlSeries(s.id, !crawlSeries.includes(s.id))"
+            >
+              <span class="tile-mark" aria-hidden="true"><el-icon><Check /></el-icon></span>
+              <div class="tile-top">
                 <span v-if="s.lang" class="lang-tag" :class="'lang-' + s.langKey">{{ s.lang }}</span>
-                <span class="crawl-card-title">{{ s.clean }}</span>
+                <span v-if="s.excluded" class="ex-badge">已排除</span>
               </div>
-              <div v-if="s.subCount" class="crawl-card-sub muted">{{ s.subCount }} 个子分类</div>
-            </div>
-            <span class="crawl-count">{{ s.count }}<i>话</i></span>
-            <span v-if="s.excluded" class="ex-badge">已排除</span>
-          </label>
-        </div>
+              <span class="tile-name">{{ s.clean }}</span>
+              <span class="tile-foot">
+                <span class="tile-count">{{ s.count }}<i>话</i></span>
+                <span v-if="s.subCount" class="tile-sub">{{ s.subCount }} 子分类</span>
+              </span>
+            </button>
+          </div>
+        </section>
       </div>
 
       <template #footer>
         <el-button @click="crawlDialog = false">取消</el-button>
-        <el-button type="success" @click="doCrawl">开始抓取</el-button>
+        <el-button type="success" :disabled="!crawlSeries.length" @click="doCrawl">
+          开始抓取{{ crawlSeries.length ? `（${crawlSeries.length} 系列 / ${selectedEpisodeCount} 话）` : '' }}
+        </el-button>
       </template>
     </el-dialog>
 
@@ -334,7 +343,7 @@
 
 <script setup>
 import { ref, computed, onMounted, nextTick, onUnmounted } from 'vue';
-import { ArrowLeft, Download, Refresh, Tools, Document, CopyDocument, PictureFilled, FolderDelete } from '@element-plus/icons-vue';
+import { ArrowLeft, Download, Refresh, Tools, Document, CopyDocument, PictureFilled, FolderDelete, Check } from '@element-plus/icons-vue';
 import { ElMessage, ElMessageBox } from 'element-plus';
 import {
   getManga, getMangaTree, fetchCosManga, crawlManga, retryManga, mangaImageUrl,
@@ -489,11 +498,21 @@ function toggleCrawlSeries(id, v) {
 function toggleAllSeries(v) {
   crawlSeries.value = v ? [...selectableIds.value] : [];
 }
+// 全选按钮：已全选（或半选）→ 清空，否则全选未排除项
+function toggleAll() {
+  toggleAllSeries(!crawlAllChecked.value);
+}
 function selectOfficialOnly() {
   crawlSeries.value = seriesOptions.value
     .filter((s) => s.group === 'official' && !s.excluded)
     .map((s) => s.id);
 }
+const isOfficialOnly = computed(() => {
+  const off = seriesOptions.value.filter((s) => s.group === 'official' && !s.excluded).map((s) => s.id);
+  return off.length > 0
+    && off.every((id) => crawlSeries.value.includes(id))
+    && crawlSeries.value.every((id) => off.includes(id));
+});
 
 async function doCrawl() {
   crawlDialog.value = false;
@@ -997,30 +1016,111 @@ html:not(.dark) .glass {
 .series-name { font-weight: 600; font-size: 14px; }
 .series-count { font-size: 13px; }
 
-/* 抓取弹窗：系列选择卡片 */
-.crawl-toolbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.crawl-stat { font-size: 13px; }
-.crawl-group { margin-bottom: 16px; }
-.crawl-group-title { font-size: 14px; font-weight: 700; margin-bottom: 8px; color: var(--el-text-color-primary); }
-.crawl-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 8px; }
-.crawl-card {
-  display: flex; align-items: center; gap: 8px;
-  padding: 10px 12px;
-  border-radius: 10px;
+/* 抓取弹窗：系列选择磁贴 */
+.crawl-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.crawl-actions { display: flex; gap: 6px; }
+.chip {
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1;
+  padding: 7px 13px;
+  border-radius: 999px;
   border: 1px solid var(--el-border-color);
   background: var(--el-fill-color-blank);
-  cursor: pointer; transition: border-color .12s, background .12s, opacity .12s;
+  color: var(--el-text-color-regular);
+  cursor: pointer;
+  transition: color .16s cubic-bezier(.22, 1, .36, 1), border-color .16s, background .16s;
 }
-.crawl-card:hover { border-color: var(--el-color-primary); }
-.crawl-card.is-checked { border-color: var(--el-color-primary); background: var(--el-color-primary-light-9); }
-.crawl-card.is-excluded { opacity: .5; cursor: not-allowed; background: var(--el-fill-color-light); }
-.crawl-card.is-excluded:hover { border-color: var(--el-border-color); }
-.crawl-card-main { flex: 1; min-width: 0; }
-.crawl-card-name { display: flex; align-items: center; gap: 6px; }
-.crawl-card-title { font-weight: 600; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.crawl-card-sub { font-size: 12px; margin-top: 2px; }
-.crawl-count { font-size: 13px; color: var(--el-color-primary); font-weight: 700; white-space: nowrap; }
-.crawl-count i { font-style: normal; font-weight: 400; color: var(--el-text-color-secondary); font-size: 12px; margin-left: 1px; }
+.chip:hover { border-color: var(--el-color-primary); color: var(--el-color-primary); }
+.chip.is-on { background: var(--el-color-primary); border-color: var(--el-color-primary); color: #fff; }
+.chip.is-part { border-color: var(--el-color-primary); color: var(--el-color-primary); background: var(--el-color-primary-light-9); }
+.crawl-sum { font-size: 13px; color: var(--el-text-color-secondary); }
+.crawl-sum b { color: var(--el-color-primary); font-variant-numeric: tabular-nums; }
+
+.crawl-picker {
+  display: flex; flex-direction: column; gap: 18px;
+  max-height: 54vh; overflow-y: auto; padding-right: 4px;
+}
+.crawl-group-head { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.group-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.dot-official { background: var(--el-color-primary); }
+.dot-other { background: var(--el-color-info); }
+.dot-fan { background: var(--el-color-warning); }
+.crawl-group-title { margin: 0; font-size: 14px; font-weight: 700; color: var(--el-text-color-primary); }
+.group-meta { font-size: 12px; color: var(--el-text-color-secondary); }
+
+.crawl-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(172px, 1fr)); gap: 10px; }
+.tile {
+  position: relative;
+  display: flex; flex-direction: column; gap: 6px;
+  min-height: 96px;
+  padding: 12px 12px 11px;
+  text-align: left;
+  font-family: inherit;
+  border: 1px solid var(--el-border-color);
+  border-radius: 12px;
+  background: var(--el-fill-color-blank);
+  color: var(--el-text-color-primary);
+  cursor: pointer;
+  transition: transform .18s cubic-bezier(.22, 1, .36, 1), border-color .18s, background .18s, box-shadow .18s;
+}
+.tile:hover:not(.is-off) {
+  transform: translateY(-2px);
+  border-color: var(--el-color-primary);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+}
+.tile.is-on {
+  border-color: var(--el-color-primary);
+  background: var(--el-color-primary-light-9);
+  box-shadow: inset 0 0 0 1px var(--el-color-primary);
+}
+.tile.is-off {
+  opacity: .55;
+  border-style: dashed;
+  background: var(--el-fill-color-light);
+  cursor: not-allowed;
+}
+.tile:focus-visible { outline: 2px solid var(--el-color-primary); outline-offset: 2px; }
+.tile-mark {
+  position: absolute; top: 9px; right: 9px;
+  width: 18px; height: 18px; border-radius: 50%;
+  display: grid; place-items: center;
+  border: 1px solid var(--el-border-color);
+  background: var(--el-fill-color-blank);
+  color: transparent;
+  font-size: 11px;
+  transform: scale(.7); opacity: 0;
+  transition: transform .2s cubic-bezier(.22, 1, .36, 1), opacity .16s, background .16s, border-color .16s;
+}
+.tile.is-on .tile-mark {
+  background: var(--el-color-primary);
+  border-color: var(--el-color-primary);
+  color: #fff;
+  transform: scale(1); opacity: 1;
+}
+.tile-top { display: flex; align-items: center; gap: 5px; min-height: 18px; padding-right: 24px; }
+.tile-name {
+  font-size: 14px; font-weight: 600; line-height: 1.35;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden; word-break: break-word;
+}
+.tile-foot { margin-top: auto; display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; }
+.tile-count {
+  font-size: 17px; font-weight: 700; line-height: 1;
+  color: var(--el-color-primary); font-variant-numeric: tabular-nums;
+}
+.tile-count i { font-style: normal; font-size: 11px; font-weight: 400; color: var(--el-text-color-secondary); margin-left: 1px; }
+.tile-sub { font-size: 11px; color: var(--el-text-color-secondary); }
+
+@media (max-width: 560px) {
+  .crawl-tiles { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+  .tile { min-height: 84px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tile, .tile-mark, .chip { transition: none; }
+  .tile:hover:not(.is-off) { transform: none; }
+}
 .ex-badge {
   font-size: 12px; color: var(--el-color-danger);
   border: 1px solid var(--el-color-danger); border-radius: 4px;
