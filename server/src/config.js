@@ -28,6 +28,22 @@ export const config = {
     icon: (id) => `https://schaledb.com/images/student/icon/${id}.webp`,
     collection: (id) => `https://schaledb.com/images/student/collection/${id}.webp`,
   },
+
+  // 头像管理
+  icons: {
+    // 三类头像子目录名（与 COS key 一致）
+    types: ['stu_icon_db_png', 'stu_icon_db', 'gacha-img'],
+    // wikiru 图源（日文 wiki 的星级页面；文件名规则见 icons-wikiru.js）
+    wikiru: {
+      base: 'https://bluearchive.wikiru.jp/',
+      pages: ['?★1', '?★2', '?★3'],
+      // 代理地址，留空 = 直连。例：'http://127.0.0.1:7890'
+      proxy: process.env.WIKIRU_PROXY || '',
+    },
+    // 单张图下载重试与超时
+    fetchTimeout: 60000,
+    fetchRetries: 3,
+  },
 };
 
 export default config;

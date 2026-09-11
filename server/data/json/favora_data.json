@@ -6361,6 +6361,130 @@
     ]
   },
   {
+    "stuid": 10149,
+    "favorGifts": [
+      {
+        "preId": 5001,
+        "matchCount": 1,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_1"
+      },
+      {
+        "preId": 5016,
+        "matchCount": 1,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_16"
+      },
+      {
+        "preId": 5017,
+        "matchCount": 2,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_17"
+      },
+      {
+        "preId": 5024,
+        "matchCount": 1,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_24"
+      },
+      {
+        "preId": 5034,
+        "matchCount": 2,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_34"
+      },
+      {
+        "preId": 5109,
+        "matchCount": 1,
+        "Rarity": "SSR",
+        "Icon": "item_icon_favor_lv2_9"
+      },
+      {
+        "preId": 5111,
+        "matchCount": 3,
+        "Rarity": "SSR",
+        "Icon": "item_icon_favor_lv2_11"
+      }
+    ]
+  },
+  {
+    "stuid": 10150,
+    "favorGifts": [
+      {
+        "preId": 5002,
+        "matchCount": 1,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_2"
+      },
+      {
+        "preId": 5003,
+        "matchCount": 1,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_3"
+      },
+      {
+        "preId": 5004,
+        "matchCount": 1,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_4"
+      },
+      {
+        "preId": 5009,
+        "matchCount": 1,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_9"
+      },
+      {
+        "preId": 5011,
+        "matchCount": 1,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_11"
+      },
+      {
+        "preId": 5015,
+        "matchCount": 1,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_15"
+      },
+      {
+        "preId": 5017,
+        "matchCount": 2,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_17"
+      },
+      {
+        "preId": 5023,
+        "matchCount": 1,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_23"
+      },
+      {
+        "preId": 5032,
+        "matchCount": 1,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_32"
+      },
+      {
+        "preId": 5034,
+        "matchCount": 2,
+        "Rarity": "SR",
+        "Icon": "item_icon_favor_34"
+      },
+      {
+        "preId": 5101,
+        "matchCount": 1,
+        "Rarity": "SSR",
+        "Icon": "item_icon_favor_lv2_1"
+      },
+      {
+        "preId": 5105,
+        "matchCount": 3,
+        "Rarity": "SSR",
+        "Icon": "item_icon_favor_lv2_5"
+      }
+    ]
+  },
+  {
     "stuid": 13000,
     "favorGifts": [
       {

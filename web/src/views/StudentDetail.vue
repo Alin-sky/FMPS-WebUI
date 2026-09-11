@@ -40,6 +40,48 @@
         </div>
       </div>
 
+      <!-- 头像管理（三类，均可单独替换/上传/删除） -->
+      <div class="avatar-panel">
+        <div class="ap-head">
+          <h3>头像</h3>
+          <el-button size="small" text type="primary" @click="$router.push('/icons')">
+            打开头像管理 <el-icon><ArrowRight /></el-icon>
+          </el-button>
+        </div>
+        <div class="ap-grid">
+          <div v-for="t in ICON_TYPES" :key="t.key" class="ap-card">
+            <div class="ap-title">
+              <span>{{ t.label }}</span>
+              <el-tag
+                size="small"
+                :type="iconMeta[t.key]?.source === 'manual' ? 'warning' : 'info'"
+                effect="plain"
+              >
+                {{ srcShort(iconMeta[t.key]?.source) }}
+              </el-tag>
+            </div>
+            <div class="ap-thumb">
+              <img v-if="iconMeta[t.key]?.exists" :src="iconSrc(t, iconMeta[t.key])" :alt="t.label" />
+              <div v-else class="ap-missing">缺图</div>
+            </div>
+            <div class="ap-size">{{ t.size[0] }}×{{ t.size[1] }}</div>
+            <div class="ap-btns">
+              <el-button size="small" :loading="iconBusy[t.key]" @click="uploadFor(t.key)">上传</el-button>
+              <el-button
+                size="small"
+                :disabled="!iconMeta[t.key]?.exists"
+                @click="deleteFor(t.key)"
+              >
+                删除
+              </el-button>
+            </div>
+          </div>
+        </div>
+        <div class="ap-note">
+          标为「人工」的图不会被自动流程（生成 / 抓取 / COS 同步）覆盖。
+        </div>
+      </div>
+
       <el-dialog v-model="rawDialog" :title="`原始 JSON 数据（本角色 #${student.Id_db}，可编辑）`" width="min(720px, 94vw)">
         <div v-loading="rawLoading" class="raw-files">
           <div v-for="(val, fname) in rawData" :key="fname" class="raw-file">
@@ -235,9 +277,9 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
-import { ArrowLeft, Edit, Check, Position, Document, Pointer } from '@element-plus/icons-vue';
+import { ArrowLeft, Edit, Check, Position, Document, Pointer, ArrowRight } from '@element-plus/icons-vue';
 import { ElMessage, ElMessageBox } from 'element-plus';
-import { getStudent, getStudentRaw, updateStudentRaw, updateStudent, avatarUrl, itemUrl, testMatch, getCloudDiff } from '../api';
+import { getStudent, getStudentRaw, updateStudentRaw, updateStudent, avatarUrl, itemUrl, testMatch, getCloudDiff, getStudentIcons, iconViewUrl, uploadIcon, deleteIcon } from '../api';
 
 const route = useRoute();
 const student = ref(null);
@@ -259,6 +301,84 @@ const rawDialog = ref(false);
 const rawData = ref(null);
 const rawLoading = ref(false);
 const rawSaving = ref(false);
+
+// ---------- 三类头像（可单独替换/上传/删除） ----------
+const ICON_TYPES = [
+  { key: 'stu_icon_db_png', label: '基础头像 PNG', size: [200, 226], ext: 'png' },
+  { key: 'stu_icon_db', label: '基础头像 JPG', size: [200, 226], ext: 'jpg' },
+  { key: 'gacha-img', label: '抽卡头像 PNG', size: [200, 200], ext: 'png' },
+];
+const iconMeta = ref({});
+const iconBusy = ref({});
+const iconStamp = ref(Date.now());
+
+const srcShort = (s) => ({ auto: '自动', manual: '人工', cos: 'COS' }[s] || '未知');
+
+function iconSrc(t, meta) {
+  // 用 mtime 做版本参数，替换后立即刷新
+  return iconViewUrl(t.key, student.value.Id_db, meta?.mtime || iconStamp.value);
+}
+
+async function loadIconMeta() {
+  if (!student.value) return;
+  try {
+    const r = await getStudentIcons(student.value.Id_db);
+    const out = {};
+    for (const t of ICON_TYPES) {
+      out[t.key] = r.types?.[t.key] || { exists: false, source: null };
+    }
+    iconMeta.value = out;
+  } catch (e) {
+    // 头像状态失败不阻塞详情页
+    console.warn('头像状态加载失败：', e.message);
+  }
+}
+
+async function refreshIcons() {
+  iconStamp.value = Date.now();
+  await loadIconMeta();
+}
+
+function uploadFor(typeKey) {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*';
+  input.onchange = async () => {
+    const file = input.files?.[0];
+    if (!file) return;
+    iconBusy.value = { ...iconBusy.value, [typeKey]: true };
+    try {
+      await uploadIcon(typeKey, student.value.Id_db, file, '详情页人工上传');
+      ElMessage.success('已上传并标记为「人工」，自动流程不会再覆盖');
+      await refreshIcons();
+    } catch (e) {
+      ElMessage.error('上传失败：' + e.message);
+    } finally {
+      iconBusy.value = { ...iconBusy.value, [typeKey]: false };
+    }
+  };
+  input.click();
+}
+
+async function deleteFor(typeKey) {
+  try {
+    await ElMessageBox.confirm('删除这张头像？删除后需要重新生成或上传。', '确认删除', {
+      type: 'warning',
+    });
+  } catch {
+    return;
+  }
+  iconBusy.value = { ...iconBusy.value, [typeKey]: true };
+  try {
+    await deleteIcon(typeKey, student.value.Id_db);
+    ElMessage.success('已删除');
+    await refreshIcons();
+  } catch (e) {
+    ElMessage.error('删除失败：' + e.message);
+  } finally {
+    iconBusy.value = { ...iconBusy.value, [typeKey]: false };
+  }
+}
 
 async function openRaw() {
   rawDialog.value = true;
@@ -432,6 +552,7 @@ async function save() {
 onMounted(async () => {
   await load();
   loadCloudFields();
+  loadIconMeta();
   // 支持 ?edit=1 自动进入编辑模式（从更新模式双击跳转）
   if (route.query.edit === '1') {
     startEdit();
@@ -440,20 +561,98 @@ onMounted(async () => {
 </script>
 
 <style scoped>
+.avatar-panel {
+  margin: 16px 0 20px;
+  padding: 14px 16px 12px;
+  border: 1px solid var(--el-border-color-lighter);
+  border-radius: 10px;
+  background: var(--el-fill-color-blank);
+}
+.ap-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.ap-head h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.ap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.ap-card {
+  border: 1px solid var(--el-border-color-lighter);
+  border-radius: 8px;
+  padding: 10px;
+  background: var(--el-bg-color);
+}
+.ap-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.ap-thumb {
+  height: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--el-fill-color-light);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.ap-thumb img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.ap-missing {
+  font-size: 13.5px;
+  color: var(--el-text-color-placeholder);
+}
+.ap-size {
+  margin-top: 6px;
+  font-size: 12.5px;
+  color: var(--el-text-color-secondary);
+  text-align: center;
+}
+.ap-btns {
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+.ap-note {
+  margin-top: 10px;
+  font-size: 13.5px;
+  color: var(--el-text-color-secondary);
+}
+@media (max-width: 720px) {
+  .ap-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .back {
   display: inline-flex;
   align-items: center;
   gap: 4px;
   cursor: pointer;
   color: var(--el-color-primary);
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 12px;
 }
 .dbl-hint {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--el-color-primary);
   margin-bottom: 12px;
   padding: 8px 14px;
@@ -476,7 +675,7 @@ onMounted(async () => {
   object-fit: cover;
   object-position: center 18%;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--fmps-panel-border);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
 }
 .head-info { display: flex; flex-direction: column; align-items: center; }
@@ -488,13 +687,13 @@ onMounted(async () => {
 .sections, .sec { display: flex; flex-direction: column; gap: 24px; }
 .sec {
   position: relative;
-  background: rgba(30, 31, 43, 0.52);
+  background: var(--fmps-panel-bg);
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--fmps-panel-border);
   border-radius: 16px;
   padding: 22px;
-  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  box-shadow: var(--fmps-panel-shadow-lg);
 }
 /* 渐变边框（毛玻璃质感） */
 .sec::before {
@@ -503,7 +702,7 @@ onMounted(async () => {
   inset: 0;
   border-radius: 16px;
   padding: 1.5px;
-  background: linear-gradient(135deg, rgba(120, 140, 240, 0.45), rgba(120, 140, 240, 0.05) 30%, rgba(160, 120, 240, 0.08) 60%, rgba(120, 180, 240, 0.4));
+  background: var(--fmps-ring);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -519,15 +718,7 @@ onMounted(async () => {
   background: linear-gradient(90deg, transparent, rgba(150, 160, 250, 0.7), transparent);
   pointer-events: none;
 }
-html:not(.dark) .sec {
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 10px 34px rgba(30, 50, 90, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9);
-}
-html:not(.dark) .sec::before {
-  background: linear-gradient(135deg, rgba(120, 140, 240, 0.35), rgba(120, 140, 240, 0.04) 30%, rgba(160, 120, 240, 0.06) 60%, rgba(120, 180, 240, 0.3));
-}
-.sec h3 { margin: 0 0 14px; font-size: 16px; font-weight: 600; }
+.sec h3 { margin: 0 0 14px; font-size: 17px; font-weight: 600; }
 .field-grid {
   display: flex;
   flex-direction: column;
@@ -537,18 +728,13 @@ html:not(.dark) .sec::before {
   display: flex;
   gap: 12px;
   align-items: center;
-  font-size: 16px;
+  font-size: 17px;
   padding: 14px 16px;
   border-radius: 12px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  transition: all 0.18s;
-}
-html:not(.dark) .field {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.35));
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 2px 8px rgba(30, 50, 90, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  background: var(--fmps-card-bg);
+  border: 1px solid var(--fmps-card-border);
+  box-shadow: var(--fmps-card-shadow);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 .field:hover {
   transform: translateY(-2px);
@@ -560,7 +746,7 @@ html:not(.dark) .field {
 .field .v { color: var(--el-text-color-primary); word-break: break-all; }
 .tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
 .tag-row { display: flex; align-items: center; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
-.tag-row .k { color: var(--el-text-color-secondary); font-size: 13px; }
+.tag-row .k { color: var(--el-text-color-secondary); font-size: 14px; }
 .tag-select { flex: 1; min-width: 240px; }
 .full-width { width: 100%; }
 .gift-list {
@@ -583,10 +769,10 @@ html:not(.dark) .field {
   flex: 0 0 auto;
 }
 .gift-info { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.gift-name { font-size: 12px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gift-name { font-size: 13.5px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .gift-meta { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
-.gift-id { font-size: 11px; color: var(--el-text-color-secondary); }
-.gift-count { font-size: 11px; color: var(--el-text-color-secondary); }
+.gift-id { font-size: 12.5px; color: var(--el-text-color-secondary); }
+.gift-count { font-size: 12.5px; color: var(--el-text-color-secondary); }
 .match-row { display: flex; gap: 10px; }
 .match-input { flex: 1; max-width: 420px; }
 .match-result {
@@ -595,12 +781,12 @@ html:not(.dark) .field {
   gap: 12px;
   padding: 14px 16px;
   border-radius: 12px;
-  font-size: 14px;
+  font-size: 15px;
 }
 .match-result.hit { background: rgba(74, 222, 128, 0.1); border: 1px solid rgba(74, 222, 128, 0.25); }
 .match-result.miss { background: rgba(251, 191, 36, 0.1); border: 1px solid rgba(251, 191, 36, 0.25); }
 .match-head { display: flex; align-items: center; gap: 8px; }
-.match-hint { font-size: 13px; color: var(--el-text-color-secondary); }
+.match-hint { font-size: 14px; color: var(--el-text-color-secondary); }
 .match-imgs {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -629,22 +815,22 @@ html:not(.dark) .field {
   object-position: center top;
 }
 .match-card.small .match-img { height: 100px; }
-.match-name { font-size: 13px; font-weight: 600; padding: 6px 4px 2px; }
-.match-use { font-size: 11px; color: var(--el-color-primary); padding-bottom: 6px; }
+.match-name { font-size: 14px; font-weight: 600; padding: 6px 4px 2px; }
+.match-use { font-size: 12.5px; color: var(--el-color-primary); padding-bottom: 6px; }
 .candidate {
-  font-size: 13px;
+  font-size: 14px;
   padding: 2px 8px;
   border-radius: 4px;
   background: var(--el-fill-color-light);
 }
 .mr-8 { margin-right: 8px; }
-.field { font-size: 14px; }
+.field { font-size: 15px; }
 .mapname-v { display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .mb-12 { margin-bottom: 12px; }
 .raw-files { display: flex; flex-direction: column; gap: 16px; }
 .raw-file { display: flex; flex-direction: column; gap: 6px; }
 .raw-fname {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--el-color-primary);
   font-family: 'SFMono-Regular', Consolas, monospace;
@@ -670,23 +856,19 @@ html:not(.dark) .field {
 .diff-line {
   display: flex;
   gap: 12px;
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'SFMono-Regular', Consolas, monospace;
   flex-wrap: wrap;
   padding: 10px 14px;
   margin-bottom: 8px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--fmps-subtle-bg);
+  border: 1px solid var(--fmps-subtle-border);
   align-items: flex-start;
-}
-html:not(.dark) .diff-line {
-  background: rgba(0, 0, 0, 0.02);
-  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .diff-key { font-weight: 600; color: var(--el-text-color-primary); min-width: 130px; }
 .diff-old { color: var(--el-color-danger); word-break: break-all; }
 .diff-new { color: var(--el-color-success); word-break: break-all; }
 .title { font-size: 24px; }
-.sec h3 { font-size: 16px; }
+.sec h3 { font-size: 17px; }
 </style>

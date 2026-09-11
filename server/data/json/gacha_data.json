@@ -1418,7 +1418,7 @@
       "id": 10139,
       "IsReleased": [
         true,
-        false,
+        true,
         false
       ],
       "StarGrade": 3,
@@ -1428,7 +1428,7 @@
       "id": 10140,
       "IsReleased": [
         true,
-        false,
+        true,
         false
       ],
       "StarGrade": 3,
@@ -1503,6 +1503,26 @@
       ],
       "StarGrade": 3,
       "IsLimited": 3
+    },
+    {
+      "id": 10149,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
+    },
+    {
+      "id": 10150,
+      "IsReleased": [
+        true,
+        false,
+        false
+      ],
+      "StarGrade": 3,
+      "IsLimited": 0
     },
     {
       "id": 13000,
@@ -1858,7 +1878,7 @@
       "id": 16020,
       "IsReleased": [
         true,
-        false,
+        true,
         false
       ],
       "StarGrade": 1,

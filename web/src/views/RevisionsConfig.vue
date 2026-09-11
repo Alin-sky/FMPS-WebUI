@@ -106,25 +106,23 @@ onMounted(async () => {
   gap: 4px;
   cursor: pointer;
   color: var(--el-color-primary);
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 .head { margin-bottom: 14px; }
 .head h2 { margin: 0 0 4px; }
-.muted { color: var(--el-text-color-secondary); font-size: 15px; }
+.muted { color: var(--el-text-color-secondary); font-size: 16px; }
 .toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
 .search { max-width: 320px; }
 .spacer { flex: 1; }
 .list {
-  background: rgba(30, 31, 43, 0.55);
+  background: var(--fmps-panel-bg);
   backdrop-filter: blur(16px) saturate(140%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid var(--fmps-panel-border);
+  box-shadow: var(--fmps-panel-shadow);
   border-radius: 14px;
   overflow: hidden;
-}
-html:not(.dark) .list {
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 .row {
   display: grid;
@@ -135,6 +133,6 @@ html:not(.dark) .list {
   border-bottom: 1px solid var(--el-border-color-lighter);
 }
 .row:last-of-type { border-bottom: none; }
-.row.header { background: var(--el-fill-color); font-size: 14px; color: var(--el-text-color-secondary); font-weight: 600; }
+.row.header { background: var(--el-fill-color); font-size: 15px; color: var(--el-text-color-secondary); font-weight: 600; }
 .add-row { padding: 12px 14px; }
 </style>

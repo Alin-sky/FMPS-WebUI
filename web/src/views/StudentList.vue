@@ -8,7 +8,10 @@
       </div>
       <div class="stat-chips" v-if="stats">
         <span class="stat-chip"><b>{{ stats.completeCount }}</b>完整</span>
-        <span class="stat-chip warn"><b>{{ stats.incompleteCount }}</b>缺失</span>
+        <span
+          class="stat-chip"
+          :class="stats.incompleteCount > 0 ? 'warn' : 'ok'"
+        ><b>{{ stats.incompleteCount }}</b>缺失</span>
         <span class="stat-chip"><b>{{ stats.giftCount }}</b>礼物</span>
         <span class="stat-chip"><b>{{ stats.mangaCount }}</b>漫画</span>
       </div>
@@ -21,11 +24,24 @@
         <el-radio-button value="update">更新模式</el-radio-button>
         <el-radio-button value="manga">漫画更新</el-radio-button>
         <el-radio-button value="gacha">卡池管理</el-radio-button>
+        <el-radio-button value="icons">头像管理</el-radio-button>
         <el-radio-button value="json">JSON对比</el-radio-button>
       </el-radio-group>
       <div class="mode-hint">
         <template v-if="mode === 'all'">
           <span class="muted">{{ students.length }} 名本地学生</span>
+          <el-tooltip content="跳转到头像管理页，处理缺失的头像图" placement="bottom">
+            <el-button
+              v-if="iconBadge.total > 0"
+              size="small"
+              type="warning"
+              plain
+              @click="goIcons('missing')"
+            >
+              <el-icon><Picture /></el-icon>
+              缺头像 {{ iconBadge.total }}
+            </el-button>
+          </el-tooltip>
         </template>
         <template v-else>
           <span class="muted">对比云端：</span>
@@ -200,11 +216,49 @@
     </el-dialog>
 
     <!-- 发布推送弹窗（第二步：变更预览 → 确认推送） -->
-    <el-dialog v-model="publishPreviewDialog" title="推送变更预览（本地 vs 云端）" width="min(860px, 94vw)" top="4vh">
+    <el-dialog v-model="publishPreviewDialog" title="推送变更预览（本地 vs 云端）" width="min(900px, 94vw)" top="3vh">
       <div v-loading="previewing" class="pub-preview-body">
         <template v-if="publishPreview">
+          <!-- ① 数量统计总览 -->
+          <div class="pub-summary glass">
+            <div class="ps-item">
+              <span class="ps-num">{{ publishPreview.jsonCount }}</span>
+              <span class="ps-label">JSON 文件</span>
+            </div>
+            <div class="ps-item">
+              <span class="ps-num">{{ pubTotals.filesChanged }}</span>
+              <span class="ps-label">有变更的文件</span>
+            </div>
+            <div class="ps-item add">
+              <span class="ps-num">+{{ pubTotals.added }}</span>
+              <span class="ps-label">新增条目</span>
+            </div>
+            <div class="ps-item mod">
+              <span class="ps-num">~{{ pubTotals.modified }}</span>
+              <span class="ps-label">修改条目</span>
+            </div>
+            <div class="ps-item del">
+              <span class="ps-num">-{{ pubTotals.removed }}</span>
+              <span class="ps-label">删除条目</span>
+            </div>
+            <div class="ps-item">
+              <span class="ps-num">{{ pubTotals.fields }}</span>
+              <span class="ps-label">变更字段数</span>
+            </div>
+            <div class="ps-item" :class="{ warn: (publishPreview.iconDiff?.totals?.add || 0) + (publishPreview.iconDiff?.totals?.modify || 0) > 0 }">
+              <span class="ps-num">{{ (publishPreview.iconDiff?.totals?.add || 0) + (publishPreview.iconDiff?.totals?.modify || 0) }}</span>
+              <span class="ps-label">头像图待传</span>
+            </div>
+          </div>
+
           <el-alert type="info" :closable="false" class="mb-12"
             :title="`将推送 ${publishPreview.jsonCount} 个 JSON 文件（json/ 前缀）${publishPreview.dataFiles.length ? ` + ${publishPreview.dataFiles.length} 个数据文件（data/ 前缀：${publishPreview.dataFiles.join('、')}）` : ''}，并更新 hash.json`" />
+
+          <!-- ② JSON 文件清单（可折叠 → 字段级红绿 diff） -->
+          <div class="pub-section-title">
+            <el-icon><Document /></el-icon> JSON 变更明细
+            <span class="muted">（点击文件名展开字段级对比）</span>
+          </div>
           <div class="pub-file-list">
             <div v-for="f in publishPreview.files" :key="f.fname" class="pub-file-item">
               <div class="pub-file-head" @click="togglePubFile(f.fname)">
@@ -245,10 +299,91 @@
               </div>
             </div>
           </div>
+
+          <!-- ③ 图片清单与体积 -->
+          <div class="pub-section-title" style="margin-top: 18px">
+            <el-icon><Picture /></el-icon> 头像图片（随本次发布上传）
+            <span class="muted" v-if="publishPreview.iconDiff?.totals">
+              — 新增 {{ publishPreview.iconDiff.totals.add }} / 变更 {{ publishPreview.iconDiff.totals.modify }} /
+              未变 {{ publishPreview.iconDiff.totals.same }}，共 {{ publishPreview.iconDiff.totals.mb }} MB
+            </span>
+          </div>
+
+          <el-alert v-if="publishPreview.iconDiff?.error" type="warning" :closable="false">
+            头像差异计算失败：{{ publishPreview.iconDiff.error }}（发布时仍会尝试上传）
+          </el-alert>
+
+          <template v-else-if="publishPreview.iconDiff?.totals">
+            <div class="pub-summary icon-summary">
+              <div class="ps-item add">
+                <span class="ps-num">{{ publishPreview.iconDiff.totals.add }}</span>
+                <span class="ps-label">新增图</span>
+              </div>
+              <div class="ps-item mod">
+                <span class="ps-num">{{ publishPreview.iconDiff.totals.modify }}</span>
+                <span class="ps-label">变更图</span>
+              </div>
+              <div class="ps-item">
+                <span class="ps-num">{{ publishPreview.iconDiff.totals.same }}</span>
+                <span class="ps-label">未变化</span>
+              </div>
+              <div class="ps-item warn">
+                <span class="ps-num">{{ publishPreview.iconDiff.totals.cloudOnly }}</span>
+                <span class="ps-label">仅云端有</span>
+              </div>
+              <div class="ps-item">
+                <span class="ps-num">{{ publishPreview.iconDiff.totals.mb }}</span>
+                <span class="ps-label">本次上传 MB</span>
+              </div>
+            </div>
+
+            <div v-if="publishPreview.iconDiff.files?.length" class="icon-list-toggle">
+              <el-button size="small" text @click="showIconFiles = !showIconFiles">
+                {{ showIconFiles ? '收起' : '展开' }}图片清单（{{ publishPreview.iconDiff.files.length }} 条）
+              </el-button>
+              <div class="icon-filter">
+                <el-input v-model="iconFileFilter" size="small" placeholder="过滤 Id / 类型" clearable />
+              </div>
+            </div>
+            <div v-if="showIconFiles" class="icon-file-list">
+              <div
+                v-for="(it, i) in filteredIconFiles.slice(0, 400)"
+                :key="i"
+                class="icon-file-line"
+                :class="it.action"
+              >
+                <el-tag size="small" :type="iconActionType(it.action)" effect="plain">{{ iconActionLabel(it.action) }}</el-tag>
+                <img :src="`/api/iconview/${it.type}/${it.id}`" class="icon-mini" loading="lazy" @error="(e) => (e.target.style.visibility = 'hidden')" />
+                <span class="mono">{{ it.type }}/{{ it.id }}.{{ it.type === 'stu_icon_db' ? 'jpg' : 'png' }}</span>
+                <span class="muted">{{ (it.size / 1024).toFixed(0) }} KB</span>
+              </div>
+              <div v-if="filteredIconFiles.length > 400" class="muted" style="padding: 6px">
+                … 仅显示前 400 条，共 {{ filteredIconFiles.length }} 条
+              </div>
+              <el-empty v-if="!filteredIconFiles.length" description="没有待上传的图片" :image-size="42" />
+            </div>
+            <el-empty v-else-if="!publishPreview.iconDiff.files?.length" description="图片与云端一致，无需上传" :image-size="42" />
+          </template>
+
+          <!-- ④ 历次发布记录 -->
+          <div class="pub-section-title" style="margin-top: 18px">
+            <el-icon><Clock /></el-icon> 历次发布记录
+            <el-button size="small" text @click="loadIconReleases">刷新</el-button>
+          </div>
+          <div v-if="iconReleases.length" class="release-list">
+            <div v-for="r in iconReleases.slice(0, 8)" :key="r.file" class="release-item">
+              <span class="release-ts mono">{{ (r.releasedAt || '').replace('T', ' ').slice(0, 19) }}</span>
+              <span class="muted">
+                新增 {{ r.totals?.add || 0 }} / 变更 {{ r.totals?.modify || 0 }} / 共 {{ r.totals?.mb || 0 }} MB
+              </span>
+            </div>
+          </div>
+          <div v-else class="muted" style="padding: 4px 0">（暂无头像发布记录）</div>
         </template>
       </div>
       <template #footer>
         <el-button @click="publishPreviewDialog = false">返回修改</el-button>
+        <el-checkbox v-model="iconPublishEnabled" style="margin-right: 12px">同时上传头像图</el-checkbox>
         <el-button type="success" :loading="publishing" @click="doPublish">确认推送</el-button>
       </template>
     </el-dialog>
@@ -258,20 +393,33 @@
 <script setup>
 import { ref, computed, onMounted, nextTick } from 'vue';
 import { useRouter } from 'vue-router';
-import { Search, Refresh, Upload, Download, RefreshLeft, RefreshRight, CaretRight } from '@element-plus/icons-vue';
+import { Search, Refresh, Upload, Download, RefreshLeft, RefreshRight, CaretRight, Picture, Document, Clock } from '@element-plus/icons-vue';
 import { ElMessage, ElMessageBox } from 'element-plus';
-import { getStudents, getCloudDiff, avatarUrl, crawl, crawlCloud, revertStudentAll, revertStudentExceptId, publish, previewPublish, getSkipList, exportJson } from '../api';
+import { getStudents, getCloudDiff, avatarUrl, crawl, crawlCloud, revertStudentAll, revertStudentExceptId, publish, previewPublish, getSkipList, exportJson, getIconsStatus, getIconReleases } from '../api';
 
 const router = useRouter();
 const mode = ref('all');
 
-// 统一模式切换：全览/更新切换本页，漫画更新/卡池管理/JSON对比跳转对应页面
+// 统一模式切换：全览/更新切换本页，漫画更新/卡池管理/JSON对比 跳转对应页面
 const viewMode = computed(() => mode.value);
 function onModeChange(val) {
   if (val === 'manga') { router.push('/manga'); return; }
   if (val === 'gacha') { router.push('/gacha'); return; }
+  if (val === 'icons') { router.push('/icons'); return; }
   if (val === 'json') { router.push('/json-diff'); return; }
   mode.value = val;
+}
+
+// 缺头像角标（列表页给个入口，不用专门点头像管理才发现）
+const iconBadge = ref({ total: 0 });
+async function loadIconBadge() {
+  try {
+    const r = await getIconsStatus('missing=1');
+    iconBadge.value = { total: r.filtered || 0 };
+  } catch {}
+}
+function goIcons(flag) {
+  router.push(flag === 'missing' ? '/icons' : '/icons');
 }
 const students = ref([]);
 const stats = ref(null);
@@ -433,10 +581,47 @@ const publishPreview = ref(null);
 const previewing = ref(false);
 const expandedPubFiles = ref(new Set());
 
+// 图片清单与历次记录
+const showIconFiles = ref(false);
+const iconFileFilter = ref('');
+const iconReleases = ref([]);
+const iconPublishEnabled = ref(true);
+
+// 数量统计总览（新增/删除/修改的文件数、条目数、字段数）
+const pubTotals = computed(() => {
+  const files = publishPreview.value?.files || [];
+  let added = 0, modified = 0, removed = 0, fields = 0, filesChanged = 0;
+  for (const f of files) {
+    added += f.added || 0;
+    modified += f.modified || 0;
+    removed += f.removed || 0;
+    for (const m of f.modList || []) fields += (m.fields || []).length;
+    if (f.added || f.modified || f.removed || f.isNew) filesChanged++;
+  }
+  return { added, modified, removed, fields, filesChanged };
+});
+
+const filteredIconFiles = computed(() => {
+  const list = publishPreview.value?.iconDiff?.files || [];
+  const kw = iconFileFilter.value.trim().toLowerCase();
+  if (!kw) return list;
+  return list.filter((f) => `${f.type}/${f.id}`.toLowerCase().includes(kw) || String(f.id).includes(kw));
+});
+
+const iconActionLabel = (a) => ({ add: '新增', modify: '变更', 'cloud-only': '仅云端' }[a] || a);
+const iconActionType = (a) => ({ add: 'success', modify: 'warning', 'cloud-only': 'info' }[a] || 'info');
+
 function togglePubFile(fname) {
   const s = new Set(expandedPubFiles.value);
   s.has(fname) ? s.delete(fname) : s.add(fname);
   expandedPubFiles.value = s;
+}
+
+async function loadIconReleases() {
+  try {
+    const r = await getIconReleases();
+    iconReleases.value = r.releases || [];
+  } catch {}
 }
 
 async function doPreviewPublish() {
@@ -454,6 +639,7 @@ async function doPreviewPublish() {
     expandedPubFiles.value = s;
     publishDialog.value = false;
     publishPreviewDialog.value = true;
+    loadIconReleases();
   } catch (e) {
     ElMessage.error(e.message || '预览失败');
   } finally {
@@ -464,15 +650,23 @@ async function doPreviewPublish() {
 async function doPublish() {
   publishing.value = true;
   try {
-    const result = await publish(publishPassword.value);
+    const result = await publish(publishPassword.value, { iconPublish: iconPublishEnabled.value });
     if (result.cosError) {
       ElMessage.warning(`Hash 已生成（${result.hashCount} 个），但 COS 上传出错：${result.cosError}`);
     } else {
-      ElMessage.success(`发布成功！已上传 ${result.uploaded} 个文件`);
+      const ic = result.iconResult;
+      const iconMsg = ic && !ic.error
+        ? `，头像图 ${ic.uploaded} 张（${((ic.bytes || 0) / 1048576).toFixed(1)} MB）`
+        : ic?.error
+          ? `，头像图上传统计失败：${ic.error}`
+          : '';
+      ElMessage.success(`发布成功！JSON 已上传 ${result.uploaded} 个文件${iconMsg}`);
       publishPreviewDialog.value = false;
       publishPassword.value = '';
       await load();
       await loadCloudDiff();
+      await loadIconBadge();
+      await loadIconReleases();
     }
   } catch (e) {
     ElMessage.error('发布失败：' + e.message);
@@ -496,6 +690,7 @@ async function doExport() {
 onMounted(() => {
   load();
   loadCloudDiff();
+  loadIconBadge();
 });
 </script>
 
@@ -521,14 +716,17 @@ onMounted(() => {
 .stat-chip {
   padding: 6px 14px;
   border-radius: 20px;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--el-text-color-secondary);
   background: rgba(91, 141, 239, 0.08);
   border: 1px solid rgba(91, 141, 239, 0.2);
 }
-.stat-chip b { color: var(--el-color-primary); font-size: 15px; margin-right: 4px; }
+.stat-chip b { color: var(--el-color-primary); font-size: 16px; margin-right: 4px; }
 .stat-chip.warn { background: rgba(248, 113, 113, 0.08); border-color: rgba(248, 113, 113, 0.25); }
 .stat-chip.warn b { color: var(--el-color-danger); }
+/* 没有缺失时不该报红，用成功色收尾 */
+.stat-chip.ok { background: rgba(74, 222, 128, 0.09); border-color: rgba(74, 222, 128, 0.25); }
+.stat-chip.ok b { color: var(--el-color-success); }
 .top-row {
   display: flex;
   align-items: center;
@@ -540,6 +738,62 @@ onMounted(() => {
 
 /* 发布推送变更预览 */
 .pub-preview-body { min-height: 200px; max-height: 64vh; overflow-y: auto; }
+
+/* ① 数量统计总览 */
+.pub-summary {
+  display: flex; flex-wrap: wrap; gap: 6px 0;
+  padding: 10px 14px; border-radius: 12px; margin-bottom: 12px;
+  background: var(--el-fill-color-lighter);
+}
+.pub-summary.icon-summary { margin-bottom: 10px; }
+.ps-item {
+  flex: 1; min-width: 82px; display: flex; flex-direction: column;
+  align-items: center; border-right: 1px solid var(--el-border-color-lighter);
+}
+.ps-item:last-child { border-right: none; }
+.ps-num { font-size: 19px; font-weight: 700; line-height: 1.25; font-variant-numeric: tabular-nums; }
+.ps-label { font-size: 12.5px; color: var(--el-text-color-secondary); }
+.ps-item.add .ps-num { color: var(--el-color-success); }
+.ps-item.mod .ps-num { color: var(--el-color-warning); }
+.ps-item.del .ps-num { color: var(--el-color-danger); }
+.ps-item.warn .ps-num { color: var(--el-color-warning); }
+
+.pub-section-title {
+  display: flex; align-items: center; gap: 6px;
+  font-weight: 700; font-size: 16px; margin-bottom: 8px;
+}
+.pub-section-title .muted { font-weight: 400; font-size: 13.5px; }
+
+/* ③ 图片清单 */
+.icon-list-toggle { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.icon-filter { width: 170px; }
+.icon-file-list {
+  max-height: 240px; overflow-y: auto; margin-top: 6px;
+  border: 1px solid var(--el-border-color-lighter); border-radius: 10px;
+}
+.icon-file-line {
+  display: flex; align-items: center; gap: 8px;
+  padding: 3px 10px; font-size: 13.5px;
+  border-bottom: 1px solid var(--el-border-color-lighter);
+}
+.icon-file-line:last-child { border-bottom: none; }
+.icon-file-line.add { background: rgba(74, 222, 128, 0.06); }
+.icon-file-line.modify { background: rgba(251, 191, 36, 0.07); }
+.icon-file-line.cloud-only { opacity: 0.6; }
+.icon-mini {
+  width: 24px; height: 24px; object-fit: cover;
+  border-radius: 4px; border: 1px solid var(--el-border-color-lighter);
+}
+
+/* ④ 历次发布记录 */
+.release-list { display: flex; flex-direction: column; gap: 4px; }
+.release-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 5px 10px; border-radius: 8px;
+  background: var(--el-fill-color-lighter); font-size: 13.5px;
+}
+.release-ts { font-weight: 600; }
+
 .pub-file-list { display: flex; flex-direction: column; gap: 6px; }
 .pub-file-item { border: 1px solid var(--el-border-color-lighter); border-radius: 10px; overflow: hidden; }
 .pub-file-head {
@@ -549,15 +803,15 @@ onMounted(() => {
 .pub-file-head:hover { background: var(--el-fill-color); }
 .pub-caret { transition: transform 0.15s; color: var(--el-text-color-secondary); }
 .pub-caret.open { transform: rotate(90deg); }
-.pub-fname { font-weight: 600; font-size: 13px; }
-.pub-unchanged { font-size: 12px; }
+.pub-fname { font-weight: 600; font-size: 14px; }
+.pub-unchanged { font-size: 13.5px; }
 .pub-file-detail { padding: 10px 14px; border-top: 1px dashed var(--el-border-color-lighter); }
 .pub-detail-sec { margin-bottom: 10px; }
-.pub-detail-title { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+.pub-detail-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
 .pub-detail-title.add { color: var(--el-color-success); }
 .pub-detail-title.mod { color: var(--el-color-warning); }
 .pub-detail-title.del { color: var(--el-color-danger); }
-.pub-detail-line { font-size: 13px; padding: 2px 0; }
+.pub-detail-line { font-size: 14px; padding: 2px 0; }
 .pub-detail-line.add { color: var(--el-color-success); }
 .pub-detail-line.del { color: var(--el-color-danger); }
 .pub-line-head { font-weight: 600; display: block; margin: 4px 0 2px; }
@@ -565,7 +819,7 @@ onMounted(() => {
 .pub-field-key { min-width: 120px; font-weight: 600; color: var(--el-text-color-regular); }
 .pub-old { color: var(--el-color-danger); word-break: break-all; }
 .pub-new { color: var(--el-color-success); word-break: break-all; }
-.mode-hint { display: flex; align-items: center; gap: 8px; font-size: 13px; flex-wrap: wrap; }
+.mode-hint { display: flex; align-items: center; gap: 8px; font-size: 14px; flex-wrap: wrap; }
 .mb-12 { margin-bottom: 12px; }
 .mt-8 { margin-top: 8px; }
 .raw-box {
@@ -594,15 +848,12 @@ onMounted(() => {
 .diff-line {
   display: flex;
   gap: 12px;
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'SFMono-Regular', Consolas, monospace;
   flex-wrap: wrap;
   padding: 8px 12px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
-}
-html:not(.dark) .diff-line {
-  background: rgba(0, 0, 0, 0.03);
+  background: var(--fmps-subtle-bg);
 }
 .diff-key {
   font-weight: 600;
@@ -618,7 +869,7 @@ html:not(.dark) .diff-line {
   word-break: break-all;
 }
 .muted { color: var(--el-text-color-secondary); }
-.chip { padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; }
+.chip { padding: 2px 10px; border-radius: 12px; font-size: 13.5px; font-weight: 500; }
 .chip.add { background: rgba(74, 222, 128, 0.15); color: var(--el-color-success); }
 .chip.mod { background: rgba(251, 191, 36, 0.15); color: var(--el-color-warning); }
 .chip.del { background: rgba(248, 113, 113, 0.15); color: var(--el-color-danger); }
@@ -636,18 +887,13 @@ html:not(.dark) .diff-line {
 
 /* 列表 */
 .list {
-  background: rgba(30, 31, 43, 0.55);
+  background: var(--fmps-panel-bg);
   backdrop-filter: blur(16px) saturate(140%);
   -webkit-backdrop-filter: blur(16px) saturate(140%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--fmps-panel-border);
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
-}
-html:not(.dark) .list {
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 8px 28px rgba(30, 50, 90, 0.08);
+  box-shadow: var(--fmps-panel-shadow);
 }
 .row {
   position: relative;
@@ -673,7 +919,7 @@ html:not(.dark) .list {
 }
 .row.header {
   background: var(--el-fill-color);
-  font-size: 13px;
+  font-size: 14px;
   color: var(--el-text-color-secondary);
   cursor: default;
   font-weight: 600;
@@ -686,8 +932,8 @@ html:not(.dark) .list {
 .row.skipped .avatar { filter: grayscale(100%); }
 .crawl-modes { display: flex; flex-direction: column; gap: 12px; width: 100%; }
 .crawl-modes :deep(.el-radio) { height: auto; padding: 14px 16px; margin: 0; }
-.mode-title { font-size: 16px; font-weight: 600; }
-.mode-desc { font-size: 14px; color: var(--el-text-color-secondary); margin-top: 4px; white-space: normal; }
+.mode-title { font-size: 17px; font-weight: 600; }
+.mode-desc { font-size: 15px; color: var(--el-text-color-secondary); margin-top: 4px; white-space: normal; }
 .diff-actions {
   display: flex;
   gap: 8px;
@@ -706,13 +952,13 @@ html:not(.dark) .list {
 }
 .col-name { display: flex; flex-direction: column; min-width: 0; }
 .name-cn { font-size: 19px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.name-en { font-size: 14px; color: var(--el-text-color-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.mono { font-family: monospace; font-size: 15px; color: var(--el-text-color-secondary); }
-.star { color: #ffb800; font-size: 16px; font-weight: 600; }
-.col-map { font-size: 16px; font-weight: 500; color: var(--el-text-color-regular); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.name-en { font-size: 15px; color: var(--el-text-color-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mono { font-family: monospace; font-size: 16px; color: var(--el-text-color-secondary); }
+.star { color: #ffb800; font-size: 17px; font-weight: 600; }
+.col-map { font-size: 17px; font-weight: 500; color: var(--el-text-color-regular); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .col-favor { display: flex; gap: 3px; flex-wrap: wrap; }
 .mini-tag { margin: 0; }
-.nick { font-size: 15px; color: var(--el-text-color-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.nick { font-size: 16px; color: var(--el-text-color-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .col-status { text-align: center; }
 
 /* 日志 */

@@ -346,7 +346,7 @@ onMounted(load);
   gap: 4px;
   cursor: pointer;
   color: var(--el-color-primary);
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 .head {
@@ -358,21 +358,11 @@ onMounted(load);
   flex-wrap: wrap;
 }
 .head h2 { margin: 0 0 4px; }
-.muted { color: var(--el-text-color-secondary); font-size: 14px; }
+.muted { color: var(--el-text-color-secondary); font-size: 15px; }
 .head-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 
-.glass {
-  background: rgba(30, 31, 43, 0.55);
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
-}
-html:not(.dark) .glass {
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 8px 28px rgba(30, 50, 90, 0.08);
-}
+/* .glass 由 App.vue 全局定义（走主题 token），这里不再重复声明，
+   否则 scoped 版的 .glass 会盖掉全局样式、把深色模式带偏。 */
 
 .server-grid {
   display: grid;
@@ -384,14 +374,14 @@ html:not(.dark) .glass {
 .server-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
 .server-head h3 { margin: 0; font-size: 17px; flex: 1; }
 .server-fes { display: flex; align-items: center; gap: 6px; }
-.fes-label { font-size: 13px; font-weight: 700; color: var(--el-color-warning); }
+.fes-label { font-size: 14px; font-weight: 700; color: var(--el-color-warning); }
 
 .server-time { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
 .time-picker { width: 200px; }
 
 .pick-select { width: 100%; margin-bottom: 12px; }
 .opt-name { font-weight: 600; }
-.opt-meta { font-size: 12px; margin-left: 8px; }
+.opt-meta { font-size: 13.5px; margin-left: 8px; }
 
 .picked-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .picked-item {
@@ -409,31 +399,31 @@ html:not(.dark) .glass {
   object-fit: cover;
   background: var(--el-fill-color);
 }
-.picked-name { font-weight: 600; font-size: 14px; }
-.picked-id { font-size: 12px; color: var(--el-text-color-secondary); }
-.picked-empty { font-size: 13px; }
+.picked-name { font-weight: 600; font-size: 15px; }
+.picked-id { font-size: 13.5px; color: var(--el-text-color-secondary); }
+.picked-empty { font-size: 14px; }
 
 /* 自动爬取弹窗 */
 .auto-body { min-height: 160px; max-height: 64vh; overflow-y: auto; }
 .auto-server { margin-bottom: 14px; padding: 12px 14px; border-radius: 12px; background: var(--el-fill-color-light); }
 .auto-server-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
-.auto-server-head h4 { margin: 0; font-size: 15px; flex: 1; }
+.auto-server-head h4 { margin: 0; font-size: 16px; flex: 1; }
 .auto-names { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
-.auto-chip { padding: 3px 10px; border-radius: 8px; font-size: 13px; }
+.auto-chip { padding: 3px 10px; border-radius: 8px; font-size: 14px; }
 .auto-chip.ok { background: rgba(74, 222, 128, 0.12); color: var(--el-color-success); }
 .auto-chip.bad { background: rgba(248, 113, 113, 0.12); color: var(--el-color-danger); }
-.auto-raw { font-size: 12px; word-break: break-all; }
+.auto-raw { font-size: 13.5px; word-break: break-all; }
 
 .gen-json { border-radius: 14px; padding: 14px 16px; margin-bottom: 16px; }
 .gen-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; gap: 10px; flex-wrap: wrap; }
-.gen-title { font-weight: 600; font-size: 15px; }
+.gen-title { font-weight: 600; font-size: 16px; }
 .json-preview {
   background: var(--el-fill-color);
   border-radius: 10px;
   padding: 12px;
   max-height: 340px;
   overflow: auto;
-  font-size: 13px;
+  font-size: 14px;
   margin: 0;
 }
 .mono { font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; }

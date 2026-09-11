@@ -8,10 +8,22 @@ import { fetchBinary, fetchJson } from './crawler.js';
 import { config } from './config.js';
 import { loadLatestSnapshot, listSnapshots, diffStudents, diffFields, restoreSnapshot, revertStudent } from './snapshot.js';
 import { listVersions, restoreVersion, revertStudentToVersion } from './version.js';
+import {
+  localManifest,
+  putCloudRelease,
+  listCloudReleases,
+  readCloudRelease,
+  rebuildCloudReleases,
+  diffReleaseStudents,
+  diffReleaseFiles,
+  diffCloudReleaseVsLocal,
+  applyCloudRelease,
+} from './release-cloud.js';
 import { runCrawl, crawlEvents } from './crawl.js';
 import { fetchCloudStudents, diffCloud } from './cloud.js';
 import { editStudent } from './edit.js';
 import { loadAliasConfig, saveAliasConfig } from './alias-config.js';
+import { createIconsRouter } from './icons-routes.js';
 
 const SKIP_PATH = path.join(config.dataDir, 'skip-list.json');
 const PUBLISH_CONFIG_PATH = path.join(config.dataDir, 'publish-config.json');
@@ -52,6 +64,9 @@ async function cachedImage(cacheDir, key, remoteUrl) {
 
 export function createRouter() {
   const router = express.Router();
+
+  // 头像管理（存储 / 生成 / 抓取 / COS 同步 / 上传），独立子路由
+  router.use(createIconsRouter());
 
   // 学生列表 + 统计
   router.get('/api/students', async (req, res) => {
@@ -300,6 +315,83 @@ export function createRouter() {
   router.post('/api/versions/:ts/restore', async (req, res) => {
     try {
       const result = await restoreVersion(req.params.ts);
+      res.json({ ok: true, ...result });
+    } catch (e) {
+      res.status(500).json({ error: e.message });
+    }
+  });
+
+  // ==================== 云端发布记录 ====================
+  // 本地版本归档只存在本机，换台设备发布就看不到了。
+  // 云端记录写在 COS 的 releases/ 下，任何设备都能读到。
+  router.get('/api/cloud-releases', async (req, res) => {
+    try {
+      const releases = await listCloudReleases();
+      res.json({ releases, count: releases.length });
+    } catch (e) {
+      res.status(500).json({ error: e.message, releases: [] });
+    }
+  });
+
+  // 从 COS 现状重建/补齐发布记录（给"在别的设备发布过、本机没记录"的历史补档）
+  router.post('/api/cloud-releases/rebuild', async (req, res) => {
+    try {
+      const r = await rebuildCloudReleases({});
+      res.json({ ok: true, ...r });
+    } catch (e) {
+      res.status(500).json({ error: e.message });
+    }
+  });
+
+  // 某次云端发布的详情（文件清单 + 相对上一次发布的学生级差异）
+  router.get('/api/cloud-releases/:ts', async (req, res) => {
+    try {
+      const ts = req.params.ts;
+      const manifest = await readCloudRelease(ts);
+      if (!manifest) return res.status(404).json({ error: `云端没有 ${ts} 的发布记录` });
+
+      const releases = await listCloudReleases();
+      // releases 是倒序（最新在前），"上一个"就是列表里排在它后面的那条
+      const idx = releases.findIndex((r) => r.ts === ts);
+      const prevEntry = idx >= 0 && idx < releases.length - 1 ? releases[idx + 1] : null;
+      const prev = prevEntry ? await readCloudRelease(prevEntry.ts) : null;
+
+      // 没有上一版本时**不要**返回"15 个文件全是新增" —— 那是 diffReleaseFiles(null, x) 的假象。
+      // 显式告知前端「无对比基准」。
+      const students = prev
+        ? diffReleaseStudents(prev, manifest)
+        : { available: false, reason: '这是最早的一次云端发布，没有可对比的前一版本', added: [], removed: [], modified: [] };
+      const files = prev
+        ? diffReleaseFiles(prev, manifest)
+        : { hasPrev: false, added: [], removed: [], modified: [], same: 0 };
+
+      res.json({
+        release: manifest,
+        prevTs: prev ? prev.ts : null,
+        prevReleasedAt: prev ? prev.releasedAt : null,
+        hasPrev: !!prev,
+        students,
+        files,
+        isLatest: idx === 0,
+      });
+    } catch (e) {
+      res.status(500).json({ error: e.message });
+    }
+  });
+
+  // 该云端版本 vs 本地现状（added = 本地有云端无，即待上传的新增）
+  router.get('/api/cloud-releases/:ts/compare-local', async (req, res) => {
+    try {
+      res.json(await diffCloudReleaseVsLocal(req.params.ts));
+    } catch (e) {
+      res.status(500).json({ error: e.message });
+    }
+  });
+
+  // 把某个云端版本拉到本地（会先把本地现状归档成版本，可回滚）
+  router.post('/api/cloud-releases/:ts/apply', async (req, res) => {
+    try {
+      const result = await applyCloudRelease(req.params.ts, {});
       res.json({ ok: true, ...result });
     } catch (e) {
       res.status(500).json({ error: e.message });
@@ -937,7 +1029,17 @@ export function createRouter() {
           dataFiles.push(f);
         } catch {}
       }
-      res.json({ ok: true, files: out, dataFiles, jsonCount: out.length });
+
+      // 头像图片：本地 ↔ COS 的差异清单（新增 / 变更 / 仅云端有），供确认页展示
+      let iconDiff = null;
+      try {
+        const { diffLocalVsCos } = await import('./icons-publish.js');
+        iconDiff = await diffLocalVsCos();
+      } catch (e) {
+        iconDiff = { error: e.message };
+      }
+
+      res.json({ ok: true, files: out, dataFiles, jsonCount: out.length, iconDiff });
     } catch (e) {
       res.status(500).json({ error: e.message });
     }
@@ -1009,7 +1111,26 @@ export function createRouter() {
       } catch (e) {
         cosError = e.message;
       }
-      // 发布成功后归档版本
+
+      // 头像图片随发布一起上传（只推有变化的；受 iconPublish 开关控制）
+      let iconResult = null;
+      const { iconPublish = true } = req.body || {};
+      if (!cosError && iconPublish) {
+        try {
+          const { diffLocalVsCos, uploadIconsToCos, snapshotIconRelease } = await import('./icons-publish.js');
+          const diff = await diffLocalVsCos();
+          iconResult = await uploadIconsToCos({ diff });
+          iconResult.totals = diff.totals;
+          if (iconResult.uploaded > 0) {
+            const snap = await snapshotIconRelease(diff);
+            iconResult.release = snap.ts;
+          }
+        } catch (e) {
+          iconResult = { error: e.message };
+        }
+      }
+
+      // 发布成功后归档版本（本地）
       let version = null;
       if (!cosError) {
         try {
@@ -1017,7 +1138,42 @@ export function createRouter() {
           version = await archiveVersion();
         } catch {}
       }
-      res.json({ ok: true, uploaded, uploadedKeys, dataFiles, hashCount: hashes.length, cosError, version });
+
+      // 同时写一份「云端发布记录」到 COS，这样**别的设备**也能在版本管理里看到这次发布。
+      // 关键是把学生指纹一起写进去，跨设备就能算学生级差异，无需下载旧 JSON。
+      let cloudRelease = null;
+      let cloudReleaseError = null;
+      if (!cosError) {
+        try {
+          const manifest = await localManifest({ note: '从 Web 界面发布推送' });
+          cloudRelease = await putCloudRelease(manifest);
+        } catch (e) {
+          cloudReleaseError = e.message;
+        }
+      }
+
+      res.json({
+        ok: true,
+        uploaded,
+        uploadedKeys,
+        dataFiles,
+        hashCount: hashes.length,
+        cosError,
+        version,
+        cloudRelease,
+        cloudReleaseError,
+        iconResult,
+      });
+    } catch (e) {
+      res.status(500).json({ error: e.message });
+    }
+  });
+
+  // 历次头像发布记录
+  router.get('/api/icons/releases', async (req, res) => {
+    try {
+      const { listIconReleases } = await import('./icons-publish.js');
+      res.json({ releases: await listIconReleases() });
     } catch (e) {
       res.status(500).json({ error: e.message });
     }

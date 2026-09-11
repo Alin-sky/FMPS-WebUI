@@ -766,7 +766,11 @@
       "FH",
       "Gi",
       "hl",
-      "Iu"
+      "Iu",
+      "ia",
+      "iB",
+      "ib",
+      "iC"
     ],
     "ShiftingCraftQuality": 20,
     "CraftQuality": 20,
@@ -1946,7 +1950,9 @@
       "hz",
       "IA",
       "Iy",
-      "IZ"
+      "IZ",
+      "ib",
+      "iC"
     ],
     "CraftQuality": 50,
     "ExpValue": 60,
@@ -2338,7 +2344,9 @@
       "hb",
       "hC",
       "Ib",
-      "IC"
+      "IC",
+      "ia",
+      "iB"
     ],
     "CraftQuality": 50,
     "ExpValue": 60,

@@ -8,6 +8,7 @@ import VersionsView from '../views/VersionsView.vue';
 import MangaView from '../views/MangaView.vue';
 import JsonDiffView from '../views/JsonDiffView.vue';
 import GachaView from '../views/GachaView.vue';
+import IconsView from '../views/IconsView.vue';
 
 export default createRouter({
   history: createWebHistory(),
@@ -20,6 +21,7 @@ export default createRouter({
     { path: '/manga', name: 'manga', component: MangaView },
     { path: '/json-diff', name: 'json-diff', component: JsonDiffView },
     { path: '/gacha', name: 'gacha', component: GachaView },
+    { path: '/icons', name: 'icons', component: IconsView },
     { path: '/student/:id', name: 'detail', component: StudentDetail },
   ],
 });

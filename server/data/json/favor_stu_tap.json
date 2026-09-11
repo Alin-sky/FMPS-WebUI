@@ -1809,6 +1809,34 @@
     ]
   },
   {
+    "id": 10149,
+    "name": "心",
+    "FavorItemTags": [
+      "am",
+      "aj",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "ia",
+      "iB"
+    ]
+  },
+  {
+    "id": 10150,
+    "name": "琴音",
+    "FavorItemTags": [
+      "aL",
+      "BB",
+      "CX",
+      "Cx"
+    ],
+    "FavorItemUniqueTags": [
+      "ib",
+      "iC"
+    ]
+  },
+  {
     "id": 13000,
     "name": "茜",
     "FavorItemTags": [

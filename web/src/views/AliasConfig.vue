@@ -108,12 +108,12 @@ onMounted(async () => {
   gap: 4px;
   cursor: pointer;
   color: var(--el-color-primary);
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 .head { margin-bottom: 16px; }
 .head h2 { margin: 0 0 4px; }
-.muted { color: var(--el-text-color-secondary); font-size: 13px; }
+.muted { color: var(--el-text-color-secondary); font-size: 14px; }
 .group-list { display: flex; flex-direction: column; gap: 12px; }
 .group-card {
   background: var(--el-bg-color);
@@ -127,9 +127,9 @@ onMounted(async () => {
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.group-title { font-weight: 600; font-size: 14px; }
+.group-title { font-weight: 600; font-size: 15px; }
 .row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; flex-wrap: wrap; }
-.row .k { color: var(--el-text-color-secondary); font-size: 13px; flex: 0 0 auto; }
+.row .k { color: var(--el-text-color-secondary); font-size: 14px; flex: 0 0 auto; }
 .sel { flex: 1; min-width: 260px; }
 .actions { display: flex; gap: 10px; margin-top: 16px; }
 </style>

@@ -135,24 +135,24 @@ onMounted(async () => {
   gap: 4px;
   cursor: pointer;
   color: var(--el-color-primary);
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 8px;
 }
 .head h2 { margin: 0 0 8px; }
-.snapshot-info { font-size: 13px; color: var(--el-text-color-secondary); }
+.snapshot-info { font-size: 14px; color: var(--el-text-color-secondary); }
 .muted { color: var(--el-text-color-secondary); }
 .summary { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
 .chip {
   padding: 6px 14px;
   border-radius: 20px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
 }
 .chip.add { background: rgba(74, 222, 128, 0.15); color: var(--el-color-success); }
 .chip.del { background: rgba(248, 113, 113, 0.15); color: var(--el-color-danger); }
 .chip.mod { background: rgba(251, 191, 36, 0.15); color: var(--el-color-warning); }
 .sec { margin-bottom: 20px; }
-.sec-title { font-size: 15px; margin: 0 0 10px; }
+.sec-title { font-size: 16px; margin: 0 0 10px; }
 .sec-title.add { color: var(--el-color-success); }
 .sec-title.del { color: var(--el-color-danger); }
 .sec-title.mod { color: var(--el-color-warning); }
@@ -172,8 +172,8 @@ onMounted(async () => {
 .del-card { border-left: 3px solid var(--el-color-danger); opacity: 0.7; }
 .avatar { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; }
 .info { text-align: center; margin-top: 6px; }
-.name { font-size: 13px; font-weight: 600; }
-.id { font-size: 12px; color: var(--el-text-color-secondary); }
+.name { font-size: 14px; font-weight: 600; }
+.id { font-size: 13.5px; color: var(--el-text-color-secondary); }
 .mod-list { display: flex; flex-direction: column; gap: 8px; }
 .mod-item {
   display: flex;
@@ -190,7 +190,7 @@ onMounted(async () => {
 .mod-info { flex: 1; }
 .changed { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
 .field-tag {
-  font-size: 11px;
+  font-size: 12.5px;
   padding: 1px 6px;
   border-radius: 4px;
   background: var(--el-fill-color-light);
@@ -209,12 +209,12 @@ onMounted(async () => {
 .diff-line {
   display: flex;
   gap: 12px;
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'SFMono-Regular', Consolas, monospace;
   flex-wrap: wrap;
   padding: 6px 10px;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--fmps-subtle-bg);
 }
 .diff-key { font-weight: 600; min-width: 130px; }
 .diff-old { color: var(--el-color-danger); word-break: break-all; }

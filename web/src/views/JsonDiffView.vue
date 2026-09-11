@@ -213,12 +213,12 @@ async function doCompare() {
   gap: 4px;
   cursor: pointer;
   color: var(--el-color-primary);
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 .head { margin-bottom: 16px; }
 .head h2 { margin: 0 0 4px; }
-.muted { color: var(--el-text-color-secondary); font-size: 14px; }
+.muted { color: var(--el-text-color-secondary); font-size: 15px; }
 
 .toolbar {
   display: flex;
@@ -231,26 +231,15 @@ async function doCompare() {
 }
 .file-select { width: 260px; }
 .spacer { flex: 1; }
-.chip { font-size: 15px; font-weight: 700; }
+.chip { font-size: 16px; font-weight: 700; }
 .chip.add { color: var(--el-color-success); }
 .chip.mod { color: var(--el-color-warning); }
 .chip.del { color: var(--el-color-danger); }
 
-.glass {
-  background: rgba(30, 31, 43, 0.55);
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
-}
-html:not(.dark) .glass {
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 8px 28px rgba(30, 50, 90, 0.08);
-}
+/* .glass 由 App.vue 全局定义（走主题 token），这里不再重复声明。 */
 
 .sec { margin-bottom: 18px; }
-.sec-title { margin: 0 0 10px; font-size: 16px; }
+.sec-title { margin: 0 0 10px; font-size: 17px; }
 .sec-title.add { color: var(--el-color-success); }
 .sec-title.mod { color: var(--el-color-warning); }
 .sec-title.del { color: var(--el-color-danger); }
@@ -266,7 +255,7 @@ html:not(.dark) .glass {
 .diff-block.mod { background: rgba(251, 191, 36, 0.08); border-color: rgba(251, 191, 36, 0.3); }
 
 .diff-block-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-.diff-tag { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 6px; }
+.diff-tag { font-size: 13.5px; font-weight: 700; padding: 2px 8px; border-radius: 6px; }
 .diff-tag.add { background: rgba(74, 222, 128, 0.2); color: var(--el-color-success); }
 .diff-tag.mod { background: rgba(251, 191, 36, 0.2); color: var(--el-color-warning); }
 .diff-tag.del { background: rgba(248, 113, 113, 0.2); color: var(--el-color-danger); }
@@ -290,7 +279,7 @@ html:not(.dark) .glass {
   border-bottom: 1px dashed var(--el-border-color-lighter);
   flex-wrap: wrap;
 }
-.diff-key { min-width: 150px; font-weight: 600; font-size: 13px; }
-.diff-old { color: var(--el-color-danger); font-size: 13px; word-break: break-all; }
-.diff-new { color: var(--el-color-success); font-size: 13px; word-break: break-all; }
+.diff-key { min-width: 150px; font-weight: 600; font-size: 14px; }
+.diff-old { color: var(--el-color-danger); font-size: 14px; word-break: break-all; }
+.diff-new { color: var(--el-color-success); font-size: 14px; word-break: break-all; }
 </style>

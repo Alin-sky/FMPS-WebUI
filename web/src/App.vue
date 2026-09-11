@@ -62,27 +62,149 @@ html, body, #app {
   padding: 0;
   height: 100%;
 }
+/* ============================================================
+   主题 token 层
+   ------------------------------------------------------------
+   所有面板的背景 / 边框 / 阴影都从这里取，不要在组件里再写死
+   `rgba(255,255,255,.62)` 或用 `:global(html.dark)` 覆盖。
+
+   为什么必须这样做：Vue 的 scoped CSS 会把 `:global(html.dark) .foo`
+   这条规则整条丢掉（编译产物里根本不存在），于是深色模式下这些面板
+   仍然套用浅色背景 —— 「深色模式下一片灰」就是这么来的。
+   改用 CSS 变量做主题切换与作用域无关，从根上避免这类问题。
+   ============================================================ */
+:root {
+  /* 毛玻璃面板 */
+  --fmps-panel-bg: rgba(255, 255, 255, 0.66);
+  --fmps-panel-border: rgba(20, 30, 60, 0.08);
+  --fmps-panel-shadow: 0 8px 28px rgba(30, 50, 90, 0.08);
+  --fmps-panel-shadow-lg: 0 12px 36px rgba(30, 50, 90, 0.11);
+  /* 顶栏 */
+  --fmps-topbar-bg: rgba(255, 255, 255, 0.7);
+  --fmps-topbar-border: rgba(20, 30, 60, 0.07);
+  /* 面板内嵌浅底 */
+  --fmps-inset-bg: rgba(255, 255, 255, 0.55);
+  --fmps-inset-border: rgba(20, 30, 60, 0.06);
+  /* 面板内的「凹陷」底（diff 行 / 代码行）：浅色下比面板更深，深色下比面板更亮。
+     以前这里写死成 rgba(255,255,255,0.04) 再配一条 `html:not(.dark)` 去覆盖，
+     但 scoped 块里的 `html:not(.dark)` 会被 Vue 编译器整条丢掉 → 浅色模式下
+     白底叠白 → 内容直接隐形。改成 token 后两边都生效。 */
+  --fmps-subtle-bg: rgba(20, 30, 60, 0.035);
+  --fmps-subtle-border: rgba(20, 30, 60, 0.06);
+  /* 面板的渐变描边环（::before 那圈细光边） */
+  --fmps-ring: linear-gradient(
+    135deg,
+    rgba(120, 140, 240, 0.35),
+    rgba(120, 140, 240, 0.04) 30%,
+    rgba(160, 120, 240, 0.06) 60%,
+    rgba(120, 180, 240, 0.3)
+  );
+  /* 分隔线 / 背景光晕 */
+  --fmps-divider: rgba(20, 30, 60, 0.09);
+  --fmps-glow: rgba(91, 141, 239, 0.14);
+  --fmps-glow-2: rgba(122, 111, 240, 0.12);
+  /* 液态玻璃按钮 */
+  --fmps-btn-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.55));
+  --fmps-btn-border: rgba(255, 255, 255, 0.95);
+  --fmps-btn-shadow:
+    0 3px 12px rgba(30, 50, 90, 0.12),
+    inset 0 1px 0 #fff,
+    inset 0 -1px 0 rgba(120, 140, 200, 0.15);
+  /* 面板内的卡片 */
+  --fmps-card-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.38));
+  --fmps-card-border: rgba(20, 30, 60, 0.07);
+  --fmps-card-shadow: 0 2px 8px rgba(30, 50, 90, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  /* 弹窗 */
+  --fmps-dialog-shadow: 0 24px 70px rgba(40, 60, 130, 0.22);
+  --fmps-dialog-head-glow: linear-gradient(135deg, rgba(91, 141, 239, 0.08), transparent 70%);
+}
+
+html.dark {
+  /* ---- Element Plus 深色基色：比默认的纯灰更有蓝紫调 ---- */
+  --el-bg-color: #1c1d29;
+  --el-bg-color-page: #12131c;
+  --el-bg-color-overlay: #24252f;
+  --el-fill-color: #262838;
+  --el-fill-color-light: #2b2d3d;
+  --el-fill-color-lighter: #202131;
+  --el-fill-color-extra-light: #1a1b26;
+  --el-fill-color-dark: #33354a;
+  --el-fill-color-darker: #3a3c52;
+  --el-fill-color-blank: #1c1d29;
+  --el-border-color: #3d3f52;
+  --el-border-color-light: #35374a;
+  --el-border-color-lighter: #2e3042;
+  --el-border-color-extra-light: #272939;
+  --el-text-color-primary: #e8eaf3;
+  --el-text-color-regular: #ced1de;
+  --el-text-color-secondary: #a0a4b8;
+  --el-text-color-placeholder: #7c8098;
+  --el-text-color-disabled: #5d6076;
+  --el-mask-color: rgba(10, 11, 18, 0.8);
+  --el-table-border-color: #2e3042;
+  --el-table-header-bg-color: #24252f;
+  --el-table-row-hover-bg-color: rgba(91, 141, 239, 0.12);
+  --el-disabled-bg-color: #262838;
+
+  /* ---- 本项目 token ---- */
+  --fmps-panel-bg: rgba(36, 37, 49, 0.72);
+  --fmps-panel-border: rgba(255, 255, 255, 0.1);
+  --fmps-panel-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+  --fmps-panel-shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.38);
+  --fmps-topbar-bg: rgba(24, 25, 36, 0.72);
+  --fmps-topbar-border: rgba(255, 255, 255, 0.08);
+  --fmps-inset-bg: rgba(255, 255, 255, 0.045);
+  --fmps-inset-border: rgba(255, 255, 255, 0.08);
+  --fmps-subtle-bg: rgba(255, 255, 255, 0.045);
+  --fmps-subtle-border: rgba(255, 255, 255, 0.07);
+  --fmps-ring: linear-gradient(
+    135deg,
+    rgba(120, 140, 240, 0.45),
+    rgba(120, 140, 240, 0.05) 30%,
+    rgba(160, 120, 240, 0.08) 60%,
+    rgba(120, 180, 240, 0.4)
+  );
+  --fmps-divider: rgba(255, 255, 255, 0.09);
+  --fmps-glow: rgba(91, 141, 239, 0.16);
+  --fmps-glow-2: rgba(122, 111, 240, 0.13);
+  --fmps-btn-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.03));
+  --fmps-btn-border: rgba(255, 255, 255, 0.16);
+  --fmps-btn-shadow:
+    0 2px 8px rgba(120, 140, 240, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  /* 面板内的卡片 */
+  --fmps-card-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
+  --fmps-card-border: rgba(255, 255, 255, 0.1);
+  --fmps-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  /* 弹窗 */
+  --fmps-dialog-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
+  --fmps-dialog-head-glow: linear-gradient(135deg, rgba(122, 111, 240, 0.16), transparent 70%);
+}
+
+/* ============ 字号：整体放大一档（正文 14 → 16） ============ */
+:root {
+  --el-font-size-extra-large: 23px;
+  --el-font-size-large: 20px;
+  --el-font-size-medium: 18px;
+  --el-font-size-base: 16px;
+  --el-font-size-small: 15px;
+  --el-font-size-extra-small: 13px;
+  --el-component-size-large: 44px;
+  --el-component-size: 36px;
+  --el-component-size-small: 30px;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--el-text-color-primary);
   background:
-    radial-gradient(1200px 600px at 15% -10%, rgba(91, 141, 239, 0.14), transparent 60%),
-    radial-gradient(1000px 500px at 100% 0%, rgba(122, 111, 240, 0.12), transparent 55%),
+    radial-gradient(1200px 600px at 15% -10%, var(--fmps-glow), transparent 60%),
+    radial-gradient(1000px 500px at 100% 0%, var(--fmps-glow-2), transparent 55%),
     var(--el-bg-color-page);
   background-attachment: fixed;
-}
-/* 深色模式：背景调浅，偏蓝紫而非纯黑 */
-html.dark {
-  --el-bg-color: #1e1f2b;
-  --el-bg-color-page: #151620;
-  --el-bg-color-overlay: #272834;
-  --el-fill-color: #262734;
-  --el-fill-color-light: #2b2c3a;
-  --el-fill-color-lighter: #212230;
-  --el-fill-color-blank: #1e1f2b;
-  --el-border-color: #3b3c4c;
-  --el-border-color-light: #343542;
-  --el-border-color-lighter: #2c2d3b;
+  -webkit-font-smoothing: antialiased;
 }
 .app {
   min-height: 100vh;
@@ -96,16 +218,12 @@ html.dark {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  height: 56px;
-  background: rgba(30, 31, 43, 0.6);
+  padding: 0 22px;
+  height: 64px;
+  background: var(--fmps-topbar-bg);
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-html:not(.dark) .topbar {
-  background: rgba(255, 255, 255, 0.65);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid var(--fmps-topbar-border);
 }
 .brand {
   display: flex;
@@ -115,29 +233,29 @@ html:not(.dark) .topbar {
   user-select: none;
 }
 .logo {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
   background: linear-gradient(135deg, #5b8def, #7a6ff0);
   color: #fff;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 17px;
-  box-shadow: 0 2px 6px rgba(90, 120, 230, 0.35);
+  font-size: 20px;
+  box-shadow: 0 3px 10px rgba(90, 120, 230, 0.4);
 }
 .brand-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.15;
+  line-height: 1.2;
 }
 .name {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
 }
 .subtitle {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--el-text-color-secondary);
   letter-spacing: 0.02em;
 }
@@ -155,46 +273,33 @@ html:not(.dark) .topbar {
   gap: 12px;
 }
 .cfg-label { margin-left: 2px; }
-/* 毛玻璃面板（透光） */
+/* 毛玻璃面板（透光）——深浅色统一走 token */
 .glass {
-  background: rgba(30, 31, 43, 0.55);
+  background: var(--fmps-panel-bg);
   backdrop-filter: blur(16px) saturate(140%);
   -webkit-backdrop-filter: blur(16px) saturate(140%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
-}
-html:not(.dark) .glass {
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 8px 28px rgba(30, 50, 90, 0.08);
+  border: 1px solid var(--fmps-panel-border);
+  box-shadow: var(--fmps-panel-shadow);
 }
 /* 液态玻璃按钮 */
 .el-button {
   border-radius: 10px;
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: transform 0.16s ease, box-shadow 0.2s ease, filter 0.2s ease;
   backdrop-filter: blur(14px) saturate(160%);
   -webkit-backdrop-filter: blur(14px) saturate(160%);
 }
-.el-button--default,
+/* 默认型按钮（无色）+ plain / text 型：液态玻璃底。
+   注意**不能**用 `.el-button--default` —— Element Plus 会把 `size="default"`
+   也编译成这个类，于是 primary / success 等彩色按钮也会被盖上这层半透明白，
+   变成"白字白底、按钮凭空消失"。这里改为显式排除所有彩色类型。 */
+.el-button:not(.el-button--primary):not(.el-button--success):not(.el-button--warning):not(.el-button--danger):not(.el-button--info),
 .el-button.is-plain,
+.el-button.is-text,
 .el-button--text {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.03));
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow:
-    0 3px 12px rgba(0, 0, 0, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.22),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
-}
-html:not(.dark) .el-button--default,
-html:not(.dark) .el-button.is-plain,
-html:not(.dark) .el-button--text {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.5));
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  box-shadow:
-    0 3px 12px rgba(30, 50, 90, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 1),
-    inset 0 -1px 0 rgba(120, 140, 200, 0.15);
+  background: var(--fmps-btn-bg);
+  border: 1px solid var(--fmps-btn-border);
+  box-shadow: var(--fmps-btn-shadow);
 }
 .el-button--primary,
 .el-button--success,
@@ -218,13 +323,29 @@ html.dark .el-button--warning {
 html.dark .el-button--danger {
   box-shadow: 0 4px 14px rgba(248, 113, 113, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
-html.dark .el-button--default,
-html.dark .el-button.is-plain {
-  box-shadow: 0 2px 8px rgba(120, 140, 240, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.22);
-}
 .el-button:hover {
   transform: translateY(-2px);
   filter: brightness(1.06);
+}
+/* 表格行内的按钮不做悬浮位移，否则行内元素会上下跳动、看起来"不对齐" */
+.el-table .el-button,
+.el-table .el-button:hover {
+  transform: none;
+}
+/* 表格里的文本按钮：去掉玻璃底，回归纯文字链接。
+   三个宽度不一的玻璃胶囊并排，视觉上怎么排都像没对齐。 */
+.el-table .el-button.is-text {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  padding: 4px 8px;
+  height: auto;
+}
+.el-table .el-button.is-text:hover {
+  background: var(--el-fill-color-light);
+  filter: none;
 }
 /* 标签美化 */
 .el-tag {
@@ -268,28 +389,25 @@ html:not(.dark) ::-webkit-scrollbar-thumb {
   overflow: hidden;
   backdrop-filter: blur(24px) saturate(160%);
   -webkit-backdrop-filter: blur(24px) saturate(160%);
-  box-shadow: 0 24px 70px rgba(10, 14, 40, 0.45) !important;
-}
-html:not(.dark) .el-dialog {
-  box-shadow: 0 24px 70px rgba(40, 60, 130, 0.22) !important;
+  box-shadow: var(--fmps-dialog-shadow) !important;
 }
 .el-dialog__header {
-  padding: 18px 22px 12px !important;
+  padding: 18px 24px 14px !important;
   border-bottom: 1px solid var(--el-border-color-lighter);
-  background: linear-gradient(135deg, rgba(91, 141, 239, 0.08), transparent 70%);
-}
-html.dark .el-dialog__header {
-  background: linear-gradient(135deg, rgba(122, 111, 240, 0.14), transparent 70%);
+  background: var(--fmps-dialog-head-glow);
 }
 .el-dialog__title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
+  letter-spacing: 0.01em;
 }
 .el-dialog__body {
-  padding: 20px 22px !important;
+  padding: 20px 24px !important;
+  font-size: 15px;
+  line-height: 1.7;
 }
 .el-dialog__footer {
-  padding: 12px 22px 18px !important;
+  padding: 12px 24px 18px !important;
 }
 .el-overlay {
   backdrop-filter: blur(4px);
@@ -364,9 +482,50 @@ html.dark .el-dialog__header {
   font-variant-numeric: tabular-nums;
 }
 
+/* ===== 表格：行高与内边距随字号一起放大 ===== */
+.el-table {
+  font-size: var(--el-font-size-base);
+  --el-table-border-color: var(--fmps-divider);
+}
+.el-table th.el-table__cell {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--el-text-color-regular);
+  letter-spacing: 0.02em;
+  padding: 10px 0;
+}
+.el-table td.el-table__cell {
+  padding: 12px 0;
+}
+.el-table .cell {
+  line-height: 1.55;
+  padding: 0 14px;
+}
+.el-table__inner-wrapper::before {
+  height: 1px;
+  background-color: var(--fmps-divider);
+}
+
+/* ===== 模式切换（radio-button 组）：加大点击区 ===== */
+.el-radio-button__inner {
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+/* ===== 标签 ===== */
+.el-tag {
+  font-size: 13px;
+}
+
+/* ===== 消息提示 ===== */
+.el-message {
+  font-size: 15px;
+}
+
 @media (max-width: 560px) {
   .cfg-label { display: none; }
   .content { padding: 14px 10px; }
-  body { font-size: 17px; }
+  body { font-size: 15px; }
+  .topbar { padding: 0 14px; height: 58px; }
 }
 </style>
