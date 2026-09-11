@@ -19,10 +19,20 @@ server/data/publish-config.json
 # ===== 大数据缓存：2.3GB 漫画图片（可重新爬取） =====
 server/data/img/manga/
 
+# ===== 头像图片：本体可重新爬取/从 COS 拉回，不入库 =====
+# 但 icons-meta.json（人工来源标记）必须入库，它记录了哪些图是人工指定的，丢了不可恢复。
+server/data/img/stu_icon_db_png/
+server/data/img/stu_icon_db/
+server/data/img/gacha-img/
+!server/data/icons-meta.json
+
 # ===== 历史快照 / 导出 / 版本（可再生） =====
 server/data/snapshots/
 server/data/export/
 server/data/versions/
+
+# ===== 破坏性操作前的本地保险备份（仅本机兜底用） =====
+server/data/_safety/
 
 # ===== 临时 / 中间文件 =====
 server/data/proc_final.txt
@@ -31,6 +41,7 @@ server/data/proc_final.txt
 .workbuddy/
 
 # ===== 开发期截图（根目录） =====
+.tmp-shots/
 /gacha-auto.png
 /gacha-page.png
 /manga-157-dialog.png
